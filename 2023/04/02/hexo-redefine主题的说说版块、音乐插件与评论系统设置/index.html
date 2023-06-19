@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="狮子阿儒">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+        
+            <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+        
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://example.com/2023/04/02/hexo-redefine主题的说说版块、音乐插件与评论系统设置/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="前言​		针对我安装或者配置时遇到的困难分享一下，大家如果有遇到其他的问题，可以评论区讨论一下或者电子邮件联系，希望能帮到各位。 Artitalk说说版块设置及问题配置需要 Artitalk官方文档 LeanCloud数据存储库（国内版）  配置过程1、LeanCloud​		由于用Artitalk的方式部署说说，需要将说说内容存储到后端数据存储库中，因而用到了LeanCloud（Artita">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo-redefine主题的说说版块、音乐插件与评论系统设置">
+<meta property="og:url" content="http://example.com/2023/04/02/hexo-redefine%E4%B8%BB%E9%A2%98%E7%9A%84%E8%AF%B4%E8%AF%B4%E7%89%88%E5%9D%97%E3%80%81%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6%E4%B8%8E%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="前言​		针对我安装或者配置时遇到的困难分享一下，大家如果有遇到其他的问题，可以评论区讨论一下或者电子邮件联系，希望能帮到各位。 Artitalk说说版块设置及问题配置需要 Artitalk官方文档 LeanCloud数据存储库（国内版）  配置过程1、LeanCloud​		由于用Artitalk的方式部署说说，需要将说说内容存储到后端数据存储库中，因而用到了LeanCloud（Artita">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/leancloud%E9%A6%96%E9%A1%B5.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/leancloud%E6%B3%A8%E5%86%8C.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/leancloud%E7%BB%91%E5%AE%9A%E6%89%8B%E6%9C%BA%E5%8F%B71.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/leancloud%E7%BB%91%E5%AE%9A%E7%94%B5%E5%AD%90%E9%82%AE%E7%AE%B1.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/leancloud%E5%88%9B%E5%BB%BA%E5%BA%94%E7%94%A8.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E5%88%9B%E5%BB%BAshuoshuo%E7%B1%BB.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/user1.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/user2.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/shuoshuo%E6%9D%83%E9%99%901.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E8%AF%B4%E8%AF%B4quanxian.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E5%88%9B%E5%BB%BAatComment.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/user%E6%B7%BB%E5%8A%A0%E5%88%971.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/userimg.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E5%BA%94%E7%94%A8key.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/user%E6%9D%83%E9%99%902.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/artitalk%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/API%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9Aleancloud.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E8%AF%B4%E8%AF%B4md%E6%96%87%E4%BB%B6.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E8%AF%B4%E8%AF%B4%E6%9D%BF%E5%9D%97%E6%95%88%E6%9E%9C%E5%9B%BE.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/aplayer%E6%95%88%E6%9E%9C%E5%9B%BE.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/aplayer%E6%A0%B7%E5%9B%BE2.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/SSL%E8%AF%81%E4%B9%A6%E5%85%8D%E8%B4%B9%E7%94%B3%E8%AF%B7.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E5%A4%9A%E5%90%89%E4%BA%91https%E8%AE%BE%E7%BD%AE.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/MP3%E6%AD%A3%E5%B8%B8%E6%92%AD%E6%94%BE.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/leancloud-api%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9A.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/20230420234831.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/20230420235353.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/20230420235503.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/20230420235535.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/20230421002328.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/20230421002416.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/20230421002501.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/20230421002603.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/20230421003633.png">
+<meta property="og:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/20230421003259.png">
+<meta property="article:published_time" content="2023-04-01T16:39:35.000Z">
+<meta property="article:modified_time" content="2023-04-23T12:58:45.164Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="说说">
+<meta property="article:tag" content="音乐播放器">
+<meta property="article:tag" content="评论系统">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/leancloud%E9%A6%96%E9%A1%B5.png">
+    
+    
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGVBF105RR"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-LGVBF105RR');
+        </script>
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/202304171454278.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/202304171454278.png">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/202304171454278.png">
+    <!--- Page Info-->
+    
+    <title>
+        
+            hexo-redefine主题的说说版块、音乐插件与评论系统设置 -
+        
+        阿儒小站
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/assets/fonts.css">
+    <!--- Font Part-->
+    
+    
+    
+        <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    
+    
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    
+
+    <!--- Inject Part-->
+    
+    <script id="hexo-configurations">
+    let Global = window.Global || {};
+    Global.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"};
+    Global.theme_config = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":true,"list":["下境界","中境界","上境界","大圆满"]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":6,"number":true,"expand":true,"init_open":true},"copyright":true,"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":true,"family":"Ma Shan Zheng","url":"https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap"},"english":{"enable":true,"family":"Noto Sans","url":"https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":true},"scroll_progress":{"bar":true,"percentage":true},"busuanzi_counter":{"enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"pjax":true,"open_graph":true,"google_analytics":{"enable":true,"id":"G-LGVBF105RR"}},"home_banner":{"enable":true,"style":"static","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"欢迎来到ARU Station😀","subtitle":{"text":["Loading···"],"hitokoto":{"enable":true,"api":"https://v1.hitokoto.cn/?c=i"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":false,"smart_backspace":true},"text_color":{"light":"#fff39f","dark":"#2f2f00"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"links":{"github":"https://github.com/c200108","instagram":null,"zhihu":null,"twitter":null,"email":"2547985435@qq.com","bilibili":"https://space.bilibili.com/34854856?spm_id_from=333.1007.0.0","facebook":"https://www.facebook.com/profile.php?id=100092217361404","fa-solid fa-rss":"https://c200108.github.io/atom.xml"}}},"plugins":{"feed":{"enable":true},"aplayer":{"enable":true,"type":"fixed","audios":[{"name":"Reverse Galaxy","artist":"SireN","url":"http://music.163.com/song/media/outer/url?id=1392965168.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/5aeb12253c0d777b24a0c6fecabb170d.png"},{"name":"光るナラ(动画《四月是你的谎言》片头曲)","artist":"Goose House","url":"http://music.163.com/song/media/outer/url?id=1840175166.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover1.png"},{"name":"泣いて笑って(哭着笑着)","artist":"佐藤史果","url":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/2.MP3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover2.png"},{"name":"Let Me Hear(寄生兽动漫曲)","artist":"Fear, and Loathing in Las Vegas","url":"http://music.163.com/song/media/outer/url?id=35023412.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover3.png"},{"name":"Wings of Courage -空を超えて","artist":"川田まみ (川田麻美)","url":"http://music.163.com/song/media/outer/url?id=29771058.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover4.png"},{"name":"secret base ~君がくれたもの~","artist":"茅野愛衣","url":"http://music.163.com/song/media/outer/url?id=22817150.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover5.png"},{"name":"Goodbye Nostalgia","artist":"Coda(小田和奏)","url":"http://music.163.com/song/media/outer/url?id=32098083.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover6.png"},{"name":"遙か彼方","artist":"Rita","url":"http://music.163.com/song/media/outer/url?id=760370.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover7.png"},{"name":"涙の種、笑顔の花","artist":"中川翔子","url":"http://music.163.com/song/media/outer/url?id=2022736381.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover8.png"},{"name":"青鸟（ブルーバード ）","artist":"生物股长（いきものがかり）","url":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/9.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover9.png"},{"name":"オレンジ（四月是你的谎言ED2）","artist":"seven oops","url":"https://sharefs.ali.kugou.com/202304211324/0c732326e053c1e670c2ad9815e6c850/v2/d7d67cefbe33106fe45cbbb2c7dd2e0c/G108/M04/17/10/TJQEAFvpn8uAF1R-AFLRzpJfQMg625.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover10.png"},{"name":"愛してる(我爱你)","artist":"高鈴","url":"http://music.163.com/song/media/outer/url?id=28661197.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover11.png"},{"name":"Before my body is dry","artist":"小林未郁","url":"http://music.163.com/song/media/outer/url?id=30431359.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover12.png"},{"name":"Blumenkranz（《斩服少女》插曲）","artist":"Cyua","url":"http://music.163.com/song/media/outer/url?id=28196036.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover13.png"},{"name":"Flower Dance（电影对白mix）(花之舞)","artist":"DJ Okawari","url":"http://music.163.com/song/media/outer/url?id=1405903472.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover14.png"},{"name":"風になる（幻化成风）","artist":"つじあやの","url":"http://music.163.com/song/media/outer/url?id=29394504.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover15.png"},{"name":"HYDRA（TV动画《OVERLORD》第二季片尾曲）","artist":"MYTH & ROID","url":"http://music.163.com/song/media/outer/url?id=536098015.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover16.png"},{"name":"灰色と青（灰色与青）","artist":"米津玄師","url":"https://sharefs.ali.kugou.com/202304230012/ca7ee8b37c6f3925b73728c2952a4927/KGTX/CLTX003/2f2f156caac062bd5656adf3ee31e8f0.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover17.png"},{"name":"君の知らない物語","artist":"Supercell","url":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/18.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover18.png"},{"name":"Lemon","artist":"米津玄师","url":"http://ws.stream.qqmusic.qq.com/C400002uGBJY4aCwlI.m4a?guid=916658326&vkey=46CE3521A5E4F0FE4B398FBB9C2EE9F7BFB1949E2FCB101071530CCCDB19D67C64900EC39536981904AEC5D9D0088A1956686C0858BFC512&uin=&fromtag=120032","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover19.png"},{"name":"Only My Railgun","artist":"fripSide","url":"https://sharefs.ali.kugou.com/202304230018/a8ebd3f04fb562eec9d56b7de390c51d/v2/e45edb532aaf8f6e8f50bd86b261b477/G063/M03/00/13/fw0DAFcQwi-AIuvmAEBRupL8g2w963.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover20.png"},{"name":"SILVER SKY","artist":"Re:vale","url":"http://music.163.com/song/media/outer/url?id=2031881164.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover21.png"},{"name":"Silent Solitude（TV动画《OVERLORD III》片尾曲）","artist":"OxT","url":"http://music.163.com/song/media/outer/url?id=1293953847.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover22.png"},{"name":"深海少女","artist":"のぶなが","url":"http://music.163.com/song/media/outer/url?id=857619.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover23.png"},{"name":"我的一个道姑朋友（Cover タイナカ彩智）","artist":"LON","url":"http://music.163.com/song/media/outer/url?id=533245911.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover24.png"},{"name":"無くした日々にさよなら","artist":"スネオヘアー","url":"http://music.163.com/song/media/outer/url?id=1829709418.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover25.png"},{"name":"我好像在哪见过你（我好像在哪见过你）","artist":"薛之谦","url":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/26.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover26.png"},{"name":"我在那一角落患过伤风(步步高音乐手机广告曲)","artist":"冯曦妤","url":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/27.mp3","cover":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/cover27.png"},{"name":"遠き呼び声の彼方へ","artist":"矢野立美","url":"http://music.163.com/song/media/outer/url?id=4968374.mp3","cover":"https://c200108.oss-cn-beijing.aliyuncs.com/imgs/20230421121858.png"},{"name":"3000万年前からのメッセージ <M-44,Tamのみ,M-45>","artist":"矢野立美","url":"http://music.163.com/song/media/outer/url?id=4968354.mp3","cover":"https://c200108.oss-cn-beijing.aliyuncs.com/imgs/20230421125043.png"},{"name":"ninelie","artist":"Aimer,EGOIST","url":"http://music.163.com/song/media/outer/url?id=409872504.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/6e68e84355c751a6dc68a99d1aa0dbaa.png"},{"name":"太陽と向日葵 (version2016)","artist":"Flower","url":"http://music.163.com/song/media/outer/url?id=447925813.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/6530f43ea6b77adf25501e7e610f48a4.png"},{"name":"Lil Mama","artist":"Jain","url":"http://music.163.com/song/media/outer/url?id=36492681.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/2bd38c7b1802f362792c74b0cf6356eb.png"},{"name":"绊","artist":"NanNan","url":"http://music.163.com/song/media/outer/url?id=1387385598.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/953ef3cf74178023df17405f37de1623.png"},{"name":"伪装","artist":"大壮","url":"http://music.163.com/song/media/outer/url?id=1348548292.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/0393ffff8ffef456be7b888e0e8018e5.png"},{"name":"你的酒馆对我打了烊","artist":"陈雪凝","url":"http://music.163.com/song/media/outer/url?id=1341964346.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/e41ef86c0064d04e959364ae99e6fef5.png"},{"name":"广东十年爱情故事","artist":"广东雨神","url":"http://music.163.com/song/media/outer/url?id=513791211.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/639cc996618a49e306b554f64f5165f3.png"},{"name":"爱如潮水","artist":"张信哲","url":"http://music.163.com/song/media/outer/url?id=187338.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/eeafc5408ed2ed4b4d1b4ad5c713c9b4.png"},{"name":"吻别","artist":"张学友","url":"http://music.163.com/song/media/outer/url?id=190449.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/e667b8558e5fba7f64de83ce25a932d4.png"},{"name":"黄昏","artist":"周传雄","url":"https://freetyst.nf.migu.cn/public%2Fproduct9th%2Fproduct45%2F2022%2F04%2F2210%2F2018%E5%B9%B408%E6%9C%8829%E6%97%A516%E7%82%B932%E5%88%86%E7%B4%A7%E6%80%A5%E5%86%85%E5%AE%B9%E5%87%86%E5%85%A5SONY711%E9%A6%96%2F%E5%85%A8%E6%9B%B2%E8%AF%95%E5%90%AC%2FMp3_64_22_16%2F6005970UR4F105909.mp3?Key=5917c0fa58db5555&Tim=1682057525436&channelid=01&msisdn=4bb159e46ffb495ebe61f791d36c1c16","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/ca813f6de58b791401b302c6f8fab205.png"},{"name":"不将就","artist":"李荣浩","url":"http://music.163.com/song/media/outer/url?id=31654343.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/2d3de800023580373cacfdbcb871513f.png"},{"name":"뭐가 그리 잘나셨어요","artist":"가음","url":"http://music.163.com/song/media/outer/url?id=1406201695.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/e06bc9f60c64939340e564815a913fd0.png"},{"name":"Counting Stars","artist":"OneRepublic","url":"http://music.163.com/song/media/outer/url?id=28575553.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/1742f29794a17c2f6ab85817e07fd656.png"},{"name":"Hall of Fame (Glee Cast Version)","artist":"Glee Cast","url":"http://music.163.com/song/media/outer/url?id=25799696.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/8fb19a829f80a62ce303e17237ace2c6.png"},{"name":"See You Again (From \"Furious 7\" Soundtrack|2016 GRAMMY Nominees Album)","artist":"Wiz Khalifa,Charlie Puth","url":"http://music.163.com/song/media/outer/url?id=1884848659.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/0bc138922e217d86affd728fa5d11a80.png"},{"name":"Reminding Me","artist":"Shawn Hook,Vanessa Hudgens","url":"http://music.163.com/song/media/outer/url?id=472219602.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/d81b14ce3397951ac1b9c6dcfe19ff6f.png"},{"name":"Turnin'","artist":"Young Rising Sons","url":"http://music.163.com/song/media/outer/url?id=1427824704.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/f8d43fe88317fc4a58a4c288a52ca5d5.png"},{"name":"Forgettable","artist":"Project 46,Olivia","url":"http://music.163.com/song/media/outer/url?id=33035577.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/b836dc1ad64ec83b9662076cf8b75f15.png"},{"name":"Innocence(Live)","artist":"Avril Lavigne","url":"http://music.163.com/song/media/outer/url?id=2117321.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/ff59960fde709c5a0c7eee3c3485ae4a.png"},{"name":"Hero (Deep Mix)","artist":"Cash Cash,Christina Perri","url":"http://music.163.com/song/media/outer/url?id=1360454878.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/dc1f17b98c78737279f6ef64c02b5244.png"},{"name":"多想在平庸的生活拥抱你","artist":"隔壁老樊","url":"http://music.163.com/song/media/outer/url?id=1346104327.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/8aeebefa89da3947996b307a0ff5e5dd.png"},{"name":"Lost Stars","artist":"Adam Levine","url":"http://music.163.com/song/media/outer/url?id=1294688967.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/338e38caa7b3fd9d3ac327cfbdf03e43.png"},{"name":"Best of 2012 (Payphone/Call Me Maybe/Wide Awake/Starship/We Are Young)","artist":"Anthem Lights","url":"http://music.163.com/song/media/outer/url?id=1435404200.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/aaed43cdf83aeb664ece409ec0d6e2f2.png"},{"name":"世间美好与你环环相扣","artist":"冯提莫","url":"http://music.163.com/song/media/outer/url?id=1406211977.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/f438356fa469b1510b05e2b0afb963e7.png"},{"name":"Cheap Thrills","artist":"Sia","url":"http://music.163.com/song/media/outer/url?id=554375561.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/b5e562b2386eb80202274f15021de3bf.png"},{"name":"Holding On","artist":"Dabin,Lowell","url":"http://music.163.com/song/media/outer/url?id=1415581032.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/df7d07c4ffa43afcb915435c2241e892.png"},{"name":"把孤独当作晚餐 (原版)","artist":"刘旭阳","url":"http://music.163.com/song/media/outer/url?id=1381053140.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/576ad95d0e76465dc9725fbadde95ce7.png"},{"name":"年少有为","artist":"李荣浩","url":"http://music.163.com/song/media/outer/url?id=1293886117.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/96487173c7b7cf5a55deef51db3afec6.png"},{"name":"大天蓬（女生版）","artist":"清水er","url":"http://music.163.com/song/media/outer/url?id=1433562661.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/dd5cfd2cf7d3bde2692f4015cb8e50ca.png"},{"name":"仙四.回梦游仙(变奏)-千年缘","artist":"心然","url":"http://music.163.com/song/media/outer/url?id=314365.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/5ac6c3e9380adac0547a305183ee232f.png"},{"name":"离人愁（Cover 李袁杰）","artist":"萧忆情Alex","url":"http://music.163.com/song/media/outer/url?id=547335248.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/e618099189a25d138df6556b9e4f97ec.png"},{"name":"盗墓笔记·十年人间","artist":"李常超 (Lao乾妈)","url":"http://music.163.com/song/media/outer/url?id=1297802566.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/143ed25eede9b260c1bc61ec7239f19e.png"},{"name":"盗墓笔记·十年人间（完整版）","artist":"泽国同学","url":"http://music.163.com/song/media/outer/url?id=1414084688.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/dce72db1cf656c040172b99ba9638f88.png"},{"name":"赤伶","artist":"是二智呀","url":"http://music.163.com/song/media/outer/url?id=1377748865.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/ffd989026e949251bf1a7543a61e267d.png"},{"name":"此生不换","artist":"青鸟飞鱼","url":"http://music.163.com/song/media/outer/url?id=1934168650.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/c3151e0565ceb78c9c733574bcfee6d9.png"},{"name":"琵琶行","artist":"奇然,沈谧仁","url":"http://music.163.com/song/media/outer/url?id=476513774.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/c4be4af91bddf67ab62312366768446b.png"},{"name":"フリージア","artist":"Uru","url":"http://music.163.com/song/media/outer/url?id=459925524.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/592d57a4462a04aee36cd9b1ee37ccd9.png"},{"name":"あのねこの話","artist":"みゆな,クボタカイ","url":"http://music.163.com/song/media/outer/url?id=1472907044.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/87ce41fe22e3ed16ce42a5f03765640b.png"},{"name":"unravel (acoustic version)","artist":"TK from 凛として時雨","url":"http://music.163.com/song/media/outer/url?id=537012213.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/9a8c66cfcbb66c6bfb2e1a35e932da6d.png"},{"name":"月光の雲海","artist":"久石譲","url":"http://music.163.com/song/media/outer/url?id=442760.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/7cb94226e0fb4a855f0ba352d408ae84.png"},{"name":"谪仙","artist":"KEY.Y","url":"http://music.163.com/song/media/outer/url?id=2040084248.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/bd1c89713ae318563a9cff7b1db1bab2.png"},{"name":"天下","artist":"张杰","url":"http://music.163.com/song/media/outer/url?id=191254.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/fea601ca233078518cd4835bbb7a28ce.png"},{"name":"红昭愿","artist":"音阙诗听","url":"http://music.163.com/song/media/outer/url?id=452986458.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/83b54a268777184ed78800b66dcf89da.png"},{"name":"红尘酒馆","artist":"向文涛","url":"http://music.163.com/song/media/outer/url?id=1479198471.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/7c4cd8dd716bae0d69d0ca581250c48e.png"},{"name":"小星星","artist":"汪苏泷","url":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/75.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/7d0effd6cac0bdfcc451ad3244e797e2.png"},{"name":"有点甜","artist":"汪苏泷","url":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/76.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/7d0effd6cac0bdfcc451ad3244e797e2.png"},{"name":"Fingertips","artist":"Dawin","url":"http://music.163.com/song/media/outer/url?id=1380237816.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/fd789410b10700bf999d19252a05e74f.png"},{"name":"空に星が綺麗~悲しい吉祥寺~","artist":"斉藤和義","url":"http://music.163.com/song/media/outer/url?id=22704309.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/51caef30a444821b8796f124865514f2.png"},{"name":"阿拉斯加海湾","artist":"蓝心羽","url":"http://music.163.com/song/media/outer/url?id=1500569811.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/2aa1993bfe06366c380b1ceeffdf0160.png"},{"name":"茫","artist":"李润祺","url":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/80.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/c7e43673f08526ca0bf588901ee28ff0.png"},{"name":"经济舱","artist":"KEY.L刘聪,Kafe.Hu","url":"http://music.163.com/song/media/outer/url?id=1492049185.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/62b79efe071a6abea48f652094704d0a.png"},{"name":"让一切随风","artist":"钟镇涛","url":"http://music.163.com/song/media/outer/url?id=194769.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/19e262e81e045fa044a3c58f4720dc76.png"},{"name":"春夏秋冬","artist":"张国荣","url":"http://music.163.com/song/media/outer/url?id=186453.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/a35e63e0d89764e833377474261ff422.png"},{"name":"游山恋","artist":"夏艺韩","url":"http://music.163.com/song/media/outer/url?id=1471055851.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/b8b92aee1bd49a74398df16339dd2322.png"},{"name":"虞兮叹","artist":"闻人听書_","url":"http://music.163.com/song/media/outer/url?id=1479526505.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/85169aa6dac9475c73e2dad47c3408b1.png"},{"name":"青丝","artist":"时光胶囊","url":"http://music.163.com/song/media/outer/url?id=30500857.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/eb8da7ff398ea8e6ae7fcf143669b794.png"},{"name":"Naina","artist":"Arijit Singh","url":"http://music.163.com/song/media/outer/url?id=475279815.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/d2197e992e10dd5d3cb38ffa0d49d924.png"},{"name":"与君书","artist":"尘ah.","url":"http://music.163.com/song/media/outer/url?id=1811721281.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/785e38c886fdc4c2ae986fd6bc1f2ad1.png"},{"name":"异乡夜里","artist":"卢云","url":"http://music.163.com/song/media/outer/url?id=1329769713.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/ecc359cc95c7b5cb3c5819ab253d3fc8.png"},{"name":"千千阕歌","artist":"陈慧娴","url":"http://music.163.com/song/media/outer/url?id=212233.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/290511b935c09d8ef1e86a4e437acfdc.png"},{"name":"红玫瑰","artist":"陈奕迅","url":"http://music.163.com/song/media/outer/url?id=65533.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/3b12e59f9710072faf16c469a77923f9.png"},{"name":"阴天快乐","artist":"陈奕迅","url":"http://music.163.com/song/media/outer/url?id=28563317.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/16741aeb128c25401776d8c6b6a78ba1.png"},{"name":"娱乐天空","artist":"陈奕迅","url":"http://music.163.com/song/media/outer/url?id=28481104.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/16741aeb128c25401776d8c6b6a78ba1.png"},{"name":"剑心","artist":"张杰","url":"http://music.163.com/song/media/outer/url?id=34179901.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/41e3ed628ab2f15d949efb48df27b26b.png"},{"name":"时间煮雨","artist":"郁可唯","url":"http://music.163.com/song/media/outer/url?id=26418130.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/0b8d540202db1b658c246ae997072b45.png"},{"name":"Love Yourself","artist":"Justin Bieber","url":"http://music.163.com/song/media/outer/url?id=1478064941.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/8e87f8ba3294601ee07b6e66147a18e7.png"},{"name":"东流","artist":"绯村柯北,灰老板","url":"http://music.163.com/song/media/outer/url?id=33004428.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/24065a1b12325132d634789d0bc79748.png"},{"name":"What Are Words","artist":"Chris Medina","url":"http://music.163.com/song/media/outer/url?id=1210496.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/347b58abacd84259c561ee083d4913a9.png"},{"name":"洋葱(Live)","artist":"杨宗纬","url":"http://music.163.com/song/media/outer/url?id=176040.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/2f385d5d73b6d3d84ea7d64a2ebb1ac4.png"},{"name":"爸爸妈妈","artist":"李荣浩","url":"http://music.163.com/song/media/outer/url?id=407450223.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/6f97c02b42c4f89f906e1e62c01ad387.png"},{"name":"麻雀","artist":"李荣浩","url":"http://music.163.com/song/media/outer/url?id=1407551413.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/111e53398e8d0dd6a543298cc10c013c.png"},{"name":"Without You","artist":"Avicii,Sandro Cavazza","url":"http://music.163.com/song/media/outer/url?id=1470909181.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/48dac1255ee325cabbc50793ddb4ddf1.png"},{"name":"我们好好的","artist":"李荣浩","url":"http://music.163.com/song/media/outer/url?id=1871993457.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/b2bb1d94f1f0a4a6ae547cc3e2e44cc7.png"},{"name":"爱情转移","artist":"陈奕迅","url":"http://music.163.com/song/media/outer/url?id=65536.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/b5990f7897210f8ea07f0c218de86461.png"},{"name":"Moonlight Shadow","artist":"Dana Winner","url":"http://music.163.com/song/media/outer/url?id=29592187.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/08301dc6a726252ef1937d08a9b7ca68.png"},{"name":"Talking to the Moon","artist":"Bruno Mars","url":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/106.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/156bd5dde5ed2bc77a2fe5db59dd8718.png"},{"name":"Señorita","artist":"Shawn Mendes,Camila Cabello","url":"http://music.163.com/song/media/outer/url?id=1373168742.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/c243f6b48512588111df5218ef8f5214.png"},{"name":"山楂树之恋","artist":"东来东往","url":"http://music.163.com/song/media/outer/url?id=77040.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/08e299a8c202e591ebb065746c9358b6.png"},{"name":"Yesterday Once More","artist":"Carpenters","url":"http://music.163.com/song/media/outer/url?id=3986241.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/63dc3afc80c4161bed01ec8dfd13d52b.png"},{"name":"错位时空","artist":"艾辰","url":"http://music.163.com/song/media/outer/url?id=1808492017.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/09d820496a99bd07c50db29048b65003.png"},{"name":"与山记","artist":"G2er,万象凡音","url":"http://music.163.com/song/media/outer/url?id=1456669346.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/a64d51cfd6ec15cc54ccb6f48f66ece4.png"},{"name":"嚣张","artist":"李艺皓","url":"http://music.163.com/song/media/outer/url?id=1388004789.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/381d2c34a0402645a249942c64368bb1.png"},{"name":"Колыбельная","artist":"Rauf & Faik","url":"http://music.163.com/song/media/outer/url?id=1855592376.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/f9bd7723dc0967d8b8d8778bca701f3c.png"},{"name":"Let It Go","artist":"Idina Menzel","url":"http://music.163.com/song/media/outer/url?id=28915528.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/00b07c84b7da0227c67a0723f3eec07f.png"},{"name":"风度","artist":"汪苏泷","url":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/115.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/84166c27d45102a3ce9de86610d3bc50.png"},{"name":"生生世世爱","artist":"吴雨霏","url":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/116.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/2dbe7c5706aac51a390cfc980b4a0900.png"},{"name":"故里逢春","artist":"阿YueYue","url":"http://music.163.com/song/media/outer/url?id=1457113272.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/821ba7564e160534a5fbb539b9bd8b1c.png"},{"name":"一分一寸","artist":"阿YueYue,李娜娜_Nana","url":"http://music.163.com/song/media/outer/url?id=1493083969.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/6daf1737326c73c74ea309c0801c256c.png"},{"name":"沈园外","artist":"阿YueYue,戾格,小田音乐社","url":"http://music.163.com/song/media/outer/url?id=1808078153.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/4726e53073d9d248a3b7076653a95dd4.png"},{"name":"夜曲","artist":"周杰伦","url":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/120.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/9431358c5b318509a26ca8c54ef0ed8b.png"},{"name":"蒲公英的约定","artist":"周杰伦","url":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/121.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/ead9a63b558b81e25609cf1942d242b9.png"},{"name":"最美的瞬间 (女版)","artist":"弹棉花的小花","url":"http://music.163.com/song/media/outer/url?id=1937050851.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/4287bbb0f71d5b86bc46c7953f73ade5.png"},{"name":"春庭雪","artist":"程翼","url":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/123.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/9f2f719eeeda79f7e67fd34fe13a981d.png"},{"name":"Send It (feat. Rich Homie Quan)","artist":"Austin Mahone,Rich Homie Quan","url":"http://music.163.com/song/media/outer/url?id=426291544.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/6541dd57c3a1b7dd49a04d5e52e7e269.png"},{"name":"花海","artist":"周杰伦","url":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/125.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/3069dda388987a19656a74c3acbf3839.png"},{"name":"THE STAR","artist":"Vitas","url":"http://music.163.com/song/media/outer/url?id=25947783.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/4e57d81c32a2daa9d9c88aeb4302bd59.png"},{"name":"千里共婵娟","artist":"程响","url":"http://music.163.com/song/media/outer/url?id=1382790135.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/33863955c6bc347ff201241ad05740c4.png"},{"name":"归期","artist":"钱润玉","url":"http://music.163.com/song/media/outer/url?id=1971054019.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/00d9e439fc85286b5181d0efa591c3bb.png"},{"name":"落英","artist":"银临","url":"http://music.163.com/song/media/outer/url?id=1948125134.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/ed8a00a722bb8fc9595fa2cbb3f3f1bc.png"},{"name":"四季予你 (吉他版)","artist":"程响","url":"http://music.163.com/song/media/outer/url?id=1909961703.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/b75e587c16662a88c0b982e7f609f515.png"},{"name":"时光洪流","artist":"程响","url":"http://music.163.com/song/media/outer/url?id=1868943615.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/8c50d90d967b5305850e36af8e0814b5.png"},{"name":"岁月神偷","artist":"金玟岐","url":"http://music.163.com/song/media/outer/url?id=28285910.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/337b5cc05d3973c7de71bb3bb5df06b4.png"},{"name":"爱上你是一个错（烟嗓）","artist":"烟(许佳豪)","url":"http://music.163.com/song/media/outer/url?id=1978036723.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/20c1438a0793761c906e36f03e9c243e.png"},{"name":"伯虎说 (feat.唐伯虎Annie) 无鼠来宝版","artist":"伯爵Johnny,唐伯虎Annie","url":"http://music.163.com/song/media/outer/url?id=1804586207.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/97a81736a919be858266a3086be59181.png"},{"name":"New Boy","artist":"房东的猫,陈婧霏","url":"http://music.163.com/song/media/outer/url?id=1857630559.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/e2222acdb8ce493578ab39626d482569.png"},{"name":"忘记时间","artist":"胡歌","url":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/136.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/b391f4ae4142675accbd2bc93591e223.png"},{"name":"仙娥叹","artist":"坤坤阿","url":"http://music.163.com/song/media/outer/url?id=1836078338.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/eac6dc0ee621b56e91b19fb9d52955a4.png"},{"name":"牵丝戏","artist":"银临,Aki阿杰","url":"http://music.163.com/song/media/outer/url?id=30352891.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/2ca5f80d3cf30f0ad165e51f72eb9bab.png"},{"name":"等一分钟 Wait One Minute","artist":"徐誉滕","url":"http://music.163.com/song/media/outer/url?id=1493994302.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/be0d2c2ef084b5f847cfa7a7943ec6ae.png"},{"name":"秋天不回来","artist":"王强","url":"http://music.163.com/song/media/outer/url?id=163123.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/764edeb1b6f759eb70196e9d34fff7ec.png"},{"name":"天使的翅膀 Angel's Wing","artist":"徐誉滕","url":"http://music.163.com/song/media/outer/url?id=1493994313.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/d0810b109ee428af715161c0ea47e2bc.png"},{"name":"辞.九门回忆","artist":"解忧草,唯子","url":"http://music.163.com/song/media/outer/url?id=1347524822.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/e2c6d8f9e86f30d155b84b42120ada64.png"},{"name":"吹梦到西洲","artist":"恋恋故人难,黄诗扶,妖扬","url":"http://music.163.com/song/media/outer/url?id=1376873330.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/4a46b8743f990dfe04702266adb248a9.png"},{"name":"风恋歌","artist":"恋恋故人难,芝麻Mochi","url":"http://music.163.com/song/media/outer/url?id=1418131597.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/0cbe7c46b0811583405b7daf17e8d973.png"},{"name":"一等轶闻","artist":"恋恋故人难,不才","url":"http://music.163.com/song/media/outer/url?id=1455030171.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/88713d32d23f5b5e29067a6fa47dcfb9.png"},{"name":"晚来天欲雪","artist":"恋恋故人难,云の泣","url":"http://music.163.com/song/media/outer/url?id=1466822129.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/96893e83675d24a4bae3fbd80965eadc.png"},{"name":"剑落杯中月","artist":"李常超 (Lao乾妈),恋恋故人难","url":"http://music.163.com/song/media/outer/url?id=1492342584.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/3d68d056a2391bcae9fc711b64b83cd6.png"},{"name":"夜风无意作情歌","artist":"恋恋故人难,不才","url":"http://music.163.com/song/media/outer/url?id=1361030268.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/30f06b9c257ff7a2a729425303b82aef.png"},{"name":"小谪风月","artist":"恋恋故人难,叶炫清","url":"http://music.163.com/song/media/outer/url?id=1448750854.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/d35082aab018859628ee97f81adb4ff5.png"},{"name":"千年の恋","artist":"芝麻Mochi,恋恋故人难,出羽良彰","url":"http://music.163.com/song/media/outer/url?id=1859954221.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/c8e09af46ecc56d6791e401e4698c229.png"},{"name":"下雨天","artist":"与少年他,芝麻Mochi","url":"http://music.163.com/song/media/outer/url?id=1426112587.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/23/ac9c29f0740895683574c5e7ffd9d436.png"},{"name":"吹灭小山河","artist":"国风堂,司南","url":"http://music.163.com/song/media/outer/url?id=1412559986.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/24/d4792e3b5f606d424f495f6672de7395.png"},{"name":"杨花落尽子规啼","artist":"G2er,黄诗扶,国风堂","url":"http://music.163.com/song/media/outer/url?id=1375935067.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/24/d86dcce5bc5f0b765f231cb7c3bbc870.png"},{"name":"给你一瓶魔法药水","artist":"告五人","url":"http://music.163.com/song/media/outer/url?id=1959667345.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/24/9d9fb5f624d7e85a7a9877d1627501ab.png"},{"name":"爱人错过","artist":"告五人","url":"http://music.163.com/song/media/outer/url?id=1368754688.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/24/95c2f8636d587873e6a495371049ded6.png"},{"name":"Letting go","artist":"蔡健雅","url":"https://duojiyun.xn--l3q92w0lc.xyz/yunmusic/156.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/24/9ee71d77de7b9924b28dd709944eb7b6.png"},{"name":"星河散尽故人来","artist":"国风堂,丸子呦","url":"http://music.163.com/song/media/outer/url?id=1417442524.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/24/5b190f34767c2ad8a35a61bed2d2f08a.png"},{"name":"黯然销魂","artist":"玄觞","url":"http://music.163.com/song/media/outer/url?id=30569561.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/24/1505099bb7cd0be848665aac256252f1.png"},{"name":"一笑江湖","artist":"姜姜","url":"http://music.163.com/song/media/outer/url?id=1940002183.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/24/ef8fdaead1b14cb548f8da160c80c525.png"},{"name":"爱情有时很残忍(DJ版)","artist":"杜姐,DJ小可","url":"http://music.163.com/song/media/outer/url?id=1831476765.mp3","cover":"https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/04/24/f1f42cb5e9f98950d6aa884d05b43bc4.png"}]},"mermaid":{"enable":true,"version":"9.3.0"}},"version":"2.1.5","navbar":{"auto_hide":true,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"说说":{"path":"/shuoshuo","icon":"fa-solid fa-messages"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Categories":{"icon":"fa-solid fa-folder","path":"/categories/"},"Tags":{"icon":"fa-solid fa-tags","path":"/tags/"},"About":{"icon":"fa-regular fa-user","path":"/about/"},"Links":{"icon":"fa-regular fa-link","path":"/links/"}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":"记录python、人工智能与前端的学习过程，分享知识，传递价值。","links":{"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Tags":{"path":"/tags","icon":"fa-regular fa-tags"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"}}},"article_date_format":"YYYY-MM-DD HH:mm:ss","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}}};
+    Global.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+    Global.data_config = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/fontawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/fontawesome/brands.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/fontawesome/solid.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/fontawesome/regular.min.css">
+    
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/fontawesome/thin.min.css">
+    
+    
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/fontawesome/light.min.css">
+    
+    
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/fontawesome/duotone.min.css">
+    
+    
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/fontawesome/sharp-solid.min.css">
+    
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="main-content-container">
+
+        <div class="main-content-header">
+            <header class="navbar-container">
+    
+    <div class="navbar-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/202304171511777.png">
+                </a>
+            
+            <a class="logo-title" href="/">
+                
+                阿儒小站
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-house"></i>
+                                        
+                                        首页
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/shuoshuo"  >
+                                    
+                                        
+                                            <i class="fa-solid fa-messages"></i>
+                                        
+                                        说说
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/archives"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-archive"></i>
+                                        
+                                        归档
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/categories/"  >
+                                    
+                                        
+                                            <i class="fa-solid fa-folder"></i>
+                                        
+                                        分类
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/tags/"  >
+                                    
+                                        
+                                            <i class="fa-solid fa-tags"></i>
+                                        
+                                        标签
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/about/"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-user"></i>
+                                        
+                                        关于
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/links/"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-link"></i>
+                                        
+                                        链接
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i></div>
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="navbar-drawer">
+        <ul class="drawer-navbar-list">
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/"  >
+                             
+                                
+                                    <i class="fa-regular fa-house"></i>
+                                
+                                首页
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/shuoshuo"  >
+                             
+                                
+                                    <i class="fa-solid fa-messages"></i>
+                                
+                                说说
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/archives"  >
+                             
+                                
+                                    <i class="fa-regular fa-archive"></i>
+                                
+                                归档
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/categories/"  >
+                             
+                                
+                                    <i class="fa-solid fa-folder"></i>
+                                
+                                分类
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/tags/"  >
+                             
+                                
+                                    <i class="fa-solid fa-tags"></i>
+                                
+                                标签
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/about/"  >
+                             
+                                
+                                    <i class="fa-regular fa-user"></i>
+                                
+                                关于
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/links/"  >
+                             
+                                
+                                    <i class="fa-regular fa-link"></i>
+                                
+                                链接
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="main-content-body">
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            
+             
+                <div class="article-title">         
+                    <img src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E5%B0%81%E9%9D%A2%E5%9B%BE3.png" alt="hexo-redefine主题的说说版块、音乐插件与评论系统设置" />
+                    <h1 class="article-title-cover">hexo-redefine主题的说说版块、音乐插件与评论系统设置</h1>
+                </div>
+            
+                
+            
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/202304171505157.svg">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">狮子阿儒</span>
+                            
+                                <span class="author-label">Lv3</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2023-04-02 00:39:35</span>
+        <span class="mobile">2023-04-02 00:39</span>
+        <span class="hover-info">创建</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2023-04-23 20:58:45</span>
+            <span class="mobile">2023-04-23 20:58</span>
+            <span class="hover-info">更新</span>
+        </span>
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/hexo/">hexo</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E8%AF%B4%E8%AF%B4/">说说</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/">音乐播放器</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/">评论系统</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>2.9k 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>11 分钟</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content markdown-body">
+                <script defer src="/_vercel/insights/script.js"></script>
+
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​		针对我安装或者配置时遇到的困难分享一下，大家如果有遇到其他的问题，可以评论区讨论一下或者电子邮件联系，希望能帮到各位。</p>
+<h2 id="Artitalk说说版块设置及问题"><a href="#Artitalk说说版块设置及问题" class="headerlink" title="Artitalk说说版块设置及问题"></a>Artitalk说说版块设置及问题</h2><h3 id="配置需要"><a href="#配置需要" class="headerlink" title="配置需要"></a>配置需要</h3><ol>
+<li><strong>Artitalk官方文档</strong></li>
+<li><strong>LeanCloud数据存储库（国内版）</strong></li>
+</ol>
+<h3 id="配置过程"><a href="#配置过程" class="headerlink" title="配置过程"></a>配置过程</h3><h4 id="1、LeanCloud"><a href="#1、LeanCloud" class="headerlink" title="1、LeanCloud"></a>1、LeanCloud</h4><p>​		<strong>由于用Artitalk的方式部署说说，需要将说说内容存储到后端数据存储库中，因而用到了LeanCloud（Artitalk官网方法）</strong></p>
+<p>​		LeanCloud有国内版与国际版，Artitalk选择的是LeanCloud国际版，LeanCloud 的国际版基本上在中国大陆地区已经无法使用，所以国内用户应使用国内版 LeanCloud，国内版与国际版差异不大，配置过程基本一致。</p>
+<p><em><strong>具体设置过程</strong></em></p>
+<p>1、前往 <a class="link"   target="_blank" rel="noopener" href="https://leancloud.app/" >LeanCloud 国内版 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，注册账号。</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/leancloud%E9%A6%96%E9%A1%B5.png"
+                      alt="leancloud首页" style="zoom: 50%;" 
+                >
+
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/leancloud%E6%B3%A8%E5%86%8C.png"
+                      alt="leancloud注册" style="zoom: 67%;" 
+                >
+
+<p>2、注册完成之后根据 LeanCloud 的提示绑定手机号和邮箱。</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/leancloud%E7%BB%91%E5%AE%9A%E6%89%8B%E6%9C%BA%E5%8F%B71.png"
+                      alt="leancloud绑定手机号1" style="zoom:50%;" 
+                >
+
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/leancloud%E7%BB%91%E5%AE%9A%E7%94%B5%E5%AD%90%E9%82%AE%E7%AE%B1.png"
+                      alt="LeanCloud绑定电子邮箱" style="zoom:50%;" 
+                >
+
+<p>3、绑定完成之后点击<code>创建应用</code>，应用名称随意，接着在<code>结构化数据</code>中创建 <code>class</code>，命名为 <code>shuoshuo</code>。</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/leancloud%E5%88%9B%E5%BB%BA%E5%BA%94%E7%94%A8.png"
+                      style="zoom: 67%;" 
+                >
+
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E5%88%9B%E5%BB%BAshuoshuo%E7%B1%BB.png"
+                      alt="创建shuoshuo类" style="zoom: 50%;" 
+                >
+
+<p>4、在你新建的应用中找到<code>结构化数据</code>下的<code>_User</code>。点击<code>添加行</code>，输入想用的用户名及密码。</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/user1.png"
+                      alt="user1" style="zoom:67%;" 
+                >
+
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/user2.png"
+                      alt="user2" style="zoom:67%;" 
+                >
+
+<p>5、回到<code>结构化数据</code>中，点击 <code>class</code> 下的 <code>shuoshuo</code>。找到权限，在 <code>Class 访问权限</code>中将 <code>add_fields</code> 以及 <code>create</code> 权限设置为指定用户，输入你刚才输入的用户名会自动匹配。为了安全起见，将 <code>delete</code> 和 <code>update</code> 也设置为跟它们一样的权限。</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/shuoshuo%E6%9D%83%E9%99%901.png"
+                      style="zoom: 67%;" 
+                >
+
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E8%AF%B4%E8%AF%B4quanxian.png"
+                      style="zoom: 80%;" 
+                >
+
+<p>6、然后新建一个名为<code>atComment</code>的class，权限什么的使用默认的即可。</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E5%88%9B%E5%BB%BAatComment.png"
+                      alt="创建atComment" style="zoom: 67%;" 
+                >
+
+<p>7、点击 <code>class</code> 下的 <code>_User</code> 添加列，列名称为 <code>img</code>，默认值填上你这个账号想要用的发布说说的头像url，这一项不进行配置，说说头像会显示为默认头像 —— Artitalk 的 logo。</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/user%E6%B7%BB%E5%8A%A0%E5%88%971.png"
+                      alt="user添加列" style="zoom: 67%;" 
+                >
+
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/userimg.png"
+                      alt="userimg" style="zoom: 67%;" 
+                >
+
+<p>8、在菜单栏最下面找到设置-&gt; 应用凭证，记下来 <code>AppID</code> 和 <code>AppKey</code> ，一会儿用。</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E5%BA%94%E7%94%A8key.png"
+                      alt="应用key" style="zoom:67%;" 
+                >
+
+<p>9、最后将 <code>_User</code> 中的权限全部调为指定用户，或者数据创建者，为了保证不被篡改用户数据以达到强制发布说说。</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/user%E6%9D%83%E9%99%902.png"
+                      alt="user权限2" style="zoom: 67%;" 
+                >
+
+<h4 id="2、Artitalk"><a href="#2、Artitalk" class="headerlink" title="2、Artitalk"></a>2、Artitalk</h4><p>下面为artitalk给出的示例代码，其中还有很多配置项需要补充，详情见<a target="_blank" rel="noopener" href="https://artitalk.js.org/settings.html#%F0%9F%98%9C-artitalk%E6%94%AF%E6%8C%81%E4%B8%A4%E7%A7%8D%E5%88%9D%E5%A7%8B%E5%8C%96%E6%96%B9%E5%BC%8F"><strong>Artitalk配置项</strong></a></p>
+<div class="highlight-container" data-rel="Html"><figure class="iseeu highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 引用 artitalk --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span> <span class="attr">src</span>=<span class="string">&quot;https://unpkg.com/artitalk&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 存放说说的容器 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;artitalk_main&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript"><span class="keyword">new</span> <span class="title class_">Artitalk</span>(&#123;</span></span><br><span class="line"><span class="language-javascript">    <span class="attr">appId</span>: <span class="string">&#x27;&#x27;</span>, <span class="comment">// Your LeanCloud appId</span></span></span><br><span class="line"><span class="language-javascript">    <span class="attr">appKey</span>: <span class="string">&#x27;&#x27;</span> <span class="comment">// Your LeanCloud appKey</span></span></span><br><span class="line"><span class="language-javascript">&#125;)</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>给出的使用说明：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/artitalk%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.png"
+                      alt="artitalk使用说明" style="zoom: 67%;" 
+                >
+
+<h3 id="说说页面编辑"><a href="#说说页面编辑" class="headerlink" title="说说页面编辑"></a>说说页面编辑</h3><p>​		windows在hexo博客根目录下用cmd命令行或者git bash或者PowerShell 输入</p>
+<p> <strong><code>hexo new page</code> 命令创建新页面</strong>，我设置的名字叫 <code>shuoshuo</code>，则输入</p>
+<div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page shuoshuo</span><br></pre></td></tr></table></figure></div>
+
+<p>博客根目录下的 <code>source</code> 文件夹里就会自动新建一个 <code>shuoshuo</code> 文件夹</p>
+<p><strong>打开里面的 <code>index.md</code> 文件</strong>中进行如下配置：</p>
+<h4 id="1、修改index-md文件的front-matter"><a href="#1、修改index-md文件的front-matter" class="headerlink" title="1、修改index.md文件的front-matter"></a><strong>1、修改index.md文件的front-matter</strong></h4><p>​		如果你之前用本地部署方式，在 <code>/source/_data/</code> 目录下面创建了 <code>essays.yml</code>，请把此文件删除或者重命名到别的名字，否则 <code>Artitalk</code> 不会生效。</p>
+<p>修改标题为说说</p>
+<p>——</p>
+<p>title: 说说</p>
+<p>——</p>
+<h4 id="2、编辑index-md的内容"><a href="#2、编辑index-md的内容" class="headerlink" title="2、编辑index.md的内容"></a><strong>2、编辑index.md的内容</strong></h4><p>根据REDEFINE主题给出的说说版块示例，</p>
+<ul>
+<li>国际版是不需要serverURL的</li>
+<li>而国内版需要serverURL，具体内容对应 LeanCloud 创建的应用中绑定的 API 域名</li>
+</ul>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/API%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9Aleancloud.png"
+                      alt="API域名绑定leancloud" style="zoom: 67%;" 
+                >
+
+<ul>
+<li>正常 LeanCloud 的 <code>serverURL</code> 需要备案，但是估计很多博客作者都没用备案域名，所以这里有个替代方案，就是<strong>使用 <code>https://avoscloud.com</code> 这个地址作为 <code>serverURL</code></strong></li>
+</ul>
+<p>​		<span style="background-color: #ff6600;">下面代码块为示例代码</span>，<strong>可以直接粘到index.md文件中</strong>，需要注意的是下面代码中的 <code>&lt;script async data-pjax type=&quot;text/javascript&quot; src=&quot;https://photo-1314795557.cos.ap-beijing.myqcloud.com/artitalk.js&quot;&gt;&lt;/script&gt;</code>，其中src是指artitalk.js文件位置，他用的是自己的COS云存储链接，<strong>可以换成官网给出的UNPKG方式的<code>https://unpkg.com/artitalk</code>或者JsDelivr的 <code>https://cdn.jsdelivr.net/npm/artitalk</code><strong>，</strong>还可以将JS文件下载上传到自己的云存储，用自己的云存储链接</strong>（我用的是OSS）</p>
+<div class="highlight-container" data-rel="Html"><figure class="iseeu highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 引用 artitalk --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">async</span> <span class="attr">data-pjax</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span> <span class="attr">src</span>=<span class="string">&quot;https://photo-1314795557.cos.ap-beijing.myqcloud.com/artitalk.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 存放说说的容器 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;artitalk_main&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">async</span> <span class="attr">data-pjax</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript"><span class="keyword">new</span> <span class="title class_">Artitalk</span>(&#123;</span></span><br><span class="line"><span class="language-javascript">    <span class="attr">appId</span>: <span class="string">&#x27;&#x27;</span>, <span class="comment">// Your LeanCloud appId</span></span></span><br><span class="line"><span class="language-javascript">    <span class="attr">appKey</span>: <span class="string">&#x27;&#x27;</span>, <span class="comment">// Your LeanCloud appKey</span></span></span><br><span class="line"><span class="language-javascript">    <span class="attr">serverURL</span>: <span class="string">&#x27;https://avoscloud.com&#x27;</span>,</span></span><br><span class="line"><span class="language-javascript">    <span class="attr">pageSize</span>: <span class="number">50</span>, <span class="comment">//每页评论数量</span></span></span><br><span class="line"><span class="language-javascript">    <span class="attr">shuoPla</span>: <span class="string">&#x27;&#x27;</span>, <span class="comment">//评论框里显示，可以不填</span></span></span><br><span class="line"><span class="language-javascript">    <span class="attr">motion</span>: <span class="number">0</span>, <span class="comment">//加载动画的开关 0（关闭），1（开启）</span></span></span><br><span class="line"><span class="language-javascript">    <span class="attr">atComment</span>: <span class="number">0</span>, <span class="comment">//评论功能的开关 0（关闭），1（开启）</span></span></span><br><span class="line"><span class="language-javascript">    <span class="attr">bgImg</span>: <span class="string">&#x27;&#x27;</span>, <span class="comment">//评论框里的背景，可以不填</span></span></span><br><span class="line"><span class="language-javascript">    <span class="attr">color1</span>: <span class="string">&#x27;#ffffff&#x27;</span>, <span class="comment">//自定义颜色，有几种方式</span></span></span><br><span class="line"><span class="language-javascript">    <span class="attr">color2</span>: <span class="string">&#x27;#ffffff&#x27;</span>,</span></span><br><span class="line"><span class="language-javascript">    <span class="attr">color3</span>: <span class="string">&#x27;#3b9a9c&#x27;</span>,</span></span><br><span class="line"><span class="language-javascript">&#125;)</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>下图为我的index.md文件的具体设置内容，实际编辑内容按照你的需要设置！</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E8%AF%B4%E8%AF%B4md%E6%96%87%E4%BB%B6.png"
+                      alt="说说md文件" style="zoom: 67%;" 
+                >
+
+<h4 id="3、游客说说设置"><a href="#3、游客说说设置" class="headerlink" title="3、游客说说设置"></a>3、游客说说设置</h4><p>​		需要在LeanCloud国内版应用的<code>数据存储——结构化数据——_User</code> <code>添加行</code>，和上述步骤类似，我设置的游客用户名为test，密码为123456，方便游客登录。</p>
+<p>​		然后就是游客权限设置，由于游客应该对于说说只有发布、评论功能，因而需要将其与管理员用户区分开来.</p>
+<ul>
+<li><code>_User类的权限</code>维持不变，即<code>_User</code>保持如下：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">用户对class的操作</th>
+<th align="center">权限</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">add_fields</td>
+<td align="center">管理员User</td>
+</tr>
+<tr>
+<td align="center">create</td>
+<td align="center">管理员User</td>
+</tr>
+<tr>
+<td align="center">delete</td>
+<td align="center">管理员User</td>
+</tr>
+<tr>
+<td align="center">update</td>
+<td align="center">管理员User</td>
+</tr>
+<tr>
+<td align="center">find</td>
+<td align="center">所有用户</td>
+</tr>
+<tr>
+<td align="center">get</td>
+<td align="center">所有用户</td>
+</tr>
+</tbody></table>
+<ul>
+<li><code>shuoshuo类的权限</code>发生更改，即<code>shuoshuo</code>保持如下：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">用户对class的操作</th>
+<th align="center">权限</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">add_fields</td>
+<td align="center">所有用户</td>
+</tr>
+<tr>
+<td align="center">create</td>
+<td align="center">所有用户</td>
+</tr>
+<tr>
+<td align="center">delete</td>
+<td align="center">管理员USER</td>
+</tr>
+<tr>
+<td align="center">update</td>
+<td align="center">管理员USER</td>
+</tr>
+<tr>
+<td align="center">find</td>
+<td align="center">所有用户</td>
+</tr>
+<tr>
+<td align="center">get</td>
+<td align="center">所有用户</td>
+</tr>
+</tbody></table>
+<p>​		解读：由于游客账号只有一个，而游客不固定，因而当游客想要发表说说时应当可以实现发布——操作<code>creat</code>为全体用户，此外，一名游客不能对其他游客的说说进行编辑也不能删除，因而设置操作<code>delete</code>与<code>update</code>为管理员权限。</p>
+<h3 id="最终效果图"><a href="#最终效果图" class="headerlink" title="最终效果图"></a>最终效果图</h3><p><strong>这是我博客hexo-redefine主题设置的说说版块样式</strong></p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E8%AF%B4%E8%AF%B4%E6%9D%BF%E5%9D%97%E6%95%88%E6%9E%9C%E5%9B%BE.png"
+                      alt="说说版块效果图" style="zoom:67%;" 
+                >
+
+<h2 id="Aplayer音乐插件设置及问题"><a href="#Aplayer音乐插件设置及问题" class="headerlink" title="Aplayer音乐插件设置及问题"></a>Aplayer音乐插件设置及问题</h2><ul>
+<li>插件来自：<a class="link"   target="_blank" rel="noopener" href="https://github.com/DIYgod/APlayer" >DIYgod&#x2F;APlayer: Wow, such a beautiful HTML5 music player (github.com) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li>官方中文文档：<a class="link"   target="_blank" rel="noopener" href="https://aplayer.js.org/#/zh-Hans/" >APlayer首页 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li>ReDefine演示站点：<a class="link"   target="_blank" rel="noopener" href="https://redefine.ohevan.com/2022/10/02/theme-demo/" >主题样式 Demo - Theme Redefine (ohevan.com) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+</ul>
+<h3 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h3><p>​		一个 HTML 音乐播放器，可以实现博客全站音乐播放，效果如下：</p>
+<p><code>type: fix</code> 模式：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/aplayer%E6%95%88%E6%9E%9C%E5%9B%BE.png"
+                      alt="aplayer效果图" style="zoom: 50%;" 
+                >
+
+<p><code>type: mini</code> 模式</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/aplayer%E6%A0%B7%E5%9B%BE2.png"
+                      alt="aplayer样图2" style="zoom: 67%;" 
+                >
+
+<h3 id="配置项"><a href="#配置项" class="headerlink" title="配置项"></a>配置项</h3><ul>
+<li><code>enable</code> 是否启用</li>
+<li><code>type</code> 播放器类型，<code>fixed</code> 固定，<code>mini</code> 迷你</li>
+<li><code>audios</code>是音乐源<ul>
+<li><code>name</code> 音乐名字</li>
+<li><code>artist</code> 歌手名</li>
+<li><code>url</code> 音乐源的 <code>url</code>。音乐 web 链接，注意，<strong>此链接为能够打开直接播放的那种，而不是一个网盘等下载链接</strong>！</li>
+<li><code>cover</code> 音乐的封面图片。请填写链接。音乐封面 web 链接，符合图片格式png、jpg、webp等。</li>
+</ul>
+</li>
+</ul>
+<p>示例配置如下：（注意每首歌的**<code>缩进</code>**与 <code>-</code> 标志）</p>
+<div class="highlight-container" data-rel="Yaml"><figure class="iseeu highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">plugins:</span></span><br><span class="line">  <span class="attr">aplayer:</span> <span class="comment"># APlayer</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span> <span class="comment">#true or flase</span></span><br><span class="line">    <span class="attr">audios:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Imagine</span> <span class="comment"># audio name 音乐名</span></span><br><span class="line">        <span class="attr">artist:</span> <span class="string">John</span> <span class="string">Lennon</span> <span class="comment"># audio artist 歌手名</span></span><br><span class="line">        <span class="attr">url:</span> <span class="string">https://evan.beee.top/music/Imagine%20-%20John%20Lennon.mp3</span> <span class="comment"># audio url 音乐链接</span></span><br><span class="line">        <span class="attr">cover:</span> <span class="string">https://evan.beee.top/music/covers/Lennon_Imagine_Sleeve_1975.jpg</span> <span class="comment"># audio cover url</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Something</span> <span class="string">Just</span> <span class="string">Like</span> <span class="string">This</span></span><br><span class="line">        <span class="attr">artist:</span> <span class="string">Coldplay</span></span><br><span class="line">        <span class="attr">url:</span> <span class="string">https://evan.beee.top/music/Something%20Just%20Like%20This%20-%20The%20Chainsmokers%E3%80%81Coldplay.mp3</span></span><br><span class="line">        <span class="attr">cover:</span> <span class="string">https://evan.beee.top/music/covers/Something_Just_Like_This.png</span></span><br></pre></td></tr></table></figure></div>
+
+<blockquote>
+<p>下面是我用过的几个音乐外链或下载网站：</p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://mp3.ltyuanfang.cn/?name=Se%C3%B1orita&type=netease" >远方在线音乐搜索 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>：<code>https://mp3.ltyuanfang.cn/?name=Señorita&amp;type=netease</code>	（推荐）</p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://tool.liumingye.cn/music/?page=homePage#/" >MyfreeMP3(liumingye.cn) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>：<code>https://tool.liumingye.cn/music/?page=homePage#/</code>	（推荐）</p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://music.xf1433.com/" >音乐外链在线获取 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>：<code>https://music.xf1433.com</code></p>
+</blockquote>
+<h3 id="实际问题"><a href="#实际问题" class="headerlink" title="实际问题"></a>实际问题</h3><p>​		<strong>我在配置该插件的时候，总是遇到音乐无法播放与封面无法加载的问题，我意识到这可能是自己设置的<code>url</code>和<code>cover</code>链接有问题。</strong></p>
+<p>​		我是用的多吉云存储的音乐MP3文件与封面png文件，<strong>多吉云云存储会搭配融合CDN做加速</strong>，因而我也设置了加速域名，我试着在浏览器地址栏<strong>单独输入外链链接</strong>来访问音乐mp3时，发现音乐<strong>可以正常播放</strong>，但是我网站中<strong>使用云存储链接的Aplayer插件播放音乐却出错</strong>了。</p>
+<p>​		我打开浏览器的<code>开发者工具——控制台</code>发现， <strong>XXX.mp3与XXX.png（都是我云存储中的文件）</strong>报错为 <code>err_cert_common_name_invalid</code></p>
+<p>​		谷歌搜索这个错误发现<strong>云存储域名是HTTP协议，证书存在问题，导致访问域名无效</strong>，因而我又去<strong>申请SSL证书</strong>来使CDN加速域名符合HTTPS协议，</p>
+<p>​		申请SSL证书我选择的是这个网站：<a class="link"   target="_blank" rel="noopener" href="https://www.mianfeissl.com/#" >免费SSL证书(mianfeissl.com) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，具体过程如下。</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/SSL%E8%AF%81%E4%B9%A6%E5%85%8D%E8%B4%B9%E7%94%B3%E8%AF%B7.png"
+                      alt="SSL证书免费申请" style="zoom: 50%;" 
+                >
+
+<p>​		申请完之后，去多吉云的融合CDN配置HTTPS：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E5%A4%9A%E5%90%89%E4%BA%91https%E8%AE%BE%E7%BD%AE.png"
+                      alt="多吉云https设置" style="zoom: 50%;" 
+                >
+
+<p>​		访问后显示连接安全，并且Aplayer可以正常播放音乐并加载封面！</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/MP3%E6%AD%A3%E5%B8%B8%E6%92%AD%E6%94%BE.png"
+                      alt="mp3正常播放" style="zoom: 50%;" 
+                >
+
+<h2 id="Waline评论系统设置及问题"><a href="#Waline评论系统设置及问题" class="headerlink" title="Waline评论系统设置及问题"></a>Waline评论系统设置及问题</h2><p><strong>综合比较redefine主题给出的三种评论系统，本博客选用的评论系统是Waline！</strong></p>
+<p>选择原因就是</p>
+<ul>
+<li><em><strong>功能很丰富——像可以发各种表情，动图，甚至本地图片，此外回复、点赞等功能都有</strong></em></li>
+<li><em><strong>设置起来也不难——基本鼠标点点点就完成了</strong></em></li>
+<li><em><strong>有评论管理界面——用户注册后可以打开个人资料界面，管理员也能对评论统一管理</strong></em></li>
+</ul>
+<h3 id="配置需要-1"><a href="#配置需要-1" class="headerlink" title="配置需要"></a>配置需要</h3><ol>
+<li>LeanCloud数据存储库（国内版）</li>
+<li>Vercel部署</li>
+</ol>
+<h3 id="配置过程-1"><a href="#配置过程-1" class="headerlink" title="配置过程"></a>配置过程</h3><h4 id="1、LeanCloud（国内版）"><a href="#1、LeanCloud（国内版）" class="headerlink" title="1、LeanCloud（国内版）"></a>1、LeanCloud（国内版）</h4><p>这一部分和上述Artitalk配置过程类似，不过步骤更简单点</p>
+<ul>
+<li><p>在创建完注册登录后，接着创建应用（名称随意）——和Artitalk一致</p>
+</li>
+<li><p>选择左下角的 <code>设置</code> &gt; <code>应用 Key</code>。你可以看到你的 <code>APP ID</code>,<code>APP Key</code> 和 <code>Master Key</code>。请记录它们，以便后续使用。——和Artitalk一致</p>
+</li>
+<li><p>区别：需要完成备案接入，选择 <code>设置</code> &gt; <code>域名绑定</code> &gt; <code>API 访问域名</code> &gt; <code>绑定新域名</code> &gt; 输入域名 &gt; <code>确定</code></p>
+</li>
+</ul>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/leancloud-api%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9A.png"
+                      alt="leancloud-api绑定域名" style="zoom: 50%;" 
+                >
+
+<ul>
+<li>按照页面上的提示按要求在 DNS 上完成 CNAME 解析。<strong>注意该顶级域名需要完成ICP备案</strong></li>
+</ul>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/20230420234831.png"
+                      style="zoom:80%;" 
+                >
+
+<p>上述步骤完成以后，leancloud数据库便配置完毕！</p>
+<h4 id="2、Vercel"><a href="#2、Vercel" class="headerlink" title="2、Vercel"></a>2、Vercel</h4><p><a class="link"   target="_blank" rel="noopener" href="https://vercel.com/new/clone?repository-url=https://github.com/walinejs/waline/tree/main/example" >点击跳转链接 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，跳转到Vercel进行服务端部署</p>
+<p>下面官方给出的操作步骤非常详细，可以参考下。</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/20230420235353.png"
+                      style="zoom: 80%;" 
+                >
+
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/20230420235503.png"
+                      style="zoom:80%;" 
+                >
+
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/20230420235535.png"
+                      style="zoom:80%;" 
+                >
+
+<p>​		4、点击顶部的 <code>Settings</code> - <code>Environment Variables</code> 进入环境变量配置页，并配置三个环境变量 <code>LEAN_ID</code>, <code>LEAN_KEY</code> 和 <code>LEAN_MASTER_KEY</code> 。它们的值分别对应上一步在 LeanCloud 中获得的 <code>APP ID</code>, <code>APP KEY</code>, <code>Master Key</code>。</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/20230421002328.png"
+                      style="zoom: 50%;" 
+                >
+
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/20230421002416.png"
+                      style="zoom: 80%;" 
+                >
+
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/20230421002501.png"
+                      style="zoom: 80%;" 
+                >
+
+<p><strong>vercel.app</strong> 默认域名在中国大陆地区被墙，所以建议在 Vercel 上面绑定自定义域名，可以用<code>vercel.根域名.com</code>等，Vercel绑定域名如下：(￣o￣) . z Z</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/20230421002603.png"
+                      style="zoom: 67%;" 
+                >
+
+<p>拿到你需要的 <code>serverUrl</code> （即 vercel 应用的链接，可以是上述绑定的自定义域名）后，填写到 <code>_config.redefine.yml</code> 中。</p>
+<div class="highlight-container" data-rel="Yaml"><figure class="iseeu highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">  <span class="attr">config:</span></span><br><span class="line">    <span class="attr">waline:</span></span><br><span class="line">      <span class="attr">serverUrl:</span> <span class="string">https://example.example.com</span> <span class="comment">#你拿到的 serverUrl</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h3><p>博主建议先自己注册一个账号，Waline应该是默认第一个注册用户为管理员，管理界面：Vercel自定义域名&#x2F;ui，</p>
+<p>管理平台界面如下：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/20230421003633.png"
+                      style="zoom: 50%;" 
+                >
+
+<p>评论效果图如下：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/20230421003259.png"
+                      style="zoom:67%;" 
+                >
+
+<blockquote>
+<p><strong><a class="link"   target="_blank" rel="noopener" href="https://www.dogecloud.com/?iuid=6247" >做个推广，多吉云还是很给力的，如果需要免费云存储与CDN的话可以试试， 每月免费10G云存储与20G融合CDN， 此外还有免费每月20G存储的视频云和2858分钟的转码包，对于音视频点播啥的都挺好用 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></strong></p>
+<p><strong>（づ￣3￣）づ╭❤～</strong></p>
+</blockquote>
+
+            </div>
+
+            
+                <div class="post-copyright-info">
+                    <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>标题:</strong> hexo-redefine主题的说说版块、音乐插件与评论系统设置</li>
+        <li><strong>作者:</strong> 狮子阿儒</li>
+        <li><strong>创建于:</strong> 2023-04-02 00:39:35</li>
+        
+            <li>
+                <strong>更新于:</strong> 2023-04-23 20:58:45
+            </li>
+        
+        <li>
+            <strong>链接:</strong> https://c200108.github.io/2023/04/02/hexo-redefine主题的说说版块、音乐插件与评论系统设置/
+        </li>
+        <li>
+            <strong>版权声明:</strong> 本文章采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a> 进行许可。
+        </li>
+    </ul>
+</div>
+
+                </div>
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E8%AF%B4%E8%AF%B4/">#说说</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/">#音乐播放器</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/">#评论系统</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                            rel="prev"
+                            href="/2023/04/03/%E7%BD%91%E9%A1%B5%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%BC%96%E7%A8%8BNoteBook%E5%90%88%E9%9B%86/"
+                            >
+                                <span class="left arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </span>
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">网页交互式编程NoteBook合集</span>
+                                    <span class="post-nav-item">上一篇</span>
+                                </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                            rel="next"
+                            href="/2023/04/01/hexo%E5%88%9D%E5%A7%8B%E6%93%8D%E4%BD%9C/"
+                            >
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">hexo初始操作</span>
+                                    <span class="post-nav-item">下一篇</span>
+                                </span>
+                                <span class="right arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+
+            
+                <div class="comment-container">
+                    <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fa-solid fa-comments"></i>&nbsp;评论
+    </div>
+    
+
+        
+            
+ 
+    <div id="waline"></div>
+    <script type="module"  data-pjax>
+        import { init } from 'https://evan.beee.top/js/waline.mjs';
+
+        function loadWaline() {
+            init({
+                el: '#waline',
+                serverURL: 'https://vercel.czrblog.top',
+                lang: 'zh-CN',
+                dark: 'body[class~="dark-mode"]',
+                requiredMeta: ['nick','mail'], // cannot customize by theme config, change it yourself
+            });
+        }
+
+        if ('true') {
+            const loadWalineTimeout = setTimeout(() => {
+                loadWaline();
+                clearTimeout(loadWalineTimeout);
+            }, 1000);
+        } else {
+            window.addEventListener('DOMContentLoaded', loadWaline);
+        }
+        
+    </script>
+
+
+
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">此页目录</div>
+        <div class="page-title">hexo-redefine主题的说说版块、音乐插件与评论系统设置</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Artitalk%E8%AF%B4%E8%AF%B4%E7%89%88%E5%9D%97%E8%AE%BE%E7%BD%AE%E5%8F%8A%E9%97%AE%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">Artitalk说说版块设置及问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E9%9C%80%E8%A6%81"><span class="nav-number">2.1.</span> <span class="nav-text">配置需要</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B"><span class="nav-number">2.2.</span> <span class="nav-text">配置过程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1%E3%80%81LeanCloud"><span class="nav-number">2.2.1.</span> <span class="nav-text">1、LeanCloud</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2%E3%80%81Artitalk"><span class="nav-number">2.2.2.</span> <span class="nav-text">2、Artitalk</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B4%E8%AF%B4%E9%A1%B5%E9%9D%A2%E7%BC%96%E8%BE%91"><span class="nav-number">2.3.</span> <span class="nav-text">说说页面编辑</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1%E3%80%81%E4%BF%AE%E6%94%B9index-md%E6%96%87%E4%BB%B6%E7%9A%84front-matter"><span class="nav-number">2.3.1.</span> <span class="nav-text">1、修改index.md文件的front-matter</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2%E3%80%81%E7%BC%96%E8%BE%91index-md%E7%9A%84%E5%86%85%E5%AE%B9"><span class="nav-number">2.3.2.</span> <span class="nav-text">2、编辑index.md的内容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3%E3%80%81%E6%B8%B8%E5%AE%A2%E8%AF%B4%E8%AF%B4%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.3.3.</span> <span class="nav-text">3、游客说说设置</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%80%E7%BB%88%E6%95%88%E6%9E%9C%E5%9B%BE"><span class="nav-number">2.4.</span> <span class="nav-text">最终效果图</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Aplayer%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE%E5%8F%8A%E9%97%AE%E9%A2%98"><span class="nav-number">3.</span> <span class="nav-text">Aplayer音乐插件设置及问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA"><span class="nav-number">3.1.</span> <span class="nav-text">效果展示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E9%A1%B9"><span class="nav-number">3.2.</span> <span class="nav-text">配置项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E9%99%85%E9%97%AE%E9%A2%98"><span class="nav-number">3.3.</span> <span class="nav-text">实际问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Waline%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE%E5%8F%8A%E9%97%AE%E9%A2%98"><span class="nav-number">4.</span> <span class="nav-text">Waline评论系统设置及问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E9%9C%80%E8%A6%81-1"><span class="nav-number">4.1.</span> <span class="nav-text">配置需要</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B-1"><span class="nav-number">4.2.</span> <span class="nav-text">配置过程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1%E3%80%81LeanCloud%EF%BC%88%E5%9B%BD%E5%86%85%E7%89%88%EF%BC%89"><span class="nav-number">4.2.1.</span> <span class="nav-text">1、LeanCloud（国内版）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2%E3%80%81Vercel"><span class="nav-number">4.2.2.</span> <span class="nav-text">2、Vercel</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%80%E7%BB%88%E6%95%88%E6%9E%9C"><span class="nav-number">4.3.</span> <span class="nav-text">最终效果</span></a></li></ol></li></ol>
+
+    </div>
+</div>
+            </div>
+        
+    </div>
+</div>
+
+
+                
+
+            </div>
+            
+            
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info">
+            &copy;
+            
+              <span>2023</span>
+              -
+            
+            2023&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">狮子阿儒</a>
+        </div>
+        
+            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv" class="busuanzi_container_site_uv">
+                        访问人数&nbsp;<span id="busuanzi_value_site_uv" class="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="busuanzi_container_site_pv">
+                        总访问量&nbsp;<span id="busuanzi_value_site_pv" class="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            <span class="powered-by-container">由 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" href="https://hexo.io">Hexo</a> 驱动</span>
+                <br>
+            <span class="theme-version-container">主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.1.5</a>
+        </div>
+        
+        
+        
+            <div id="start_div" style="display:none">
+                2023/4/1 0:0:0
+            </div>
+            <div>
+                博客已运行 <span class="odometer" id="runtime_days" ></span> 天 <span class="odometer" id="runtime_hours"></span> 小时 <span class="odometer" id="runtime_minutes"></span> 分钟 <span class="odometer" id="runtime_seconds"></span> 秒
+            </div>
+        
+        
+            <div class="customize-info info-item"><a href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备2023007826号-2</a> | <a href="https://icp.gov.moe/?keyword=20239003" target="_blank">萌ICP备20239003号</a></div>
+        
+        
+            <script async data-pjax>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-expand-width flex-center">
+            <i class="fa-regular fa-expand"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+            <li class="right-bottom-tools rss flex-center">
+                <a class="flex-center"
+                   href="/atom.xml"
+                   target="_blank"
+                >
+                <i class="fa-regular fa-rss"></i>
+                </a>
+            </li>
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fa-solid fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa-solid fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+</main>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/utils.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/layouts/navbarShrink.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/tools/scrollTopBottom.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/tools/lightDarkSwitch.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/tools/localSearch.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/tools/codeBlock.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/layouts/lazyload.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/tools/runtime.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/libs/odometer.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/assets/odometer-theme-minimal.css">
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/libs/Typed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/plugins/typed.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/libs/mermaid.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/plugins/mermaid.js"></script>
+
+
+
+
+<div class="post-scripts pjax">
+    
+        <script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/tools/tocToggle.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/libs/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/layouts/toc.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/plugins/tabs.js"></script>
+    
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax',
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            Global.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            Global.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            Global.refresh();
+        });
+    });
+</script>
+
+
+
+
+    <div id="aplayer"></div>
+<script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/libs/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/plugins/aplayer.js"></script>
+
+</body>
+</html>
