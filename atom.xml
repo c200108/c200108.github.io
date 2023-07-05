@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-07-05T15:36:30.644Z</updated>
+  <updated>2023-07-05T15:44:20.727Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,26 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="http://example.com/2023/07/05/token/"/>
-    <id>http://example.com/2023/07/05/token/</id>
-    <published>2023-07-05T14:32:35.280Z</published>
-    <updated>2023-07-05T15:36:30.644Z</updated>
-    
-    <content type="html"><![CDATA[{"credentials":{"accessKeyId":"AKIDItBCQ4wk6PymIWf3dZVGkDt25dEip-b9Kd0XXvOoHZ83unU2w0IVeiToiq7XuROh","secretAccessKey":"3M/QUN7GXu0itTCCjMBNvFwX3KoXjQkbSB6KuL2Nn/w=","sessionToken":"K8DsggvBBXFpRixW7NAOpeGnWttoKLyaa3b551c2c02e4fda44abb2158143e5516Bigj12_SrvF5HQ5_C3BX99cTZ0gA808NmE-YJVTfNupHDWU2ODLzxWmkdHhDDwzSqq0KWJwwG99U74BYnkLfpQm7xXaBUvDr41PA3nCG4BjTvvz8ntuFXxknnCtZ9H48bb-lyyoxdKcp1lvHPznMlqeS59ZHJAexpHS5W8LqTu53oQ8b9Wnw3Wy5uWhspn1DRf98MA5R5F3BKTWtRJpZD84_KejuEepphX8B69DRY1FW2AMl4UAcv2UQoRPyfojtanxHpYdaLVuh-TjEWTHUnGzDwbMhdYvsIKOi9THhZqXfGN8wrtCa3aJOjandDcK717Qbzmt0n36v3nPosbcohufRGzj1SSe-ESX-Z8Sv2BJTzO50mttNiuzuOve_Ko6naGV7PuNpoksi2MwHUizas441j4HMAiWq3dR261HZ3yEnUR-bjMjTgWDBZ91pGqWe8MqWrFJiiYBs2sVf0Mi7ECooOMCALxIeznItVHfE_c3TQcAzbkNlR_uuCGLmszD4EKTgrAv5fp2xUNx7nH5H0v0Nk3qmspIWEdS3S09i8XEsS73wnkk9e5whQWI8EEbf3gwEo8803gSnimE595Fz0h8eMh8gQyE4zbz4fapPZ8L2nRo1uT0BFAR-E9r9FnA"},"s3Bucket":"s-bj-6247-doge-storage-1258813047","s3Endpoint":"https://cos.ap-beijing.myqcloud.com"}]]></content>
-    
-    
-      
-      
-    <summary type="html">{&quot;credentials&quot;:{&quot;accessKeyId&quot;:&quot;AKIDItBCQ4wk6PymIWf3dZVGkDt25dEip-b9Kd0XXvOoHZ83unU2w0IVeiToiq7XuROh&quot;,&quot;secretAccessKey&quot;:&quot;3M/QUN7GXu0itTCCjMBN</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>SSL证书申请与更换</title>
@@ -569,6 +549,34 @@
     <category term="云服务器" scheme="http://example.com/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
     <category term="建站" scheme="http://example.com/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网页交互式编程NoteBook合集</title>
+    <link href="http://example.com/2023/04/03/%E7%BD%91%E9%A1%B5%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%BC%96%E7%A8%8BNoteBook%E5%90%88%E9%9B%86/"/>
+    <id>http://example.com/2023/04/03/%E7%BD%91%E9%A1%B5%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%BC%96%E7%A8%8BNoteBook%E5%90%88%E9%9B%86/</id>
+    <published>2023-04-03T06:56:31.000Z</published>
+    <updated>2023-04-19T15:00:10.890Z</updated>
+    
+    <content type="html"><![CDATA[<p>​利用python编程时常用的IDE软件像Pycharm和VScode等，体积较大，使用时电脑有时会卡顿，而且对于数据处理、可视化、机器学习及深度学习等使用不是特别方便，无法做到针对代码各部分做编辑调试。因而网页交互式IDE就成为了一种潮流，下面我将介绍一下各种网页交互式IDE</p><h2 id="一、jupyter-notebook"><a href="#一、jupyter-notebook" class="headerlink" title="一、jupyter notebook"></a><strong>一、jupyter notebook</strong></h2><h3 id="1、安装"><a href="#1、安装" class="headerlink" title="1、安装"></a><strong>1、安装</strong></h3><p>安装jupyter notebook通常在Anaconda统一包管理软件中安装，使用conda方式；如果想单独安装，也可以选择pip方式</p><table><thead><tr><th>安装方式</th><th>安装命令</th></tr></thead><tbody><tr><td><em>pip</em></td><td><em>pip install jupyter notebook</em></td></tr><tr><td><em>conda</em></td><td><em>conda install jupyter notebook</em></td></tr></tbody></table><h3 id="2、修改文件目录（可跳过）"><a href="#2、修改文件目录（可跳过）" class="headerlink" title="2、修改文件目录（可跳过）"></a>2、修改文件目录（可跳过）</h3><p>打开命令行输入<code>**jupyter notebook --generate-config**</code>回车，下方显示配置文档所在位置</p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/jupyter%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%BD%8D%E7%BD%AE.png"                      alt="jupyter配置文件位置" style="zoom:80%;"                 ><p>在该目录文件夹下找到<strong>jupyter_notebook_config.py文件</strong>，用记事本方式打开，在记事本中查找（Ctrl+F）<code>**NotebookApp.notebook_dir**</code> 所在位置</p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6%E4%BD%8D%E7%BD%AE%E5%B9%B6%E4%BF%AE%E6%94%B9.png"                      alt="查找文件位置并修改" style="zoom:80%;"                 ><h3 id="3、使用"><a href="#3、使用" class="headerlink" title="3、使用"></a><strong>3、使用</strong></h3><img                       lazyload                     src="/images/loading.svg"                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/jupyter%E7%95%8C%E9%9D%A2%E4%BB%8B%E7%BB%8D.png"                      alt="jupyter界面介绍" style="zoom:80%;"                 ><p>Jupyter Notebook（此前被称为 IPython notebook）是一个交互式笔记本，支持运行 40 多种编程语言。</p><p>Jupyter Notebook 的本质是一个 Web[ 应用程序](<a class="link"   href="https://baike.baidu.com/item/" >https://baike.baidu.com/item/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 应用程序&#x2F;5985445?fromModule&#x3D;lemma_inlink)，便于创建和共享程序文档，支持实时代码，数学方程，可视化和 <a class="link"   href="https://baike.baidu.com/item/markdown/3245829?fromModule=lemma_inlink" >markdown <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>。 用途包括：数据清理和转换，数值模拟，<a class="link"   href="https://baike.baidu.com/item/%E7%BB%9F%E8%AE%A1%E5%BB%BA%E6%A8%A1/267609?fromModule=lemma_inlink" >统计建模 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，机器学习等等</p><p>以python开发为例，Windows系统打开jupyter notebook应用程式，可以通过在命令行cmd中输入<strong>ipython notebook</strong>,即可使用默认浏览器进入一个在线IDE</p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/jupyter%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%98%BE%E7%A4%BA%E7%BD%91%E5%9D%80.png"                      alt="jupyter命令行显示网址" style="zoom:80%;"                 ><p>注意在更换浏览器打开jupyter时，需要完整复制上述网址，而不能仅复制粘贴<a class="link"   href="http://localhost:8888/tree,%E5%90%A6%E5%88%99%E4%BC%9A%E5%87%BA%E7%8E%B0%E4%B8%8B%E9%9D%A2%E8%BF%99%E7%A7%8D%E6%83%85%E5%86%B5%EF%BC%8C%E9%9C%80%E8%A6%81%E8%BE%93%E5%85%A5token%E4%BB%A4%E7%89%8C,%E5%85%B7%E4%BD%93token%E5%80%BC%E5%8F%82%E8%80%83%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADhttp://localhost:8888/?token=%E4%BB%A4%E7%89%8C%E5%80%BC" >http://localhost:8888/tree,否则会出现下面这种情况，需要输入token令牌,具体token值参考命令行中http://localhost:8888/?token=令牌值 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/jupyter%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2.png"                      alt="jupyter登录界面" style="zoom:80%;"                 ><p>下图为notebook编辑界面，刚进入该页面需要连接内核，等内核显示空闲，此时单元格可以运行；对于运行时间长的复杂程序，内核会显示<strong>忙碌状态</strong>，此时想要<strong>运行其他单元格</strong>需要等<strong>内核释放资源转为空闲时</strong>才可以。若<strong>内核长时间忙碌，程序无响应</strong>，可以选择<strong>Kernel——&gt;restart来重启内核</strong>，需要注意的是重启后<strong>进度及变量会丢失</strong>，需要重新运行</p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/jupyter%E6%93%8D%E4%BD%9C%E7%95%8C%E9%9D%A2.png"                      alt="jupyter操作界面" style="zoom:80%;"                 ><p><strong>代码模式</strong>下和常用的IDE类似，都是可以输入内容后运行程序；<strong>markdown模式</strong>则类似于做文字笔记，点击运行后内容会以文本的形式显示出来，并不执行代码操作，因此编辑时注意选择的编辑模式。</p><p>编辑区操作分为命令行模式与编辑模式，按<strong>ESC键可由编辑模式转为命令行模式(单元格变蓝线)，按Enter键可由命令行模式转为编辑模式（单元格变绿线）</strong>，常用的像</p><ul><li><strong>“A”——在上面插入单元格</strong></li><li><strong>“B”——在下面插入单元格</strong></li><li><strong>“X”——剪切选择的单元格</strong></li><li><strong>“DD”——删除单元格</strong></li><li><strong>方向键“上”或“下”——切换当前选中的单元格</strong></li><li><strong>“CTRL+ENTER”——运行选中的单元格</strong></li><li><strong>“CTRL+S”——保存当前文件</strong></li><li><strong>“TAB”——自动补全代码</strong></li></ul><p>另外其他的快捷键查看可按键盘 <strong>H</strong> 键可调出jupyter notebook快捷键列表，全部快捷键如下图</p><p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/jupyter%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%B1%87%E6%80%BB.png"                      alt="jupyter键盘快捷键汇总"                ></p><p>Magic Code魔术代码：IPython的一些特殊命令（不是内置于 Python 本身）被称为“魔术”命令。魔术命令是以百分号％为前缀的任何命令。</p><table><thead><tr><th>魔术命令</th><th>含义</th><th>用法</th></tr></thead><tbody><tr><td><strong>%matplotlib</strong></td><td>指定 matplotlib 的后端(backend)</td><td>%matplotlib (backend)</td></tr><tr><td><strong>％timeit</strong></td><td>检查任何 Python 语句的执行时间</td><td>%timeit python语句</td></tr><tr><td><strong>%run</strong></td><td>在Notebook中运行任意的Python文件</td><td>%run py文件</td></tr></tbody></table><h2 id="二、jupyter-Lab"><a href="#二、jupyter-Lab" class="headerlink" title="二、jupyter Lab"></a><strong>二、jupyter Lab</strong></h2><h3 id="1、安装-1"><a href="#1、安装-1" class="headerlink" title="1、安装"></a><strong>1、安装</strong></h3><p>安装jupyter lab可以使用conda方式，也可以选择pip方式</p><table><thead><tr><th>安装方式</th><th>安装命令</th></tr></thead><tbody><tr><td>pip</td><td>pip install jupyterlab</td></tr><tr><td>conda</td><td>conda install -c conda-forge jupyterlab</td></tr></tbody></table><h3 id="2、使用"><a href="#2、使用" class="headerlink" title="2、使用"></a><strong>2、使用</strong></h3><p>在命令行输入**<code>jupyter lab</code>**即可进入开发环境，和jupyter notebook类似，都是打开本地HTML文件或者在浏览器中输入lab网址。</p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/jupyter-lab%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%BD%91%E5%9D%80.png"                      alt="jupyter-lab命令行网址" style="zoom:80%;"                 > <h2 id="三、谷歌Colaboratory"><a href="#三、谷歌Colaboratory" class="headerlink" title="三、谷歌Colaboratory"></a>三、谷歌Colaboratory</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">网址：https://colab.research.google.com/</span><br></pre></td></tr></table></figure></div><img                       lazyload                     src="/images/loading.svg"                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/colaboratory%E8%B5%B7%E5%A7%8B%E7%95%8C%E9%9D%A2.png"                      alt="colaboratory起始界面" style="zoom:80%;"                 ><p>谷歌的notebook需要用VPN才能访问</p><h2 id="四、kaggle的notebook"><a href="#四、kaggle的notebook" class="headerlink" title="四、kaggle的notebook"></a><strong>四、kaggle的notebook</strong></h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">网址：https://www.kaggle.com/</span><br></pre></td></tr></table></figure></div><h2 id="五、百度飞桨AI-notebook"><a href="#五、百度飞桨AI-notebook" class="headerlink" title="五、百度飞桨AI notebook"></a><strong>五、百度飞桨AI notebook</strong></h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">网址：https://aistudio.baidu.com/</span><br></pre></td></tr></table></figure></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;​		利用python编程时常用的IDE软件像Pycharm和VScode等，体积较大，使用时电脑有时会卡顿，而且对于数据处理、可视化、机器学习及深度学习等使用不是特别方便，无法做到针对代码各部分做编辑调试。因而网页交互式IDE就成为了一种潮流，下面我将介绍一下各种网页交互</summary>
+      
+    
+    
+    
+    <category term="工具" scheme="http://example.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="IDE" scheme="http://example.com/tags/IDE/"/>
+    
+    <category term="notebook" scheme="http://example.com/tags/notebook/"/>
+    
+    <category term="编辑器" scheme="http://example.com/tags/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
     
   </entry>
   
