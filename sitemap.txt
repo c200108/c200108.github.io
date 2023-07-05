@@ -1,3 +1,4 @@
+http://example.com/2023/07/05/SSL%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E4%B8%8E%E6%9B%B4%E6%8D%A2/
 http://example.com/2023/07/05/token/
 http://example.com/2023/06/21/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/
 http://example.com/2023/06/18/nrm%E6%A8%A1%E5%9D%97%E9%94%99%E8%AF%AF%EF%BC%9AERR-Require-ESM/
@@ -73,6 +74,8 @@ http://example.com/tags/%E5%AE%9E%E6%88%98/
 http://example.com/tags/nodejs/
 http://example.com/tags/ERR%E8%A7%A3%E5%86%B3/
 http://example.com/tags/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/
+http://example.com/tags/HTTPS/
+http://example.com/tags/SSL%E8%AF%81%E4%B9%A6/
 http://example.com/categories/%E7%94%9F%E6%B4%BB/
 http://example.com/categories/hexo/
 http://example.com/categories/WEB%E8%BF%90%E7%BB%B4/

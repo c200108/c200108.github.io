@@ -17,18 +17,37 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/page/3/"/>
+    <link rel="canonical" href="http://example.com/2023/07/05/ssl证书申请与更换/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/page/3/index.html">
+        <meta name="description" content="如果想让自己网站数据传输更安全，可以将网站HTTP协议跳转为HTTPS协议，这需要我们做的就是申请一张SSL证书。 证书文件申请后会给我们一份CSR（证书请求文件）与私钥，注意妥善保存私钥！！，而申请验证通过后会给我们一份证书crt文件，这个文件用于为服务器安装证书。 所以要保存的有CSR、私钥、证书文件！（私钥丢失后一般不可找回） 如今为网站申请一张SSL证书是比较容易的，这里我为我云存储服务用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SSL证书申请与更换">
+<meta property="og:url" content="http://example.com/2023/07/05/SSL%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E4%B8%8E%E6%9B%B4%E6%8D%A2/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="如果想让自己网站数据传输更安全，可以将网站HTTP协议跳转为HTTPS协议，这需要我们做的就是申请一张SSL证书。 证书文件申请后会给我们一份CSR（证书请求文件）与私钥，注意妥善保存私钥！！，而申请验证通过后会给我们一份证书crt文件，这个文件用于为服务器安装证书。 所以要保存的有CSR、私钥、证书文件！（私钥丢失后一般不可找回） 如今为网站申请一张SSL证书是比较容易的，这里我为我云存储服务用">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/07/05/8590480a979a97657c0de698b96f5f5e.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/07/05/2e8474e6fa3f772bb0682f55fa8a6e53.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/07/05/1cffe93f58c66f8a87731b1801cda7e2.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/07/05/4c53c448ef3904553d1e711b76f06b4c.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/07/05/19d52b2298db54dd2356349fac3934fb.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/07/05/5e4f1b5d9dfafd25872cd4e83e7c047c.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/07/05/6b26c70907f55421b0997f75fe508bf2.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/07/05/99f92a9cfccce431083b483a86a17aff.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/07/05/d9457ba44418cf138e2bae80127976ce.png">
+<meta property="og:image" content="c:/Users/czr/AppData/Roaming/Typora/typora-user-images/image-20230705230801680.png">
+<meta property="og:image" content="c:/Users/czr/AppData/Roaming/Typora/typora-user-images/image-20230705233854269.png">
+<meta property="article:published_time" content="2023-07-05T14:23:07.000Z">
+<meta property="article:modified_time" content="2023-07-05T15:44:20.727Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="云服务器">
+<meta property="article:tag" content="HTTPS">
+<meta property="article:tag" content="SSL证书">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/07/05/8590480a979a97657c0de698b96f5f5e.png">
     
     
         <!-- Google tag (gtag.js) -->
@@ -49,6 +68,8 @@
     <!--- Page Info-->
     
     <title>
+        
+            SSL证书申请与更换 -
         
         阿儒小站
     </title>
@@ -129,9 +150,9 @@
                 </a>
             
             <a class="logo-title" href="/">
-                <h1>
+                
                 阿儒小站
-                </h1>
+                
             </a>
         </div>
 
@@ -143,7 +164,7 @@
                         
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class="active" 
+                                <a class="" 
                                     href="/"  >
                                     
                                         
@@ -277,7 +298,7 @@
             
                 
                     <li class="drawer-navbar-item flex-center">
-                        <a class="active" 
+                        <a class="" 
                         href="/"  >
                              
                                 
@@ -394,294 +415,444 @@
         <div class="main-content-body">
 
             
-                <div class="home-sidebar-container fade-in-down-animation">
-    <div class="sticky-container">
-        
-            
-                <div class="sidebar-links">
-                    <div class="site-info">
-                        <div class="site-name">阿儒小站</div>
-                        
-                            <div class="announcement">
-                                记录python、人工智能与前端的学习过程，分享知识，传递价值。
-                            </div>
-                        
-                    </div>
-                    
-                        
-                            
-                                <a class="links" href="/archives">
-                                    
-                                        <i class="fa-regular fa-archive icon-space"></i>
-                                    
-                                    <span class="link-name">Archives</span>
-                                </a>
-                            
-                        
-                            
-                                <a class="links" href="/tags">
-                                    
-                                        <i class="fa-regular fa-tags icon-space"></i>
-                                    
-                                    <span class="link-name">Tags</span>
-                                </a>
-                            
-                        
-                            
-                                <a class="links" href="/categories">
-                                    
-                                        <i class="fa-regular fa-folder icon-space"></i>
-                                    
-                                    <span class="link-name">Categories</span>
-                                </a>
-                            
-                        
-                    
-                </div>
-            
-            <div class="sidebar-content"  marginTop >
-                <div class="avatar">
-                    <img src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/202304171505157.svg">
-                </div>
-                <div class="author">
-                    <div class="name">狮子阿儒</div>
-                    
-                        <div class="label">Lv3</div>
-                    
-                </div>
-                <div class="statistics">
-                    <a class="item" href="/tags">
-                        <div class="number">48</div>
-                        <div class="label">标签</div>
-                    </a>
-                    <a class="item" href="/categories">
-                        <div class="number">11</div>
-                        <div class="label">分类</div>
-                    </a>
-                    <a class="item" href="/archives">
-                        <div class="number">23</div>
-                        <div class="label">文章</div>
-                    </a>
-                </div>
-            </div>
-        
-
-    </div>
-</div>
-
-            
 
             <div class="main-content">
 
                 
-                    <div class="home-content-container fade-in-down-animation">
-    <ul class="home-article-list">
-        
-            <li class="home-article-item">
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
 
+            
+                      
+                <div class="article-title">
+                    <img src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/07/05/8590480a979a97657c0de698b96f5f5e.png" alt="SSL证书申请与更换" />
+                    <h1 class="article-title-cover">SSL证书申请与更换</h1>
+                </div>
+            
                 
+            
 
-                
-                    <div class="home-article-thumbnail">
-                        <a href="/2023/04/03/%E7%BD%91%E9%A1%B5%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%BC%96%E7%A8%8BNoteBook%E5%90%88%E9%9B%86/">
-                            <img src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/jupyter%E7%95%8C%E9%9D%A2%E4%BB%8B%E7%BB%8D.png" alt="网页交互式编程NoteBook合集" />
-                        </a>
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/202304171505157.svg">
                     </div>
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/04/03/%E7%BD%91%E9%A1%B5%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%BC%96%E7%A8%8BNoteBook%E5%90%88%E9%9B%86/">
-                        网页交互式编程NoteBook合集
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        ​		利用python编程时常用的IDE软件像Pycharm和VScode等，体积较大，使用时电脑有时会卡顿，而且对于数据处理、可视化、机器学习及深度学习等使用不是特别方便，无法做到针对代码各部分做编辑调试。因而网页交互式IDE就成为了一种潮流，下面...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Mon Apr 03 2023 14:56:31 GMT+0800">
-                
-                    2023-04-03 14:56:31
-                
-            </span>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">狮子阿儒</span>
+                            
+                                <span class="author-label">Lv3</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2023-07-05 22:23:07</span>
+        <span class="mobile">2023-07-05 22:23</span>
+        <span class="hover-info">创建</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2023-07-05 23:44:20</span>
+            <span class="mobile">2023-07-05 23:44</span>
+            <span class="hover-info">更新</span>
         </span>
-        
-            <span class="home-article-category"><i class="fa-solid fa-folders"></i></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/categories/%E5%B7%A5%E5%85%B7/">工具</a>&nbsp;
-                        </li>
-                    
-                    
-                </ul>
-            </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/IDE/">IDE</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/notebook/">notebook</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/%E7%BC%96%E8%BE%91%E5%99%A8/">编辑器</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
+    
 
-    <a href="/2023/04/03/%E7%BD%91%E9%A1%B5%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%BC%96%E7%A8%8BNoteBook%E5%90%88%E9%9B%86/">阅读全文<span class="seo-reader-text">网页交互式编程NoteBook合集</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/WEB%E8%BF%90%E7%BB%B4/">WEB运维</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/">云服务器</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/HTTPS/">HTTPS</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/SSL%E8%AF%81%E4%B9%A6/">SSL证书</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>2k 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>7 分钟</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
 </div>
 
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-                    <div class="home-article-thumbnail">
-                        <a href="/2023/04/02/hexo-redefine%E4%B8%BB%E9%A2%98%E7%9A%84%E8%AF%B4%E8%AF%B4%E7%89%88%E5%9D%97%E3%80%81%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6%E4%B8%8E%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/">
-                            <img src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E5%B0%81%E9%9D%A2%E5%9B%BE3.png" alt="hexo-redefine主题的说说版块、音乐插件与评论系统设置" />
-                        </a>
+                        </div>
                     </div>
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/04/02/hexo-redefine%E4%B8%BB%E9%A2%98%E7%9A%84%E8%AF%B4%E8%AF%B4%E7%89%88%E5%9D%97%E3%80%81%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6%E4%B8%8E%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/">
-                        hexo-redefine主题的说说版块、音乐插件与评论系统设置
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        
-
-前言​		针对我安装或者配置时遇到的困难分享一下，大家如果有遇到其他的问题，可以评论区讨论一下或者电子邮件联系，希望能帮到各位。
-Artitalk说说版块设置及问题配置需要
-Artitalk官方文档
-LeanCloud数据存储库（国内版）
-
-配置...
-                    
                 </div>
+            
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Sun Apr 02 2023 00:39:35 GMT+0800">
-                
-                    2023-04-02 00:39:35
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category"><i class="fa-solid fa-folders"></i></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/categories/hexo/">hexo</a>&nbsp;
-                        </li>
-                    
-                    
-                </ul>
-            </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/%E8%AF%B4%E8%AF%B4/">说说</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/">音乐播放器</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/">评论系统</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
+            <div class="article-content markdown-body">
+                <p>如果想让自己网站数据传输更安全，可以将网站HTTP协议跳转为HTTPS协议，这需要我们做的就是申请一张SSL证书。</p>
+<p>证书文件申请后会给我们一份CSR（证书请求文件）与私钥，<u><strong>注意妥善保存私钥！！</strong></u>，而申请验证通过后会给我们一份证书crt文件，这个文件用于为服务器安装证书。</p>
+<p>所以要保存的有CSR、<strong>私钥、证书文件</strong>！（私钥丢失后一般不可找回）</p>
+<p>如今为网站申请一张SSL证书是比较容易的，这里我为我云存储服务用过几次SSL，简单介绍一下这些SSL证书及便捷申请网站。</p>
+<h3 id="常用的SSL证书："><a href="#常用的SSL证书：" class="headerlink" title="常用的SSL证书："></a>常用的SSL证书：</h3><h4 id="一、Let’s-Encrypt证书"><a href="#一、Let’s-Encrypt证书" class="headerlink" title="一、Let’s Encrypt证书"></a>一、Let’s Encrypt证书</h4><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/07/05/8590480a979a97657c0de698b96f5f5e.png"
+                      alt="image-20230705232130211" style="zoom: 50%;" 
+                >
 
-    <a href="/2023/04/02/hexo-redefine%E4%B8%BB%E9%A2%98%E7%9A%84%E8%AF%B4%E8%AF%B4%E7%89%88%E5%9D%97%E3%80%81%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6%E4%B8%8E%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/">阅读全文<span class="seo-reader-text">hexo-redefine主题的说说版块、音乐插件与评论系统设置</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
+<p>这是使用非常广泛的SSL证书，凭借免费、方便快速的申请流程与自动续期等特点，使得很多个人网站与服务器都是用的这种。</p>
+<ul>
+<li><p>免费证书有效时长为3个月，时间不算长，也不算短，在一定程度上也避免了域名转移后的非法使用问题。</p>
+</li>
+<li><p>域名所有权验证有DNS验证、File验证。</p>
+</li>
+</ul>
+<blockquote>
+<p>Let’s Encrypt是一个于2015年三季度推出的数字证书认证机构，旨在以自动化流程消除手动创建和安装证书的复杂流程，并推广使万维网服务器的加密连接无所不在，为安全网站提供免费的SSL&#x2F;TLS证书。let’s encrypt证书加密是一个免费的，自动的，开放的认证机构（CA），为公众的利益而运行。它是由互联网安全研究组（ISRG）提供的一项服务。</p>
+<p>Let’s Encrypt的主要原则是：</p>
+<p>免费：拥有域名的任何人都可以使用Let’s Encrypt以零成本获得可信证书。</p>
+<p>自动：在Web服务器上运行的软件可与Let’s Encrypt进行交互，轻松获取证书，安全地配置以供使用，并自动处理更新。</p>
+<p>安全：我们的加密将作为推进TLS安全最佳实践的平台，无论是在CA方面，还是帮助网站运营商妥善保护其服务器。</p>
+<p>透明：所有已颁发或已撤销的证书都将公开记录并可供任何人查看。</p>
+<p>开放：自动签发和更新协议将作为其他人可以采用的开放标准发布。</p>
+<p>合作：就像互联网协议本身一样，Let’s Encrypt是一个共同的努力，让社区受益，超越任何一个组织的控制。</p>
+</blockquote>
+<h4 id="二、Comodo证书"><a href="#二、Comodo证书" class="headerlink" title="二、Comodo证书"></a>二、Comodo证书</h4><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/07/05/2e8474e6fa3f772bb0682f55fa8a6e53.png"
+                      alt="image-20230705232230828" style="zoom:67%;" 
+                >
 
+<p>这一机构有付费证书（通配符），也有免费证书（单域名）</p>
+<ul>
+<li>免费证书有效时长为3个月。</li>
+<li>域名所有权验证有DNS验证、File验证、邮箱验证。</li>
+</ul>
+<blockquote>
+<p>Comodo ，美国的软件公司，是世界优秀的IT安全服务提供商和SSL证书的供应商之一，总部设在新泽西州泽西城，成立于1998年。</p>
+<p>Comodo 提供一些免费的产品，可以通过其官方网站下载。值得注意的是他们的免费程序防火墙，以及其他免费的安全工具，如防病毒，防恶意软件，搜索引擎和内存防火墙。以A-VSMART保证电子商务的实时安全。</p>
+<p>Comodo 也是一个全球领先的SSL证书提供商，为用户提供为期90天的免费服务。</p>
+<p>Comodo 是世界上知名的SSL证书颁发机构，著名的网络安全软件厂商，致力于为个人和企业用户提供电子邮件安全、托管DNS、PKI管理、SSL证书、安全通讯以及许多其他服务，Comodo是确保互联网具有可靠和安全性的大型证书颁发机构之一。</p>
+<p>Comodo SSL证书保护服务器和客户端浏览器之间通信连接,保证传输和接收的数据的完整性，真实性以及安全性，使COMODO成为一个非常值得信赖的品牌。</p>
+<p>Comodo Positive SSL证书是价格最低,颁发速度最快的SSL证书之一，是中小型企业和个人用户的首选SSL证书安全产品。</p>
+<p>Comodo 是著名SSL证书品牌之一,是WebTrust认证的CA服务商。</p>
+</blockquote>
+<h4 id="三、RapidSSL"><a href="#三、RapidSSL" class="headerlink" title="三、RapidSSL"></a>三、RapidSSL</h4><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/07/05/1cffe93f58c66f8a87731b1801cda7e2.png"
+                      alt="image-20230705232306965" style="zoom: 33%;" 
+                >
+
+<ul>
+<li>免费证书有效时长为1个月。</li>
+<li>域名所有权验证有邮箱验证。</li>
+</ul>
+<blockquote>
+<p>RapidSSL 是著名SSL数字证书颁发机构 GeoTrust 旗下的信息安全产品。RapidSSL是128&#x2F;256位SSL证书。因为RapidSSL有自己的根证书，所以用户可以享受到稳定可靠的SSL认证服务。RapidSSL全面支持 IE 5.01+、Netscape 4.7+、Firefox、Mozilla 1+ 浏览器及其推出的各款版本。RapidSSL经济亲切的价格，让你轻松提示企业网络安全等级。RapidSSL SSL 证书支持99%以上在市面上通行的浏览器，是入门电子商务网站的最佳选择。</p>
+<p>RapidSSL 数字证书让中小型公司透过低廉的价格就可以购买到全功能的数位凭证。是对目前交易量不大的电子商务网站最佳的选择。RapidSSL 采用自有的根证书 (Root) 发放数字证书，因此让 RapidSSL 更稳定可靠，并且比链锁 (Chain) 式的数字证书更容易安装。 RapidSSL 价格低廉，大幅降低公司使用 SSL 证书的门坎。</p>
+</blockquote>
+<h4 id="四、ZeroSSL"><a href="#四、ZeroSSL" class="headerlink" title="四、ZeroSSL"></a>四、ZeroSSL</h4><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/07/05/4c53c448ef3904553d1e711b76f06b4c.png"
+                      alt="image-20230705233030087" style="zoom:50%;" 
+                >
+
+<blockquote>
+<p>继letsencrypt之后，zerossl同样提供了免费的SSL证书申请，采用同样的ACME的接口方式。与letsencrypt类似，zerossl提供的SSL免费证书特点：</p>
+<p>1、支持多域名和泛域名</p>
+<p>2、3个月证书有效期</p>
+<p>3、域名不受限制</p>
+<p>zerossl的第三点是与letsencrypt最大的区别，很多朋友在使用letsencrypt申请SSL域名证书的时候，会遇到多次申请的时候，在申请时，提示受到限制。这个在zerossl中就不会出现</p>
+</blockquote>
+<h4 id="五、Buypass"><a href="#五、Buypass" class="headerlink" title="五、Buypass"></a>五、Buypass</h4><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/07/05/19d52b2298db54dd2356349fac3934fb.png"
+                      alt="image-20230705233627759" style="zoom: 33%;" 
+                >
+
+<blockquote>
+<p>近期，来此加密实现了buypass的兼容升级，即可以申请buypass的免费证书，该证书有以下特点：</p>
+<p>1、证书有效期6个月。</p>
+<p>2、单张证书最多支持5个单域名</p>
+<p>3、根证书起始时间2010‎年，兼容性非常好。</p>
+<p>BuyPass 是挪威的一家 CA 机构，提供数字证书、安全认证产品等多种服务。目前 BuyPass 提供了类似 Let’s Encrypt 的基于 ACME&#x2F;Certbot 的证书自动签发服务 - BuyPass GO Free SSL，免费！</p>
+</blockquote>
+<h3 id="快捷申请网站："><a href="#快捷申请网站：" class="headerlink" title="快捷申请网站："></a>快捷申请网站：</h3><h4 id="一、免费SSL（www-mianfeissl-com）"><a href="#一、免费SSL（www-mianfeissl-com）" class="headerlink" title="一、免费SSL（www.mianfeissl.com）"></a>一、<a class="link"   target="_blank" rel="noopener" href="https://www.mianfeissl.com/" >免费SSL（www.mianfeissl.com） <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h4><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/07/05/5e4f1b5d9dfafd25872cd4e83e7c047c.png"
+                      alt="image-20230705223223127" style="zoom:50%;" 
+                >
+
+<p>优点：</p>
+<ul>
+<li>申请简单快捷（大约10分钟），有“傻瓜式”教程</li>
+<li>纯免费</li>
+<li>证书种类较多，有选择性（RapidSSL、COMODO、Let’s Encrypt）</li>
+<li>有管理后台。订阅证书后，临期证书会通过微信提醒</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>私钥与CSR在验证过程中可以查看，但是验证成功后就只能下载证书了（就在昨天，申请了两个comodo证书，结果没保存私钥，没法给云存储上传证书了）</li>
+</ul>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/07/05/6b26c70907f55421b0997f75fe508bf2.png"
+                      alt="image-20230705230025607" style="zoom:33%;" 
+                >
+
+<h4 id="二、LookSSL（lookssl-com）"><a href="#二、LookSSL（lookssl-com）" class="headerlink" title="二、LookSSL（lookssl.com）"></a>二、<a href="(https://lookssl.com/)">LookSSL（lookssl.com）</a></h4><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/07/05/99f92a9cfccce431083b483a86a17aff.png"
+                      alt="image-20230705230228738" style="zoom:50%;" 
+                >
+
+<p>优点：</p>
+<ul>
+<li>部分免费</li>
+<li>方便快捷</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>申请免费证书时，显示库存不足😅</li>
+</ul>
+<h4 id="三、来此加密（letsencrypt-osfipin-com"><a href="#三、来此加密（letsencrypt-osfipin-com" class="headerlink" title="三、来此加密（letsencrypt.osfipin.com)"></a>三、<a class="link"   target="_blank" rel="noopener" href="https://letsencrypt.osfipin.com/" >来此加密（letsencrypt.osfipin.com) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h4><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/07/05/d9457ba44418cf138e2bae80127976ce.png"
+                      alt="image-20230705231145426" style="zoom: 50%;" 
+                >
+
+<p>优点：</p>
+<ul>
+<li>基本免费</li>
+<li>申请简单快捷（大约5分钟）</li>
+<li>支持多个子域名批量申请</li>
+<li>证书种类较多，有选择性（Let’s Encrypt、ZeroSSL、Buypass、Google）</li>
+<li>可下载包含证书、私钥等文件的完整压缩包</li>
+<li>证书到期提醒</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>申请数量有部分限制</li>
+</ul>
+<h4 id="四、FreeSSL（freessl-org）"><a href="#四、FreeSSL（freessl-org）" class="headerlink" title="四、FreeSSL（freessl.org）"></a>四、<a class="link"   target="_blank" rel="noopener" href="https://freessl.org/" >FreeSSL（freessl.org） <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h4><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/czr/AppData/Roaming/Typora/typora-user-images/image-20230705230801680.png"
+                      alt="image-20230705230801680" style="zoom:50%;" 
+                >
+
+<p>优点：</p>
+<ul>
+<li>免费</li>
+<li>方便快捷</li>
+<li>支持多域名申请。</li>
+<li>有管理界面</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>不支持中文域名</li>
+</ul>
+<h4 id="五、CloudFlare（www-cloudflare-com-ssl）"><a href="#五、CloudFlare（www-cloudflare-com-ssl）" class="headerlink" title="五、CloudFlare（www.cloudflare.com/ssl）"></a>五、<a class="link"   target="_blank" rel="noopener" href="https://www.cloudflare.com/zh-cn/ssl/" >CloudFlare（www.cloudflare.com/ssl） <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h4><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/czr/AppData/Roaming/Typora/typora-user-images/image-20230705233854269.png"
+                      alt="image-20230705233854269" style="zoom: 50%;" 
+                >
+
+<p>优点：</p>
+<ul>
+<li>功能全面，可以对自己的站点针对性定制</li>
+<li>部分免费</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>较复杂，需要改域名DNS服务器等</li>
+</ul>
+
+            </div>
+
+            
+                <div class="post-copyright-info">
+                    <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>标题:</strong> SSL证书申请与更换</li>
+        <li><strong>作者:</strong> 狮子阿儒</li>
+        <li><strong>创建于:</strong> 2023-07-05 22:23:07</li>
+        
+            <li>
+                <strong>更新于:</strong> 2023-07-05 23:44:20
             </li>
         
-            <li class="home-article-item">
-
-                
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/04/01/hexo%E5%88%9D%E5%A7%8B%E6%93%8D%E4%BD%9C/">
-                        hexo初始操作
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        <p>官方自带快速入门</p>
-
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Sat Apr 01 2023 23:15:33 GMT+0800">
-                
-                    2023-04-01 23:15:33
-                
-            </span>
-        </span>
-        
-        
-    </div>
-
-    <a href="/2023/04/01/hexo%E5%88%9D%E5%A7%8B%E6%93%8D%E4%BD%9C/">阅读全文<span class="seo-reader-text">hexo初始操作</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
+        <li>
+            <strong>链接:</strong> https://c200108.github.io/2023/07/05/SSL证书申请与更换/
+        </li>
+        <li>
+            <strong>版权声明:</strong> 本文章采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a> 进行许可。
+        </li>
     </ul>
-
-    <div class="home-paginator">
-        <div class="paginator">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa-regular fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
 </div>
+
+                </div>
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/">#云服务器</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/HTTPS/">#HTTPS</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/SSL%E8%AF%81%E4%B9%A6/">#SSL证书</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                            rel="prev"
+                            href="/2023/07/05/token/"
+                            >
+                                <span class="left arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </span>
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item"></span>
+                                    <span class="post-nav-item">上一篇</span>
+                                </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                            rel="next"
+                            href="/2023/06/21/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"
+                            >
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">hexo博客迁移</span>
+                                    <span class="post-nav-item">下一篇</span>
+                                </span>
+                                <span class="right arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+
+            
+                <div class="comment-container">
+                    <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fa-solid fa-comments"></i>&nbsp;评论
+    </div>
+    
+
+        
+            
+ 
+    <div id="waline"></div>
+    <script type="module"  data-pjax>
+        import { init } from 'https://evan.beee.top/js/waline.mjs';
+
+        function loadWaline() {
+            init({
+                el: '#waline',
+                serverURL: 'https://vercel.czrblog.top',
+                lang: 'zh-CN',
+                dark: 'body[class~="dark-mode"]',
+                requiredMeta: ['nick','mail'], // cannot customize by theme config, change it yourself
+            });
+        }
+
+        if ('true') {
+            const loadWalineTimeout = setTimeout(() => {
+                loadWaline();
+                clearTimeout(loadWalineTimeout);
+            }, 1000);
+        } else {
+            window.addEventListener('DOMContentLoaded', loadWaline);
+        }
+        
+    </script>
+
+
+
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">此页目录</div>
+        <div class="page-title">SSL证书申请与更换</div>
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E7%9A%84SSL%E8%AF%81%E4%B9%A6%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">常用的SSL证书：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%80%E3%80%81Let%E2%80%99s-Encrypt%E8%AF%81%E4%B9%A6"><span class="nav-number">1.1.</span> <span class="nav-text">一、Let’s Encrypt证书</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8C%E3%80%81Comodo%E8%AF%81%E4%B9%A6"><span class="nav-number">1.2.</span> <span class="nav-text">二、Comodo证书</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%89%E3%80%81RapidSSL"><span class="nav-number">1.3.</span> <span class="nav-text">三、RapidSSL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%9B%E3%80%81ZeroSSL"><span class="nav-number">1.4.</span> <span class="nav-text">四、ZeroSSL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%94%E3%80%81Buypass"><span class="nav-number">1.5.</span> <span class="nav-text">五、Buypass</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BF%AB%E6%8D%B7%E7%94%B3%E8%AF%B7%E7%BD%91%E7%AB%99%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">快捷申请网站：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%85%8D%E8%B4%B9SSL%EF%BC%88www-mianfeissl-com%EF%BC%89"><span class="nav-number">2.1.</span> <span class="nav-text">一、免费SSL（www.mianfeissl.com） </span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8C%E3%80%81LookSSL%EF%BC%88lookssl-com%EF%BC%89"><span class="nav-number">2.2.</span> <span class="nav-text">二、LookSSL（lookssl.com）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E6%9D%A5%E6%AD%A4%E5%8A%A0%E5%AF%86%EF%BC%88letsencrypt-osfipin-com"><span class="nav-number">2.3.</span> <span class="nav-text">三、来此加密（letsencrypt.osfipin.com) </span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%9B%E3%80%81FreeSSL%EF%BC%88freessl-org%EF%BC%89"><span class="nav-number">2.4.</span> <span class="nav-text">四、FreeSSL（freessl.org） </span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%94%E3%80%81CloudFlare%EF%BC%88www-cloudflare-com-ssl%EF%BC%89"><span class="nav-number">2.5.</span> <span class="nav-text">五、CloudFlare（www.cloudflare.com&#x2F;ssl） </span></a></li></ol></li></ol>
 
     </div>
 </div>
+            </div>
+        
+    </div>
+</div>
+
 
                 
 
@@ -759,6 +930,27 @@ LeanCloud数据存储库（国内版）
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-side-tools-container">
@@ -856,7 +1048,6 @@ LeanCloud数据存储库（国内版）
 
 
 
-
 <script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/utils.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/layouts/navbarShrink.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/tools/scrollTopBottom.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/tools/lightDarkSwitch.js"></script>
 
 
@@ -890,6 +1081,8 @@ LeanCloud数据存储库（国内版）
 
 
 <div class="post-scripts pjax">
+    
+        <script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/tools/tocToggle.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/libs/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/layouts/toc.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-redefine@2.1.5/source/js/plugins/tabs.js"></script>
     
 </div>
 
