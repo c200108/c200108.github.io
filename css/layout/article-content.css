@@ -249,6 +249,10 @@
   box-sizing: border-box;
   width: 100%;
   height: 100%;
+  gap: 0px;
+}
+.post-page-container.show-toc {
+  gap: 30px;
 }
 .post-page-container.show-toc .toc-content-container {
   display: block;
@@ -329,7 +333,7 @@
 }
 .post-page-container .article-content-container .article-title .article-title-regular {
   font-size: 3.2rem;
-  font-weight: bold;
+  font-weight: 700;
   margin: 0px 0 30px 0;
   line-height: 1.4;
   color: var(--second-text-color);
@@ -347,7 +351,7 @@
   font-family: 'Noto Sans', 'Ma Shan Zheng', 'Noto Sans SC', sans-serif;
   color: var(--second-text-color);
   font-size: 3.2rem;
-  font-weight: 600;
+  font-weight: 700;
   background-color: var(--background-color-transparent);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -543,6 +547,22 @@
 .post-page-container .article-content-container .recommended-article {
   overflow: visible !important;
 }
+.post-page-container .article-content-container .recommended-article .recommended-mobile {
+  display: none;
+}
+@media (max-width: 780px) {
+  .post-page-container .article-content-container .recommended-article .recommended-mobile {
+    display: block;
+  }
+}
+.post-page-container .article-content-container .recommended-article .recommended-desktop {
+  display: block;
+}
+@media (max-width: 780px) {
+  .post-page-container .article-content-container .recommended-article .recommended-desktop {
+    display: none;
+  }
+}
 .post-page-container .article-content-container .recommended-article .recommended-article-header {
   font-size: 28px;
   font-weight: 550;
@@ -579,6 +599,11 @@
   margin-top: 15px;
   margin-right: 0;
 }
+@media (max-width: 780px) {
+  .post-page-container .article-content-container .recommended-article .recommended-article-group .recommended-article-item {
+    width: 49%;
+  }
+}
 .post-page-container .article-content-container .recommended-article .recommended-article-group .recommended-article-item img {
   display: flex;
   width: calc(100% + 24px);
@@ -604,7 +629,6 @@
   width: 0;
   height: auto;
   max-height: calc(100vh - 210px);
-  margin-left: 30px;
   overflow-y: auto;
   overflow-x: hidden;
   float: right;

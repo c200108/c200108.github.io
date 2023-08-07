@@ -332,9 +332,9 @@
 }
 .home-sidebar-container .sidebar-links .site-info .site-name {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--second-text-color);
-  font-family: 'Optima Bold', sans-serif;
+  font-family: 'Chillax-Variable', sans-serif;
   text-align: center;
 }
 .home-sidebar-container .sidebar-links .site-info .announcement {
@@ -353,7 +353,10 @@
   text-align: left;
   border-radius: 9px;
   cursor: pointer;
-  font-family: Open Sans, Noto Sans, Noto Sans SC, -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial;
+  font-family: Satoshi-Variable, Noto Sans SC, -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial;
+}
+.home-sidebar-container .sidebar-links .links .link-name {
+  font-weight: 450;
 }
 .home-sidebar-container .sidebar-links .links .icon-space {
   margin-right: 5px;
