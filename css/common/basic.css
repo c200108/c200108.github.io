@@ -404,8 +404,8 @@ body {
   padding: 0;
   color: var(--default-text-color);
   background: var(--background-color);
-  font-family: Open Sans, Noto Sans, Noto Sans SC, -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial;
-  font-weight: 400;
+  font-family: Satoshi-Variable, Noto Sans SC, -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial;
+  font-weight: 450;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -414,14 +414,14 @@ body::-webkit-scrollbar {
   width: 14px;
   height: 8px;
 }
-@media (max-width: 780px) {
+@media (max-width: 768px) {
   html,
   body {
     font-size: 15.36px;
     line-height: 1.44;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 640px) {
   html,
   body {
     font-size: 14.4px;
@@ -500,12 +500,12 @@ button {
   transition-duration: 0.2s, 0.2s, 0.2s, 0.2s, 0.2s;
   transition-timing-function: ease, ease, ease, ease, linear;
 }
-@media (max-width: 780px) {
+@media (max-width: 768px) {
   .btn {
     margin-bottom: 0.8rem;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 640px) {
   .btn {
     margin-bottom: 0.6rem;
   }
@@ -513,15 +513,15 @@ button {
 .btn:hover {
   box-shadow: var(--redefine-box-shadow-hover);
 }
-@media (max-width: 780px) {
+@media (max-width: 768px) {
   .btn {
-    padding: 0;
+    padding: -4;
     border-radius: 14.4px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 640px) {
   .btn {
-    padding: 0;
+    padding: -8;
     border-radius: 10.799999999999999px;
   }
 }
@@ -540,11 +540,6 @@ button {
   transform: scale(0.95);
   transition: transform 0.1s ease;
   background-color: var(--third-background-color) !important;
-}
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .clear {
   clear: both;

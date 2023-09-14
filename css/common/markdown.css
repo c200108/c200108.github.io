@@ -203,3 +203,9 @@ redefine-tablet()
 .markdown-body > table tr:nth-child(2n) {
   background-color: var(--second-background-color);
 }
+.markdown-body mjx-container {
+  display: inline-block;
+}
+.markdown-body mjx-container[display="true"] {
+  display: block;
+}

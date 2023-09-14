@@ -253,12 +253,12 @@
 .category-container .category-name i {
   color: var(--second-text-color);
 }
-@media (max-width: 780px) {
+@media (max-width: 768px) {
   .category-container .category-name {
     font-size: 2.52rem;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 640px) {
   .category-container .category-name {
     font-size: 2.24rem;
   }
