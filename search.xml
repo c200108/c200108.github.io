@@ -3379,7 +3379,7 @@ var player = new DogePlayer({
                       alt="image-20230625225105755" style="zoom:67%;" 
                 >
 
-<h3 id="YOLOv5利用Gradio搭建Web系统"><a href="#YOLOv5利用Gradio搭建Web系统" class="headerlink" title="YOLOv5利用Gradio搭建Web系统"></a>YOLOv5利用Gradio搭建Web系统</h3><img  
+<h3 id="YOLOv5利用Gradio搭建Web-GUI"><a href="#YOLOv5利用Gradio搭建Web-GUI" class="headerlink" title="YOLOv5利用Gradio搭建Web GUI"></a>YOLOv5利用Gradio搭建Web GUI</h3><img  
                      lazyload
                      src="/images/loading.svg"
                      data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/10/08/c35dd2cc26177b6a06380984fde06228.png"
