@@ -3320,6 +3320,7 @@ var player = new DogePlayer({
 </script>
 
 
+
 <h3 id="YOLOv5利用PyQT5实现可视化界面"><a href="#YOLOv5利用PyQT5实现可视化界面" class="headerlink" title="YOLOv5利用PyQT5实现可视化界面"></a>YOLOv5利用PyQT5实现可视化界面</h3><h4 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h4><ul>
 <li>Pyside6安装：pip install pyside6</li>
 <li>pyside6 designer：打开 <code>&lt;虚拟环境位置&gt;\Lib\site-packages\PySide6</code></li>
