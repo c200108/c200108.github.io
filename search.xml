@@ -1523,6 +1523,7 @@ var player = new DogePlayer({
       <tags>
         <tag>Numpy</tag>
         <tag>基础知识</tag>
+        <tag>科学计算</tag>
       </tags>
   </entry>
   <entry>
@@ -1944,7 +1945,7 @@ var player = new DogePlayer({
       <tags>
         <tag>基础知识</tag>
         <tag>Pandas</tag>
-        <tag>数据分析</tag>
+        <tag>数据处理</tag>
       </tags>
   </entry>
   <entry>
@@ -4081,6 +4082,33 @@ var player = new DogePlayer({
       <tags>
         <tag>华数杯</tag>
         <tag>社科</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据挖掘学习记录（三）：数据可视化库matplotlib</title>
+    <url>/2023/05/20/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%BA%93matplotlib/</url>
+    <content><![CDATA[<p>​	matplotlib</p>
+]]></content>
+      <categories>
+        <category>数据挖掘</category>
+      </categories>
+      <tags>
+        <tag>基础知识</tag>
+        <tag>可视化</tag>
+        <tag>图形图像</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>统计学习方法记录（一）：概述</title>
+    <url>/2023/10/10/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[<p>​	本部分根据李航的统计方法学习（第二版）进行学习记录。</p>
+]]></content>
+      <categories>
+        <category>统计学习方法</category>
+      </categories>
+      <tags>
+        <tag>基础知识</tag>
+        <tag>李航</tag>
       </tags>
   </entry>
 </search>
