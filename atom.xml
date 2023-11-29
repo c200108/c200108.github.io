@@ -3,11 +3,11 @@
   <title>Hexo</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://c200108.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://c200108.github.io/"/>
   <updated>2023-11-17T11:39:52.073Z</updated>
-  <id>http://example.com/</id>
+  <id>https://c200108.github.io/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title></title>
-    <link href="http://example.com/2023/11/17/token/"/>
-    <id>http://example.com/2023/11/17/token/</id>
+    <link href="https://c200108.github.io/2023/11/17/token/"/>
+    <id>https://c200108.github.io/2023/11/17/token/</id>
     <published>2023-11-17T11:39:52.073Z</published>
     <updated>2023-11-17T11:39:52.073Z</updated>
     
@@ -38,8 +38,8 @@
   
   <entry>
     <title>统计学习方法记录（一）：概述</title>
-    <link href="http://example.com/2023/10/10/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E6%A6%82%E8%BF%B0/"/>
-    <id>http://example.com/2023/10/10/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E6%A6%82%E8%BF%B0/</id>
+    <link href="https://c200108.github.io/2023/10/10/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E6%A6%82%E8%BF%B0/"/>
+    <id>https://c200108.github.io/2023/10/10/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E6%A6%82%E8%BF%B0/</id>
     <published>2023-10-10T09:18:33.000Z</published>
     <updated>2023-10-10T09:29:45.335Z</updated>
     
@@ -54,19 +54,19 @@
     
     
     
-    <category term="统计学习方法" scheme="http://example.com/categories/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/"/>
+    <category term="统计学习方法" scheme="https://c200108.github.io/categories/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/"/>
     
     
-    <category term="基础知识" scheme="http://example.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <category term="基础知识" scheme="https://c200108.github.io/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
-    <category term="李航" scheme="http://example.com/tags/%E6%9D%8E%E8%88%AA/"/>
+    <category term="李航" scheme="https://c200108.github.io/tags/%E6%9D%8E%E8%88%AA/"/>
     
   </entry>
   
   <entry>
     <title>第四届华数杯数学建模竞赛C题思路、过程实现与最终论文</title>
-    <link href="http://example.com/2023/08/20/%E7%AC%AC%E5%9B%9B%E5%B1%8A%E5%8D%8E%E6%95%B0%E6%9D%AF%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9BC%E9%A2%98%E6%80%9D%E8%B7%AF%E3%80%81%E8%BF%87%E7%A8%8B%E5%AE%9E%E7%8E%B0%E4%B8%8E%E6%9C%80%E7%BB%88%E8%AE%BA%E6%96%87/"/>
-    <id>http://example.com/2023/08/20/%E7%AC%AC%E5%9B%9B%E5%B1%8A%E5%8D%8E%E6%95%B0%E6%9D%AF%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9BC%E9%A2%98%E6%80%9D%E8%B7%AF%E3%80%81%E8%BF%87%E7%A8%8B%E5%AE%9E%E7%8E%B0%E4%B8%8E%E6%9C%80%E7%BB%88%E8%AE%BA%E6%96%87/</id>
+    <link href="https://c200108.github.io/2023/08/20/%E7%AC%AC%E5%9B%9B%E5%B1%8A%E5%8D%8E%E6%95%B0%E6%9D%AF%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9BC%E9%A2%98%E6%80%9D%E8%B7%AF%E3%80%81%E8%BF%87%E7%A8%8B%E5%AE%9E%E7%8E%B0%E4%B8%8E%E6%9C%80%E7%BB%88%E8%AE%BA%E6%96%87/"/>
+    <id>https://c200108.github.io/2023/08/20/%E7%AC%AC%E5%9B%9B%E5%B1%8A%E5%8D%8E%E6%95%B0%E6%9D%AF%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9BC%E9%A2%98%E6%80%9D%E8%B7%AF%E3%80%81%E8%BF%87%E7%A8%8B%E5%AE%9E%E7%8E%B0%E4%B8%8E%E6%9C%80%E7%BB%88%E8%AE%BA%E6%96%87/</id>
     <published>2023-08-20T06:27:09.000Z</published>
     <updated>2023-09-14T04:05:15.497Z</updated>
     
@@ -80,19 +80,19 @@
     
     
     
-    <category term="数模" scheme="http://example.com/categories/%E6%95%B0%E6%A8%A1/"/>
+    <category term="数模" scheme="https://c200108.github.io/categories/%E6%95%B0%E6%A8%A1/"/>
     
     
-    <category term="华数杯" scheme="http://example.com/tags/%E5%8D%8E%E6%95%B0%E6%9D%AF/"/>
+    <category term="华数杯" scheme="https://c200108.github.io/tags/%E5%8D%8E%E6%95%B0%E6%9D%AF/"/>
     
-    <category term="社科" scheme="http://example.com/tags/%E7%A4%BE%E7%A7%91/"/>
+    <category term="社科" scheme="https://c200108.github.io/tags/%E7%A4%BE%E7%A7%91/"/>
     
   </entry>
   
   <entry>
     <title>SSL证书申请与更换</title>
-    <link href="http://example.com/2023/07/05/SSL%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E4%B8%8E%E6%9B%B4%E6%8D%A2/"/>
-    <id>http://example.com/2023/07/05/SSL%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E4%B8%8E%E6%9B%B4%E6%8D%A2/</id>
+    <link href="https://c200108.github.io/2023/07/05/SSL%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E4%B8%8E%E6%9B%B4%E6%8D%A2/"/>
+    <id>https://c200108.github.io/2023/07/05/SSL%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E4%B8%8E%E6%9B%B4%E6%8D%A2/</id>
     <published>2023-07-05T14:23:07.000Z</published>
     <updated>2023-07-05T15:48:22.272Z</updated>
     
@@ -107,21 +107,21 @@
     
     
     
-    <category term="WEB运维" scheme="http://example.com/categories/WEB%E8%BF%90%E7%BB%B4/"/>
+    <category term="WEB运维" scheme="https://c200108.github.io/categories/WEB%E8%BF%90%E7%BB%B4/"/>
     
     
-    <category term="云服务器" scheme="http://example.com/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <category term="云服务器" scheme="https://c200108.github.io/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
-    <category term="HTTPS" scheme="http://example.com/tags/HTTPS/"/>
+    <category term="HTTPS" scheme="https://c200108.github.io/tags/HTTPS/"/>
     
-    <category term="SSL证书" scheme="http://example.com/tags/SSL%E8%AF%81%E4%B9%A6/"/>
+    <category term="SSL证书" scheme="https://c200108.github.io/tags/SSL%E8%AF%81%E4%B9%A6/"/>
     
   </entry>
   
   <entry>
     <title>hexo博客迁移</title>
-    <link href="http://example.com/2023/06/21/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
-    <id>http://example.com/2023/06/21/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/</id>
+    <link href="https://c200108.github.io/2023/06/21/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    <id>https://c200108.github.io/2023/06/21/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/</id>
     <published>2023-06-21T03:10:10.000Z</published>
     <updated>2023-07-02T06:35:03.992Z</updated>
     
@@ -139,17 +139,17 @@
     
     
     
-    <category term="hexo" scheme="http://example.com/categories/hexo/"/>
+    <category term="hexo" scheme="https://c200108.github.io/categories/hexo/"/>
     
     
-    <category term="博客迁移" scheme="http://example.com/tags/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    <category term="博客迁移" scheme="https://c200108.github.io/tags/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
     
   </entry>
   
   <entry>
     <title>nrm模块错误：ERR_Require_ESM</title>
-    <link href="http://example.com/2023/06/18/nrm%E6%A8%A1%E5%9D%97%E9%94%99%E8%AF%AF%EF%BC%9AERR-Require-ESM/"/>
-    <id>http://example.com/2023/06/18/nrm%E6%A8%A1%E5%9D%97%E9%94%99%E8%AF%AF%EF%BC%9AERR-Require-ESM/</id>
+    <link href="https://c200108.github.io/2023/06/18/nrm%E6%A8%A1%E5%9D%97%E9%94%99%E8%AF%AF%EF%BC%9AERR-Require-ESM/"/>
+    <id>https://c200108.github.io/2023/06/18/nrm%E6%A8%A1%E5%9D%97%E9%94%99%E8%AF%AF%EF%BC%9AERR-Require-ESM/</id>
     <published>2023-06-18T08:25:09.000Z</published>
     <updated>2023-07-02T06:34:47.851Z</updated>
     
@@ -166,19 +166,19 @@
     
     
     
-    <category term="问题解决" scheme="http://example.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    <category term="问题解决" scheme="https://c200108.github.io/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
     
     
-    <category term="nodejs" scheme="http://example.com/tags/nodejs/"/>
+    <category term="nodejs" scheme="https://c200108.github.io/tags/nodejs/"/>
     
-    <category term="ERR解决" scheme="http://example.com/tags/ERR%E8%A7%A3%E5%86%B3/"/>
+    <category term="ERR解决" scheme="https://c200108.github.io/tags/ERR%E8%A7%A3%E5%86%B3/"/>
     
   </entry>
   
   <entry>
     <title>数据挖掘学习记录（三）：数据可视化库matplotlib</title>
-    <link href="http://example.com/2023/05/20/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%BA%93matplotlib/"/>
-    <id>http://example.com/2023/05/20/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%BA%93matplotlib/</id>
+    <link href="https://c200108.github.io/2023/05/20/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%BA%93matplotlib/"/>
+    <id>https://c200108.github.io/2023/05/20/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%BA%93matplotlib/</id>
     <published>2023-05-20T06:12:54.000Z</published>
     <updated>2023-10-10T09:30:10.100Z</updated>
     
@@ -193,21 +193,21 @@
     
     
     
-    <category term="数据挖掘" scheme="http://example.com/categories/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
+    <category term="数据挖掘" scheme="https://c200108.github.io/categories/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
     
     
-    <category term="基础知识" scheme="http://example.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <category term="基础知识" scheme="https://c200108.github.io/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
-    <category term="可视化" scheme="http://example.com/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+    <category term="可视化" scheme="https://c200108.github.io/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
     
-    <category term="图形图像" scheme="http://example.com/tags/%E5%9B%BE%E5%BD%A2%E5%9B%BE%E5%83%8F/"/>
+    <category term="图形图像" scheme="https://c200108.github.io/tags/%E5%9B%BE%E5%BD%A2%E5%9B%BE%E5%83%8F/"/>
     
   </entry>
   
   <entry>
     <title>深度学习记录（四）：YOLOv5 7.0实战</title>
-    <link href="http://example.com/2023/05/13/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9AYOLOv5%207.0%E5%AE%9E%E6%88%98/"/>
-    <id>http://example.com/2023/05/13/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9AYOLOv5%207.0%E5%AE%9E%E6%88%98/</id>
+    <link href="https://c200108.github.io/2023/05/13/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9AYOLOv5%207.0%E5%AE%9E%E6%88%98/"/>
+    <id>https://c200108.github.io/2023/05/13/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9AYOLOv5%207.0%E5%AE%9E%E6%88%98/</id>
     <published>2023-05-13T14:29:26.000Z</published>
     <updated>2023-10-10T08:41:22.973Z</updated>
     
@@ -222,21 +222,21 @@
     
     
     
-    <category term="DeepLearning" scheme="http://example.com/categories/DeepLearning/"/>
+    <category term="DeepLearning" scheme="https://c200108.github.io/categories/DeepLearning/"/>
     
     
-    <category term="YOLO" scheme="http://example.com/tags/YOLO/"/>
+    <category term="YOLO" scheme="https://c200108.github.io/tags/YOLO/"/>
     
-    <category term="目标检测" scheme="http://example.com/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/"/>
+    <category term="目标检测" scheme="https://c200108.github.io/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/"/>
     
-    <category term="实战" scheme="http://example.com/tags/%E5%AE%9E%E6%88%98/"/>
+    <category term="实战" scheme="https://c200108.github.io/tags/%E5%AE%9E%E6%88%98/"/>
     
   </entry>
   
   <entry>
     <title>NewBing申请及体验</title>
-    <link href="http://example.com/2023/05/12/NewBing%E7%94%B3%E8%AF%B7%E5%8F%8A%E4%BD%93%E9%AA%8C/"/>
-    <id>http://example.com/2023/05/12/NewBing%E7%94%B3%E8%AF%B7%E5%8F%8A%E4%BD%93%E9%AA%8C/</id>
+    <link href="https://c200108.github.io/2023/05/12/NewBing%E7%94%B3%E8%AF%B7%E5%8F%8A%E4%BD%93%E9%AA%8C/"/>
+    <id>https://c200108.github.io/2023/05/12/NewBing%E7%94%B3%E8%AF%B7%E5%8F%8A%E4%BD%93%E9%AA%8C/</id>
     <published>2023-05-12T15:30:20.000Z</published>
     <updated>2023-11-17T12:12:59.623Z</updated>
     
@@ -251,19 +251,19 @@
     
     
     
-    <category term="工具" scheme="http://example.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="https://c200108.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="NewBing" scheme="http://example.com/tags/NewBing/"/>
+    <category term="NewBing" scheme="https://c200108.github.io/tags/NewBing/"/>
     
-    <category term="chatGPT" scheme="http://example.com/tags/chatGPT/"/>
+    <category term="chatGPT" scheme="https://c200108.github.io/tags/chatGPT/"/>
     
   </entry>
   
   <entry>
     <title>深度学习记录（三）：了解神经网络模型（结构、原理）</title>
-    <link href="http://example.com/2023/05/10/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E4%BA%86%E8%A7%A3%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%EF%BC%88%E7%BB%93%E6%9E%84%E3%80%81%E5%8E%9F%E7%90%86%EF%BC%89/"/>
-    <id>http://example.com/2023/05/10/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E4%BA%86%E8%A7%A3%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%EF%BC%88%E7%BB%93%E6%9E%84%E3%80%81%E5%8E%9F%E7%90%86%EF%BC%89/</id>
+    <link href="https://c200108.github.io/2023/05/10/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E4%BA%86%E8%A7%A3%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%EF%BC%88%E7%BB%93%E6%9E%84%E3%80%81%E5%8E%9F%E7%90%86%EF%BC%89/"/>
+    <id>https://c200108.github.io/2023/05/10/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E4%BA%86%E8%A7%A3%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%EF%BC%88%E7%BB%93%E6%9E%84%E3%80%81%E5%8E%9F%E7%90%86%EF%BC%89/</id>
     <published>2023-05-10T14:40:21.000Z</published>
     <updated>2023-05-13T15:50:15.159Z</updated>
     
@@ -279,19 +279,19 @@
     
     
     
-    <category term="DeepLearning" scheme="http://example.com/categories/DeepLearning/"/>
+    <category term="DeepLearning" scheme="https://c200108.github.io/categories/DeepLearning/"/>
     
     
-    <category term="基础知识" scheme="http://example.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <category term="基础知识" scheme="https://c200108.github.io/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
-    <category term="神经网络" scheme="http://example.com/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    <category term="神经网络" scheme="https://c200108.github.io/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
   <entry>
     <title>概念辨析：偏导数、方向导数及梯度</title>
-    <link href="http://example.com/2023/05/04/%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90%EF%BC%9A%E5%81%8F%E5%AF%BC%E6%95%B0%E3%80%81%E6%96%B9%E5%90%91%E5%AF%BC%E6%95%B0%E5%8F%8A%E6%A2%AF%E5%BA%A6/"/>
-    <id>http://example.com/2023/05/04/%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90%EF%BC%9A%E5%81%8F%E5%AF%BC%E6%95%B0%E3%80%81%E6%96%B9%E5%90%91%E5%AF%BC%E6%95%B0%E5%8F%8A%E6%A2%AF%E5%BA%A6/</id>
+    <link href="https://c200108.github.io/2023/05/04/%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90%EF%BC%9A%E5%81%8F%E5%AF%BC%E6%95%B0%E3%80%81%E6%96%B9%E5%90%91%E5%AF%BC%E6%95%B0%E5%8F%8A%E6%A2%AF%E5%BA%A6/"/>
+    <id>https://c200108.github.io/2023/05/04/%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90%EF%BC%9A%E5%81%8F%E5%AF%BC%E6%95%B0%E3%80%81%E6%96%B9%E5%90%91%E5%AF%BC%E6%95%B0%E5%8F%8A%E6%A2%AF%E5%BA%A6/</id>
     <published>2023-05-03T16:00:00.000Z</published>
     <updated>2023-05-12T06:49:52.943Z</updated>
     
@@ -307,23 +307,23 @@
     
     
     
-    <category term="数学" scheme="http://example.com/categories/%E6%95%B0%E5%AD%A6/"/>
+    <category term="数学" scheme="https://c200108.github.io/categories/%E6%95%B0%E5%AD%A6/"/>
     
     
-    <category term="基础概念" scheme="http://example.com/tags/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/"/>
+    <category term="基础概念" scheme="https://c200108.github.io/tags/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/"/>
     
-    <category term="偏导数" scheme="http://example.com/tags/%E5%81%8F%E5%AF%BC%E6%95%B0/"/>
+    <category term="偏导数" scheme="https://c200108.github.io/tags/%E5%81%8F%E5%AF%BC%E6%95%B0/"/>
     
-    <category term="方向导数" scheme="http://example.com/tags/%E6%96%B9%E5%90%91%E5%AF%BC%E6%95%B0/"/>
+    <category term="方向导数" scheme="https://c200108.github.io/tags/%E6%96%B9%E5%90%91%E5%AF%BC%E6%95%B0/"/>
     
-    <category term="梯度" scheme="http://example.com/tags/%E6%A2%AF%E5%BA%A6/"/>
+    <category term="梯度" scheme="https://c200108.github.io/tags/%E6%A2%AF%E5%BA%A6/"/>
     
   </entry>
   
   <entry>
     <title>数据挖掘学习记录（二）：数据分析处理库Pandas</title>
-    <link href="http://example.com/2023/05/03/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9A%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%A4%84%E7%90%86%E5%BA%93Pandas/"/>
-    <id>http://example.com/2023/05/03/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9A%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%A4%84%E7%90%86%E5%BA%93Pandas/</id>
+    <link href="https://c200108.github.io/2023/05/03/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9A%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%A4%84%E7%90%86%E5%BA%93Pandas/"/>
+    <id>https://c200108.github.io/2023/05/03/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9A%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%A4%84%E7%90%86%E5%BA%93Pandas/</id>
     <published>2023-05-03T04:23:45.000Z</published>
     <updated>2023-10-10T09:21:03.646Z</updated>
     
@@ -337,21 +337,21 @@
     
     
     
-    <category term="数据挖掘" scheme="http://example.com/categories/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
+    <category term="数据挖掘" scheme="https://c200108.github.io/categories/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
     
     
-    <category term="基础知识" scheme="http://example.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <category term="基础知识" scheme="https://c200108.github.io/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
-    <category term="Pandas" scheme="http://example.com/tags/Pandas/"/>
+    <category term="Pandas" scheme="https://c200108.github.io/tags/Pandas/"/>
     
-    <category term="数据处理" scheme="http://example.com/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
+    <category term="数据处理" scheme="https://c200108.github.io/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
     
   </entry>
   
   <entry>
     <title>数据挖掘学习记录（一）：科学计算库numpy</title>
-    <link href="http://example.com/2023/04/29/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E5%BA%93numpy/"/>
-    <id>http://example.com/2023/04/29/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E5%BA%93numpy/</id>
+    <link href="https://c200108.github.io/2023/04/29/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E5%BA%93numpy/"/>
+    <id>https://c200108.github.io/2023/04/29/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E5%BA%93numpy/</id>
     <published>2023-04-29T14:10:11.000Z</published>
     <updated>2023-10-10T09:21:21.662Z</updated>
     
@@ -365,21 +365,21 @@
     
     
     
-    <category term="数据挖掘" scheme="http://example.com/categories/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
+    <category term="数据挖掘" scheme="https://c200108.github.io/categories/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
     
     
-    <category term="Numpy" scheme="http://example.com/tags/Numpy/"/>
+    <category term="Numpy" scheme="https://c200108.github.io/tags/Numpy/"/>
     
-    <category term="基础知识" scheme="http://example.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <category term="基础知识" scheme="https://c200108.github.io/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
-    <category term="科学计算" scheme="http://example.com/tags/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97/"/>
+    <category term="科学计算" scheme="https://c200108.github.io/tags/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
   <entry>
     <title>深度学习记录（二）：PyTorch使用技巧</title>
-    <link href="http://example.com/2023/04/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9APyTorch%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
-    <id>http://example.com/2023/04/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9APyTorch%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</id>
+    <link href="https://c200108.github.io/2023/04/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9APyTorch%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    <id>https://c200108.github.io/2023/04/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9APyTorch%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</id>
     <published>2023-04-27T04:55:06.000Z</published>
     <updated>2023-04-29T14:10:54.162Z</updated>
     
@@ -394,19 +394,19 @@
     
     
     
-    <category term="DeepLearning" scheme="http://example.com/categories/DeepLearning/"/>
+    <category term="DeepLearning" scheme="https://c200108.github.io/categories/DeepLearning/"/>
     
     
-    <category term="pytorch" scheme="http://example.com/tags/pytorch/"/>
+    <category term="pytorch" scheme="https://c200108.github.io/tags/pytorch/"/>
     
-    <category term="使用技巧" scheme="http://example.com/tags/%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    <category term="使用技巧" scheme="https://c200108.github.io/tags/%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
     
   </entry>
   
   <entry>
     <title>深度学习记录（一）：在conda环境下安装PyTorch（CUDA版）</title>
-    <link href="http://example.com/2023/04/24/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%9C%A8conda%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%AE%89%E8%A3%85PyTorch%EF%BC%88CUDA%E7%89%88%EF%BC%89/"/>
-    <id>http://example.com/2023/04/24/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%9C%A8conda%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%AE%89%E8%A3%85PyTorch%EF%BC%88CUDA%E7%89%88%EF%BC%89/</id>
+    <link href="https://c200108.github.io/2023/04/24/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%9C%A8conda%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%AE%89%E8%A3%85PyTorch%EF%BC%88CUDA%E7%89%88%EF%BC%89/"/>
+    <id>https://c200108.github.io/2023/04/24/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%9C%A8conda%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%AE%89%E8%A3%85PyTorch%EF%BC%88CUDA%E7%89%88%EF%BC%89/</id>
     <published>2023-04-24T06:43:45.000Z</published>
     <updated>2023-04-29T14:11:06.701Z</updated>
     
@@ -420,21 +420,21 @@
     
     
     
-    <category term="DeepLearning" scheme="http://example.com/categories/DeepLearning/"/>
+    <category term="DeepLearning" scheme="https://c200108.github.io/categories/DeepLearning/"/>
     
     
-    <category term="包管理" scheme="http://example.com/tags/%E5%8C%85%E7%AE%A1%E7%90%86/"/>
+    <category term="包管理" scheme="https://c200108.github.io/tags/%E5%8C%85%E7%AE%A1%E7%90%86/"/>
     
-    <category term="anaconda" scheme="http://example.com/tags/anaconda/"/>
+    <category term="anaconda" scheme="https://c200108.github.io/tags/anaconda/"/>
     
-    <category term="pytorch" scheme="http://example.com/tags/pytorch/"/>
+    <category term="pytorch" scheme="https://c200108.github.io/tags/pytorch/"/>
     
   </entry>
   
   <entry>
     <title>Picgo插件--上传图片至多吉云</title>
-    <link href="http://example.com/2023/04/21/Picgo%E6%8F%92%E4%BB%B6-%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E8%87%B3%E5%A4%9A%E5%90%89%E4%BA%91/"/>
-    <id>http://example.com/2023/04/21/Picgo%E6%8F%92%E4%BB%B6-%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E8%87%B3%E5%A4%9A%E5%90%89%E4%BA%91/</id>
+    <link href="https://c200108.github.io/2023/04/21/Picgo%E6%8F%92%E4%BB%B6-%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E8%87%B3%E5%A4%9A%E5%90%89%E4%BA%91/"/>
+    <id>https://c200108.github.io/2023/04/21/Picgo%E6%8F%92%E4%BB%B6-%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E8%87%B3%E5%A4%9A%E5%90%89%E4%BA%91/</id>
     <published>2023-04-21T13:18:42.000Z</published>
     <updated>2023-04-21T14:44:39.904Z</updated>
     
@@ -449,19 +449,19 @@
     
     
     
-    <category term="工具" scheme="http://example.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="https://c200108.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="Picgo插件" scheme="http://example.com/tags/Picgo%E6%8F%92%E4%BB%B6/"/>
+    <category term="Picgo插件" scheme="https://c200108.github.io/tags/Picgo%E6%8F%92%E4%BB%B6/"/>
     
-    <category term="DogeCloud" scheme="http://example.com/tags/DogeCloud/"/>
+    <category term="DogeCloud" scheme="https://c200108.github.io/tags/DogeCloud/"/>
     
   </entry>
   
   <entry>
     <title>2022—2023生活实录</title>
-    <link href="http://example.com/2023/04/16/2022-2023%E8%AE%B0%E5%BD%95/"/>
-    <id>http://example.com/2023/04/16/2022-2023%E8%AE%B0%E5%BD%95/</id>
+    <link href="https://c200108.github.io/2023/04/16/2022-2023%E8%AE%B0%E5%BD%95/"/>
+    <id>https://c200108.github.io/2023/04/16/2022-2023%E8%AE%B0%E5%BD%95/</id>
     <published>2023-04-16T12:16:03.000Z</published>
     <updated>2023-04-29T16:23:05.879Z</updated>
     
@@ -472,17 +472,17 @@
     
     
     
-    <category term="生活" scheme="http://example.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="https://c200108.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-    <category term="考研" scheme="http://example.com/tags/%E8%80%83%E7%A0%94/"/>
+    <category term="考研" scheme="https://c200108.github.io/tags/%E8%80%83%E7%A0%94/"/>
     
   </entry>
   
   <entry>
     <title>Flask项目部署后，网站访问速度很慢</title>
-    <link href="http://example.com/2023/04/14/flask%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E5%90%8E%EF%BC%8C%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E5%BE%88%E6%85%A2/"/>
-    <id>http://example.com/2023/04/14/flask%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E5%90%8E%EF%BC%8C%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E5%BE%88%E6%85%A2/</id>
+    <link href="https://c200108.github.io/2023/04/14/flask%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E5%90%8E%EF%BC%8C%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E5%BE%88%E6%85%A2/"/>
+    <id>https://c200108.github.io/2023/04/14/flask%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E5%90%8E%EF%BC%8C%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E5%BE%88%E6%85%A2/</id>
     <published>2023-04-14T12:14:52.000Z</published>
     <updated>2023-04-20T03:15:44.930Z</updated>
     
@@ -497,23 +497,23 @@
     
     
     
-    <category term="WEB运维" scheme="http://example.com/categories/WEB%E8%BF%90%E7%BB%B4/"/>
+    <category term="WEB运维" scheme="https://c200108.github.io/categories/WEB%E8%BF%90%E7%BB%B4/"/>
     
     
-    <category term="部署" scheme="http://example.com/tags/%E9%83%A8%E7%BD%B2/"/>
+    <category term="部署" scheme="https://c200108.github.io/tags/%E9%83%A8%E7%BD%B2/"/>
     
-    <category term="优化" scheme="http://example.com/tags/%E4%BC%98%E5%8C%96/"/>
+    <category term="优化" scheme="https://c200108.github.io/tags/%E4%BC%98%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>博客音乐歌单更新记录</title>
-    <link href="http://example.com/2023/04/12/%E5%8D%9A%E5%AE%A2%E9%9F%B3%E4%B9%90%E6%AD%8C%E5%8D%95/"/>
-    <id>http://example.com/2023/04/12/%E5%8D%9A%E5%AE%A2%E9%9F%B3%E4%B9%90%E6%AD%8C%E5%8D%95/</id>
+    <link href="https://c200108.github.io/2023/04/12/%E5%8D%9A%E5%AE%A2%E9%9F%B3%E4%B9%90%E6%AD%8C%E5%8D%95/"/>
+    <id>https://c200108.github.io/2023/04/12/%E5%8D%9A%E5%AE%A2%E9%9F%B3%E4%B9%90%E6%AD%8C%E5%8D%95/</id>
     <published>2023-04-12T02:19:56.000Z</published>
-    <updated>2023-10-15T15:52:59.960Z</updated>
+    <updated>2023-11-29T05:47:13.327Z</updated>
     
-    <content type="html"><![CDATA[<p>​网易云链接能保持较长时间，但对于VIP与付费歌曲还不稳定，QQ音乐与酷狗音乐的外链往往在一段时间之后会被禁止访问（forbidden）</p><blockquote><p>如果遇到博客音乐播放器中音乐失效或无法播放，请在文章下面留言！</p><p>格式：<em><strong>列表序号+音乐名+歌手名</strong></em></p></blockquote><h3 id="2023年4月12日新建"><a href="#2023年4月12日新建" class="headerlink" title="2023年4月12日新建"></a>2023年4月12日新建</h3><ul><li>博客安装Aplayer音乐插件</li></ul><h3 id="2023年4月15日更新"><a href="#2023年4月15日更新" class="headerlink" title="2023年4月15日更新"></a>2023年4月15日更新</h3><ul><li>博客音乐播放器新增20首歌</li><li>博客歌单歌曲与封面图片存储到DogeCloud</li></ul><h3 id="2023年4月16日更新"><a href="#2023年4月16日更新" class="headerlink" title="2023年4月16日更新"></a>2023年4月16日更新</h3><ul><li>发现部分歌曲不能播放</li><li>DogeCloud中音乐重命名，歌单音乐URL链接更换</li><li>博客歌单由原来20首增加到30首</li></ul><h3 id="2023年4月18日更新"><a href="#2023年4月18日更新" class="headerlink" title="2023年4月18日更新"></a>2023年4月18日更新</h3><ul><li>问题：发现DogeCloud音乐MP3外链存在“连接不安全”问题——致使大部分音乐无法播放</li></ul><h3 id="2023年4月19日更新"><a href="#2023年4月19日更新" class="headerlink" title="2023年4月19日更新"></a>2023年4月19日更新</h3><ul><li>解决：为多吉云的CDN加速域名申请Let’s Encrypt的SSL证书，有效期2023&#x2F;4&#x2F;19–2023&#x2F;7&#x2F;18，共三个月</li><li>解决：对原有加速域名进行HTTPS设置，歌单全部音乐恢复正常播放</li></ul><h3 id="2023年4月20日更新"><a href="#2023年4月20日更新" class="headerlink" title="2023年4月20日更新"></a>2023年4月20日更新</h3><ul><li>博客歌单由原来30首增加到56首</li><li>歌单部分歌曲由多吉云存储转为网易云、QQ音乐与酷狗音乐的外链</li></ul><h3 id="2023年4月21日更新"><a href="#2023年4月21日更新" class="headerlink" title="2023年4月21日更新"></a>2023年4月21日更新</h3><ul><li>博客歌单由原来56首增加到100首</li><li>问题：使用QQ音乐与酷狗音乐外链的歌曲无法播放</li><li>分析：上述两者mp3外链可能存在有效期限或者防盗链，致使过段时间链接失效或禁止访问！</li></ul><h3 id="2023年4月22日更新"><a href="#2023年4月22日更新" class="headerlink" title="2023年4月22日更新"></a>2023年4月22日更新</h3><ul><li>解决：过期链接音乐全部转为网易云或使用多吉云存储——歌曲恢复正常播放</li><li>为歌单封面图片新建标准型存储空间，图片域名发生变化</li><li>封面图片匹配完毕</li><li>Picgo接入dogeCloud作图床，存储效率提升！</li></ul><h3 id="2023年4月23日更新"><a href="#2023年4月23日更新" class="headerlink" title="2023年4月23日更新"></a>2023年4月23日更新</h3><ul><li>博客歌单由100首增加到160首</li><li>将失效链接替换为网易云，若属于无资源歌曲则使用多吉云存储资源</li><li>歌单封面匹配完毕</li></ul><h3 id="2023年6月23日更新"><a href="#2023年6月23日更新" class="headerlink" title="2023年6月23日更新"></a>2023年6月23日更新</h3><ul><li>修复失效链接</li><li>新增4首音乐（164首）</li></ul><h3 id="2023年9月20日更新"><a href="#2023年9月20日更新" class="headerlink" title="2023年9月20日更新"></a>2023年9月20日更新</h3><ul><li>修复第33、38、65、67、82、84、113、119、127、161、162、164首失效链接</li></ul><h3 id="2023年10月15日更新"><a href="#2023年10月15日更新" class="headerlink" title="2023年10月15日更新"></a>2023年10月15日更新</h3><ul><li>新增36首音乐（共199首）</li></ul>]]></content>
+    <content type="html"><![CDATA[<p>​网易云链接能保持较长时间，但对于VIP与付费歌曲还不稳定，QQ音乐与酷狗音乐的外链往往在一段时间之后会被禁止访问（forbidden）</p><blockquote><p>如果遇到博客音乐播放器中音乐失效或无法播放，请在文章下面留言！</p><p>格式：<em><strong>列表序号+音乐名+歌手名</strong></em></p></blockquote><h3 id="2023年4月12日新建"><a href="#2023年4月12日新建" class="headerlink" title="2023年4月12日新建"></a>2023年4月12日新建</h3><ul><li>博客安装Aplayer音乐插件</li></ul><h3 id="2023年4月15日更新"><a href="#2023年4月15日更新" class="headerlink" title="2023年4月15日更新"></a>2023年4月15日更新</h3><ul><li>博客音乐播放器新增20首歌</li><li>博客歌单歌曲与封面图片存储到DogeCloud</li></ul><h3 id="2023年4月16日更新"><a href="#2023年4月16日更新" class="headerlink" title="2023年4月16日更新"></a>2023年4月16日更新</h3><ul><li>发现部分歌曲不能播放</li><li>DogeCloud中音乐重命名，歌单音乐URL链接更换</li><li>博客歌单由原来20首增加到30首</li></ul><h3 id="2023年4月18日更新"><a href="#2023年4月18日更新" class="headerlink" title="2023年4月18日更新"></a>2023年4月18日更新</h3><ul><li>问题：发现DogeCloud音乐MP3外链存在“连接不安全”问题——致使大部分音乐无法播放</li></ul><h3 id="2023年4月19日更新"><a href="#2023年4月19日更新" class="headerlink" title="2023年4月19日更新"></a>2023年4月19日更新</h3><ul><li>解决：为多吉云的CDN加速域名申请Let’s Encrypt的SSL证书，有效期2023&#x2F;4&#x2F;19–2023&#x2F;7&#x2F;18，共三个月</li><li>解决：对原有加速域名进行HTTPS设置，歌单全部音乐恢复正常播放</li></ul><h3 id="2023年4月20日更新"><a href="#2023年4月20日更新" class="headerlink" title="2023年4月20日更新"></a>2023年4月20日更新</h3><ul><li>博客歌单由原来30首增加到56首</li><li>歌单部分歌曲由多吉云存储转为网易云、QQ音乐与酷狗音乐的外链</li></ul><h3 id="2023年4月21日更新"><a href="#2023年4月21日更新" class="headerlink" title="2023年4月21日更新"></a>2023年4月21日更新</h3><ul><li>博客歌单由原来56首增加到100首</li><li>问题：使用QQ音乐与酷狗音乐外链的歌曲无法播放</li><li>分析：上述两者mp3外链可能存在有效期限或者防盗链，致使过段时间链接失效或禁止访问！</li></ul><h3 id="2023年4月22日更新"><a href="#2023年4月22日更新" class="headerlink" title="2023年4月22日更新"></a>2023年4月22日更新</h3><ul><li>解决：过期链接音乐全部转为网易云或使用多吉云存储——歌曲恢复正常播放</li><li>为歌单封面图片新建标准型存储空间，图片域名发生变化</li><li>封面图片匹配完毕</li><li>Picgo接入dogeCloud作图床，存储效率提升！</li></ul><h3 id="2023年4月23日更新"><a href="#2023年4月23日更新" class="headerlink" title="2023年4月23日更新"></a>2023年4月23日更新</h3><ul><li>博客歌单由100首增加到160首</li><li>将失效链接替换为网易云，若属于无资源歌曲则使用多吉云存储资源</li><li>歌单封面匹配完毕</li></ul><h3 id="2023年6月23日更新"><a href="#2023年6月23日更新" class="headerlink" title="2023年6月23日更新"></a>2023年6月23日更新</h3><ul><li>修复失效链接</li><li>新增4首音乐（164首）</li></ul><h3 id="2023年9月20日更新"><a href="#2023年9月20日更新" class="headerlink" title="2023年9月20日更新"></a>2023年9月20日更新</h3><ul><li>修复第33、38、65、67、82、84、113、119、127、161、162、164首失效链接</li></ul><h3 id="2023年10月15日更新"><a href="#2023年10月15日更新" class="headerlink" title="2023年10月15日更新"></a>2023年10月15日更新</h3><ul><li>新增36首音乐（共199首）</li></ul><h3 id="2023年11月28日更新"><a href="#2023年11月28日更新" class="headerlink" title="2023年11月28日更新"></a>2023年11月28日更新</h3><ul><li>新增34首音乐（共233首）</li></ul>]]></content>
     
     
       
@@ -526,19 +526,19 @@
     
     
     
-    <category term="工具" scheme="http://example.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="https://c200108.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="Aplayer音乐插件" scheme="http://example.com/tags/Aplayer%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6/"/>
+    <category term="Aplayer音乐插件" scheme="https://c200108.github.io/tags/Aplayer%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6/"/>
     
-    <category term="更新日志" scheme="http://example.com/tags/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
+    <category term="更新日志" scheme="https://c200108.github.io/tags/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
     
   </entry>
   
   <entry>
     <title>使用python爬虫爬取链家潍坊市二手房项目</title>
-    <link href="http://example.com/2023/04/06/%E4%BD%BF%E7%94%A8python%E7%88%AC%E8%99%AB%E7%88%AC%E5%8F%96%E9%93%BE%E5%AE%B6%E6%BD%8D%E5%9D%8A%E5%B8%82%E4%BA%8C%E6%89%8B%E6%88%BF%E9%A1%B9%E7%9B%AE/"/>
-    <id>http://example.com/2023/04/06/%E4%BD%BF%E7%94%A8python%E7%88%AC%E8%99%AB%E7%88%AC%E5%8F%96%E9%93%BE%E5%AE%B6%E6%BD%8D%E5%9D%8A%E5%B8%82%E4%BA%8C%E6%89%8B%E6%88%BF%E9%A1%B9%E7%9B%AE/</id>
+    <link href="https://c200108.github.io/2023/04/06/%E4%BD%BF%E7%94%A8python%E7%88%AC%E8%99%AB%E7%88%AC%E5%8F%96%E9%93%BE%E5%AE%B6%E6%BD%8D%E5%9D%8A%E5%B8%82%E4%BA%8C%E6%89%8B%E6%88%BF%E9%A1%B9%E7%9B%AE/"/>
+    <id>https://c200108.github.io/2023/04/06/%E4%BD%BF%E7%94%A8python%E7%88%AC%E8%99%AB%E7%88%AC%E5%8F%96%E9%93%BE%E5%AE%B6%E6%BD%8D%E5%9D%8A%E5%B8%82%E4%BA%8C%E6%89%8B%E6%88%BF%E9%A1%B9%E7%9B%AE/</id>
     <published>2023-04-06T07:15:33.000Z</published>
     <updated>2023-04-19T13:57:30.852Z</updated>
     
@@ -552,16 +552,16 @@
     
     
     
-    <category term="网络爬虫" scheme="http://example.com/categories/%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB/"/>
+    <category term="网络爬虫" scheme="https://c200108.github.io/categories/%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB/"/>
     
     
-    <category term="MySQL" scheme="http://example.com/tags/MySQL/"/>
+    <category term="MySQL" scheme="https://c200108.github.io/tags/MySQL/"/>
     
-    <category term="Python" scheme="http://example.com/tags/Python/"/>
+    <category term="Python" scheme="https://c200108.github.io/tags/Python/"/>
     
-    <category term="requests库" scheme="http://example.com/tags/requests%E5%BA%93/"/>
+    <category term="requests库" scheme="https://c200108.github.io/tags/requests%E5%BA%93/"/>
     
-    <category term="链家二手房" scheme="http://example.com/tags/%E9%93%BE%E5%AE%B6%E4%BA%8C%E6%89%8B%E6%88%BF/"/>
+    <category term="链家二手房" scheme="https://c200108.github.io/tags/%E9%93%BE%E5%AE%B6%E4%BA%8C%E6%89%8B%E6%88%BF/"/>
     
   </entry>
   
