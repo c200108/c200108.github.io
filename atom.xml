@@ -6,7 +6,7 @@
   <link href="https://c200108.github.io/atom.xml" rel="self"/>
   
   <link href="https://c200108.github.io/"/>
-  <updated>2023-11-17T11:39:52.073Z</updated>
+  <updated>2023-10-10T09:29:45.335Z</updated>
   <id>https://c200108.github.io/</id>
   
   <author>
@@ -15,26 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="https://c200108.github.io/2023/11/17/token/"/>
-    <id>https://c200108.github.io/2023/11/17/token/</id>
-    <published>2023-11-17T11:39:52.073Z</published>
-    <updated>2023-11-17T11:39:52.073Z</updated>
-    
-    <content type="html"><![CDATA[{"credentials":{"accessKeyId":"AKIDzh_eGx0i3tXI1CMJRG1eOBg4Q1CyKv3k479uEvqfgQh-QuQzeFbnkArKxISI0Cqk","secretAccessKey":"nHNES8mXsg7F5F3e1QYDW8e/wDAdZ8N1pwhEERlZrjg=","sessionToken":"a85y1aPIhQadwc8BgSHSz73T394AQwnac2e36818e5d6da309872407a44e9daf5tjSZMRO8dZYPRGTXLMzuJdCEpj7Tz9M5w-qH7vIv29LIaJdnUjdD-MxWvWMesjUrIve78A0xZyMFPBbzOPZzLr6Eut-M2nxvPfHIR6cWOl8f4bTJWkKgboMkFVnqWYQqOb3f0VhO6AzlSQpVw0R2OcmadcKkb9syDsF1ZQwTd5YcLN8f9A3uC30xae4sOsmkyRpHr6-dzt9fCHhbGLKQWQdzbZwyMzqaljU8R4bFHGfc4SdJh1bbhhC563B8rOsItEJiXWiR13Cb8bkXYsBv62AyH0n4INiNEaIIEkS9nlm1BouvhlljAezKXohDHvKLKyCjbV9Oi3LiG-IifxK8WiEPMBW8GprSZFIzTci6N-SRcB8kyKFJyPDAQUol9udEQ4xgWJ6OEYy8Kd0ELXo0gWlc_lmFLk7ox3ANhIPXI25hX69u5LaDq45geyv2EGwHOaG9lHk3wwWhy1svo4VmLN4QeS_FrISGxjPZDtPVU3qmW7mOb4KkgUbjrudG1QZzR9RurKTdVJw1kAkpc53uGaBV-QwarN_ea0mWZ2qkGWhT5Hra4JaPjB-sWiGCIEZkryFQcme1HIXeI2f15I4JmRUMFqVnqj8V3aSZ-A-b2xGYa1yWmPZSfxj1aerd-4qi"},"s3Bucket":"s-bj-6247-doge-storage-1258813047","s3Endpoint":"https://cos.ap-beijing.myqcloud.com"}]]></content>
-    
-    
-      
-      
-    <summary type="html">{&quot;credentials&quot;:{&quot;accessKeyId&quot;:&quot;AKIDzh_eGx0i3tXI1CMJRG1eOBg4Q1CyKv3k479uEvqfgQh-QuQzeFbnkArKxISI0Cqk&quot;,&quot;secretAccessKey&quot;:&quot;nHNES8mXsg7F5F3e1QYD</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>统计学习方法记录（一）：概述</title>
@@ -562,6 +542,39 @@
     <category term="requests库" scheme="https://c200108.github.io/tags/requests%E5%BA%93/"/>
     
     <category term="链家二手房" scheme="https://c200108.github.io/tags/%E9%93%BE%E5%AE%B6%E4%BA%8C%E6%89%8B%E6%88%BF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>深度学习概念辨析——Epoch、Batch、Iteration</title>
+    <link href="https://c200108.github.io/2023/04/05/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90%E2%80%94%E2%80%94Epoch%E3%80%81Batch%E3%80%81Iteration/"/>
+    <id>https://c200108.github.io/2023/04/05/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90%E2%80%94%E2%80%94Epoch%E3%80%81Batch%E3%80%81Iteration/</id>
+    <published>2023-04-05T14:31:46.000Z</published>
+    <updated>2023-04-27T04:56:59.762Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>本文转载自简书<a class="link"   href="https://www.jianshu.com/p/22c50ded4cf7" >https://www.jianshu.com/p/22c50ded4cf7 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p></blockquote><h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><p>在训练神经网络的时候，我们难免会看到Batch、Epoch和Iteration这几个概念。曾对这几个概念感到模糊，看了网上的一些文章后，在这里做几个小小的总结。</p><h3 id="名词解释："><a href="#名词解释：" class="headerlink" title="名词解释："></a>名词解释：</h3><p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/epoch%7Cbatch%7Citeration%E5%AE%9A%E4%B9%89.webp"                      alt="epoch\batch\iteration定义"                ></p><blockquote><p>【 图片来源：<a class="link"   href="https://zhuanlan.zhihu.com/p/29409502" >https://zhuanlan.zhihu.com/p/29409502 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 】</p></blockquote><ul><li><strong>Epoch（时期）：</strong></li></ul><p>当一个完整的数据集通过了神经网络一次并且返回了一次，这个过程称为一次&gt;epoch。（也就是说，所有训练样本在神经网络中都 进行了一次正向传播 和一次反向传播 ）<br>再通俗一点，一个Epoch就是将所有训练样本训练一次的过程。<br>然而，当一个Epoch的样本（也就是所有的训练样本）数量可能太过庞大（对于计算机而言），就需要把它分成多个小块，也就是就是分成多个Batch 来进行训练。</p><ul><li><strong>Batch（批 &#x2F; 一批样本）：</strong></li></ul><p>将整个训练样本分成若干个Batch。</p><ul><li><strong>Batch_Size（批大小）：</strong></li></ul><p>每批样本的大小。</p><ul><li><strong>Iteration（一次迭代）：</strong></li></ul><p>训练一个Batch就是一次Iteration（这个概念跟程序语言中的迭代器相似）。</p><ul><li><strong>为什么要使用多于一个epoch?</strong></li></ul><p>在神经网络中传递完整的数据集一次是不够的，而且我们需要将完整的数据集在同样的神经网络中传递多次。但请记住，我们使用的是有限的数据集，并且我们使用一个迭代过程即梯度下降来优化学习过程。如下图所示。因此仅仅更新一次或者说使用一个epoch是不够的。</p><p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E8%BF%87%E6%8B%9F%E5%90%88%E3%80%81%E9%80%82%E4%B8%AD%E3%80%81%E6%AC%A0%E6%8B%9F%E5%90%88%E7%9A%84%E5%9B%BE%E5%83%8F%E7%89%B9%E5%BE%81.png"                      alt="过拟合、适中、欠拟合的图像特征"                ></p><p><em>随着epoch数量增加，神经网络中的权重的更新次数也在增加，曲线从欠拟合变得过拟合</em>。</p><ul><li><strong>那么，问题来了，几个epoch才是合适的呢？</strong></li></ul><p>不幸的是，这个问题并没有正确的答案。对于不同的数据集，答案是不一样的。但是数据的多样性会影响合适的epoch的数量。比如，只有黑色的猫的数据集，以及有各种颜色的猫的数据集。</p><blockquote><p>【 来源：<a class="link"   href="https://blog.csdn.net/qq_39521554/article/details/84480429" >https://blog.csdn.net/qq_39521554/article/details/84480429 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 】</p></blockquote><h3 id="换算关系："><a href="#换算关系：" class="headerlink" title="换算关系："></a>换算关系：</h3><p><img src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E6%89%B9%E6%95%B0%E9%87%8F=%E8%AE%AD%E7%BB%83%E9%9B%86%E5%A4%A7%E5%B0%8F/%E6%89%B9%E5%A4%A7%E5%B0%8F.png" alt="批数量=训练集大小/批大小"></p><p>实际上，梯度下降的几种方式的根本区别就在于上面公式中的 Batch_Size 不同。</p><p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%96%B9%E5%BC%8FBGD%E3%80%81SGD%E3%80%81Mini-Batch%E7%9A%84%E8%AE%AD%E7%BB%83%E9%9B%86%E5%A4%A7%E5%B0%8F%E3%80%81%E6%89%B9%E5%A4%A7%E5%B0%8F%E5%92%8C%E6%89%B9%E6%95%B0%E9%87%8F.webp"                      alt="梯度下降方式BGD、SGD、Mini-Batch的训练集大小、批大小和批数量"                ></p><blockquote><p>【 图片来源：<a class="link"   href="https://zhuanlan.zhihu.com/p/29409502" >https://zhuanlan.zhihu.com/p/29409502 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 】</p></blockquote><h3 id="举个例子："><a href="#举个例子：" class="headerlink" title="举个例子："></a>举个例子：</h3><p><strong>mnist 数据集有60000张图片作为训练数据，10000张图片作为测试数据。假设现在选择 Batch_Size &#x3D; 100对模型进行训练。迭代30000次。</strong></p><ul><li>每个 Epoch 要训练的图片数量：60000(训练集上的所有图像)</li><li>训练集具有的 Batch 个数： 60000&#x2F;100&#x3D;600</li><li>每个 Epoch 需要完成的 Batch 个数：600</li><li>每个 Epoch 具有的 Iteration 个数：600（完成一个Batch训练，相当于参数迭代一次）</li><li>每个 Epoch 中发生模型权重更新的次数：600</li><li>训练 10 个Epoch后，模型权重更新的次数： 600*10&#x3D;6000</li><li>不同Epoch的训练，其实用的是同一个训练集的数据。<strong>第1个Epoch和第10个Epoch虽然用的都是训练集的60000图片，但是对模型的权重更新值却是完全不同的。因为不同Epoch的模型处于代价函数空间上的不同位置，模型的训练代越靠后，越接近谷底，其代价越小。</strong></li><li>总共完成30000次迭代，相当于完成了30000&#x2F;600&#x3D;50个Epoch</li></ul><blockquote><p>【 来源：<a class="link"   href="https://blog.csdn.net/xiaohuihui1994/article/details/80624593" >https://blog.csdn.net/xiaohuihui1994/article/details/80624593 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 】【 来源：<a class="link"   href="https://blog.csdn.net/xiaohuihui1994/article/details/80624593" >https://blog.csdn.net/xiaohuihui1994/article/details/80624593 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 】</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;本文转载自简书&lt;a class=&quot;link&quot;   href=&quot;https://www.jianshu.com/p/22c50ded4cf7&quot; &gt;https://www.jianshu.com/p/22c50ded4cf7 &lt;i class=&quot;fa-</summary>
+      
+    
+    
+    
+    <category term="DeepLearning" scheme="https://c200108.github.io/categories/DeepLearning/"/>
+    
+    
+    <category term="基础概念" scheme="https://c200108.github.io/tags/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/"/>
+    
+    <category term="Epoch" scheme="https://c200108.github.io/tags/Epoch/"/>
+    
+    <category term="Batch" scheme="https://c200108.github.io/tags/Batch/"/>
+    
+    <category term="Iteration" scheme="https://c200108.github.io/tags/Iteration/"/>
+    
+    <category term="神经网络" scheme="https://c200108.github.io/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
