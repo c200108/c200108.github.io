@@ -17,20 +17,31 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://c200108.github.io/categories/"/>
+    <link rel="canonical" href="https://c200108.github.io/2023/12/14/第二十届华为杯数学建模竞赛e题思路、实现过程与最终论文/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="https://c200108.github.io/categories/index.html">
+        <meta name="description" content="​	第二十届华为杯数学建模竞赛比赛时间是2023年9月22日上午8：00至2023年9月26日12：00，具体日程表如下图：   比赛赛题共有A、B、C、D、E、F共六个赛题，其中主题分别为：  A：WLAN网络信道接入机制建模 B：DFT类矩阵的整数分解逼近 C：大规模创新类竞赛评审方案研究 D：区域双碳目标与路径规划研究 E：出血性脑卒中临床智能诊疗建模 F：强对流降水临近预报  其中A、B为">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第二十届华为杯数学建模竞赛E题思路、实现过程与最终论文">
+<meta property="og:url" content="https://c200108.github.io/2023/12/14/%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%B1%8A%E5%8D%8E%E4%B8%BA%E6%9D%AF%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9BE%E9%A2%98%E6%80%9D%E8%B7%AF%E3%80%81%E5%AE%9E%E7%8E%B0%E8%BF%87%E7%A8%8B%E4%B8%8E%E6%9C%80%E7%BB%88%E8%AE%BA%E6%96%87/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="​	第二十届华为杯数学建模竞赛比赛时间是2023年9月22日上午8：00至2023年9月26日12：00，具体日程表如下图：   比赛赛题共有A、B、C、D、E、F共六个赛题，其中主题分别为：  A：WLAN网络信道接入机制建模 B：DFT类矩阵的整数分解逼近 C：大规模创新类竞赛评审方案研究 D：区域双碳目标与路径规划研究 E：出血性脑卒中临床智能诊疗建模 F：强对流降水临近预报  其中A、B为">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-04-16T14:22:18.000Z">
-<meta property="article:modified_time" content="2023-04-16T14:22:18.547Z">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/12/14/c9f6b690ec5d0bdc400c6ba7888e7788.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/12/14/64a70bf088a1171afae5fc55313dcc27.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/12/14/d5c92157c0f4d719ae55f5176b29cb08.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/12/14/64a38aba4ca6146b75e00cf2a202b6e2.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/12/14/cddaf5d6bfe11f025863f1a5a8bfb3a8.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/12/14/ef099d297239ddf2b62eb67c1f9b1a09.png">
+<meta property="article:published_time" content="2023-12-14T12:32:30.000Z">
+<meta property="article:modified_time" content="2023-12-14T14:19:43.837Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="医学数据">
+<meta property="article:tag" content="华为杯">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/12/14/c9f6b690ec5d0bdc400c6ba7888e7788.png">
     
     
         <!-- Google tag (gtag.js) -->
@@ -52,7 +63,7 @@
     
     <title>
         
-            分类 -
+            第二十届华为杯数学建模竞赛E题思路、实现过程与最终论文 -
         
         阿儒小站
     </title>
@@ -104,7 +115,119 @@
     
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-redefine@2.4.4/source/fontawesome/sharp-solid.min.css">
     
-<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
 </head>
 
 
@@ -203,7 +326,7 @@
                         
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class="active" 
+                                <a class="" 
                                     href="/categories/"  >
                                     
                                         
@@ -334,7 +457,7 @@
             
                 
                     <li class="drawer-navbar-item text-base my-1.5 flex justify-center items-center">
-                        <a class="rounded-3xl py-1.5 px-5 hover:border hover:!text-primary active:!text-primary group active" 
+                        <a class="rounded-3xl py-1.5 px-5 hover:border hover:!text-primary active:!text-primary group " 
                         href="/categories/"  >
                              
                                 
@@ -410,19 +533,299 @@
             <div class="main-content">
 
                 
-                    <div class="category-list-container">
-	<div >
-		<h1 class="category-header">
-			分类
-		</h1>
-	</div>
-	<div class="category-list-content">
-		<ul class="all-category-list"><li class="all-category-list-item"><a class="all-category-list-link" href="/categories/DeepLearning/">DeepLearning</a><span class="all-category-list-count">5</span></li><li class="all-category-list-item"><a class="all-category-list-link" href="/categories/WEB%E8%BF%90%E7%BB%B4/">WEB运维</a><span class="all-category-list-count">2</span></li><li class="all-category-list-item"><a class="all-category-list-link" href="/categories/blog/">blog</a><span class="all-category-list-count">1</span></li><li class="all-category-list-item"><a class="all-category-list-link" href="/categories/hexo/">hexo</a><span class="all-category-list-count">2</span></li><li class="all-category-list-item"><a class="all-category-list-link" href="/categories/%E5%B7%A5%E5%85%B7/">工具</a><span class="all-category-list-count">4</span></li><li class="all-category-list-item"><a class="all-category-list-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a><span class="all-category-list-count">1</span></li><li class="all-category-list-item"><a class="all-category-list-link" href="/categories/%E6%95%B0%E5%AD%A6/">数学</a><span class="all-category-list-count">1</span></li><li class="all-category-list-item"><a class="all-category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/">数据挖掘</a><span class="all-category-list-count">3</span></li><li class="all-category-list-item"><a class="all-category-list-link" href="/categories/%E6%95%B0%E6%A8%A1/">数模</a><span class="all-category-list-count">2</span></li><li class="all-category-list-item"><a class="all-category-list-link" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a><span class="all-category-list-count">1</span></li><li class="all-category-list-item"><a class="all-category-list-link" href="/categories/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/">统计学习方法</a><span class="all-category-list-count">1</span></li><li class="all-category-list-item"><a class="all-category-list-link" href="/categories/%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB/">网络爬虫</a><span class="all-category-list-count">1</span></li><li class="all-category-list-item"><a class="all-category-list-link" href="/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">问题解决</a><span class="all-category-list-count">1</span></li></ul>
-	</div>
-	<div class="category-comments">
-		
-	</div>
+                    <div class="post-page-container">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            
+                
+                
+                <img src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/12/14/45b5748f02a0fe1e9bbf2053a55e3b60.png" alt="第二十届华为杯数学建模竞赛E题思路、实现过程与最终论文" class="max-w-none"/>
+                
+                <h1 class="article-title-cover">第二十届华为杯数学建模竞赛E题思路、实现过程与最终论文</h1>
+            
+            </div>
+            
+                    
+        
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/202304171505157.svg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">狮子阿儒</span>
+                        
+                            <span class="author-label">Lv3</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2023-12-14 20:32:30</span>
+        <span class="mobile">2023-12-14 20:32:30</span>
+        <span class="hover-info">创建</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2023-12-14 22:19:43</span>
+            <span class="mobile">2023-12-14 22:19:43</span>
+            <span class="hover-info">更新</span>
+        </span>
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E6%95%B0%E6%A8%A1/">数模</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E5%8C%BB%E5%AD%A6%E6%95%B0%E6%8D%AE/">医学数据</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E5%8D%8E%E4%B8%BA%E6%9D%AF/">华为杯</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>2.1k 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>7 分钟</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
 </div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body">
+            <p>​	第二十届华为杯数学建模竞赛比赛时间是2023年9月22日上午8：00至2023年9月26日12：00，具体日程表如下图：</p>
+<img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/12/14/c9f6b690ec5d0bdc400c6ba7888e7788.png" alt="image-20231214203757846" style="zoom:67%;">
+
+<p>比赛赛题共有A、B、C、D、E、F共六个赛题，其中主题分别为：</p>
+<ul>
+<li><strong>A：WLAN网络信道接入机制建模</strong></li>
+<li><strong>B：DFT类矩阵的整数分解逼近</strong></li>
+<li><strong>C：大规模创新类竞赛评审方案研究</strong></li>
+<li><strong>D：区域双碳目标与路径规划研究</strong></li>
+<li><strong>E：出血性脑卒中临床智能诊疗建模</strong></li>
+<li><strong>F：强对流降水临近预报</strong></li>
+</ul>
+<p>其中A、B为华为专项赛题，A题属于物理物联网问题，B题属于数学矩阵解题，</p>
+<p>C题为现实问题解决方案类，D属于地理经济类题，E题属于经典的数据分析类题，F题属于物理类数据分析题</p>
+<p>虽然E题数据较多较为复杂，但本质上E题解题思路较为固定，有规律可依，因而我们队伍选择了E题，并且绝大多数队伍也选择了E题</p>
+<blockquote>
+<p>选题人数参考：<code>A题：619</code>、<code>B题：558</code>、<code>C题：3377</code>、<code>D题：5144</code>、<code>E题：8200</code>、<code>F题：1535</code>。</p>
+</blockquote>
+<h2 id="E题完整赛题："><a href="#E题完整赛题：" class="headerlink" title="E题完整赛题："></a>E题完整赛题：</h2><p>​											<img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2023/12/14/64a70bf088a1171afae5fc55313dcc27.png" alt="image-20231214214951312"></p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2023/12/14/d5c92157c0f4d719ae55f5176b29cb08.png" alt="image-20231214215019509"></p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2023/12/14/64a38aba4ca6146b75e00cf2a202b6e2.png" alt="image-20231214215049075"></p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2023/12/14/cddaf5d6bfe11f025863f1a5a8bfb3a8.png" alt="image-20231214215128391"></p>
+<img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2023/12/14/ef099d297239ddf2b62eb67c1f9b1a09.png" alt="image-20231214215155593">
+
+<h3 id="问题一分析："><a href="#问题一分析：" class="headerlink" title="问题一分析："></a>问题一分析：</h3><h4 id="a问"><a href="#a问" class="headerlink" title="a问"></a>a问</h4><p>​		基于后续检查中患者的血肿体积是否增加 6ml 判断前 100 名患者是否在 48 小时内发生血肿扩张，并记录发生血肿扩张的时间。第一步，筛选原始数据，对数据进行数据预处理，包括对缺失值的补全和对异常值的剔除。第二步，对照各病患的入院流水号，提取各病患的发病到首次影像检查时间间隔和后续影像检查时间间隔所对应的血肿体积，计算其在入院检查到首次随访及后续随访检查中血肿体积的绝对变化量。同时，通过建立关于血肿体积和患者发病时间与随访时间间隔的函数关系式，根据各病患发病到首次影像的时间间隔和后续影像检查时间的间隔，判断血肿体积的绝对变化量在发病 48 小时内是否超过 6ml，若超过，则发生了血肿扩张事件，并记录血肿扩张发生时间。</p>
+<h4 id="b问"><a href="#b问" class="headerlink" title="b问"></a>b问</h4><p>​		要求在第a问的基础上，构建预测所有患者是否发生血肿扩张的模型。首先进行数据预处理，利用 Stata 对照患者入院首次影像检查流水号将原始数据进行匹配合并，得到前 100 名患者的个人史、疾病史、发病及治疗相关的临床信息，将患者首次检查的影像信息如血肿和水肿的体积、位置等临床信息作为输入变量，在此基础上，利用因子分析方法将原始变量精简为少数几个综合变量，构建以是否出现血肿扩张情况为目标变量的 CatBoost 预测模型，预测所有患者发生血肿扩张事件的概率。</p>
+<h3 id="问题二分析"><a href="#问题二分析" class="headerlink" title="问题二分析"></a>问题二分析</h3><h4 id="a问-1"><a href="#a问-1" class="headerlink" title="a问"></a>a问</h4><p>​		该题是一个典型的预测问题，要求对患者血肿周围水肿的发生及发展进行模型的建立与求解，首先提取水肿体积和重复检查的时间点等信息，建立多项式函数回归模型构建一条全体患者的血肿周围水肿体积随发病到多次重复影像检查时间段内的进展曲线，利用多项式回归等曲线拟合算法进行数据拟合，并对拟合出的曲线规律进行描述，最后利用 Python 比较真实数据点与拟合值进行数据计算与评估，得到前 100 名患者水肿体积的真实值与拟合曲线之间的残差。</p>
+<h4 id="b问-1"><a href="#b问-1" class="headerlink" title="b问"></a>b问</h4><p>​		首先用 K-means 算法进行聚类，按年龄特征将患者分成 3 个亚组。在此基础上，利用 XGBoost 回归模型，对原始数据点拟合，将拟合结果可视化。将每组患者的检查时间间隔代入模型中，得到各组患者的水肿体积预测值，用对应时间点水肿体积的真实值与该时间点水肿体积的预测值作差，得到相应时间间隔的残差，最后对所有残差取均值，得到各亚组的残差。</p>
+<h4 id="c问"><a href="#c问" class="headerlink" title="c问"></a>c问</h4><p>​		本问所涉及数据表中脑室引流、止血治疗、降颅压治疗、降压治疗、镇静镇痛治疗、止吐护胃、营养神经共 7 种治疗方法。水肿体积进展模式指的是水肿体积的变化量，本问根据首次检查到第八次随访检查的水肿体积值，通过对各次随访检查的水肿体积值与首次检查的水肿体积值作差，得到了不同时间下的八次水肿体积的变化量，用该类数据来来代表水肿体积进展模式，可以比较明显地看出水肿体积的变化，有利于探究治疗方法对水肿体积进展模式的影响。在对数据进行上述预处理以后，本问决定使用独立样本 T 检验来分析不同治疗方法与水肿体积变化量之间的关系，而在做独立样本 T 检验之前，需要确定样本数据是否符合正态分布，是否通过方差齐性检验。</p>
+<h4 id="d问"><a href="#d问" class="headerlink" title="d问"></a>d问</h4><p>​		利用斯皮尔曼相关系数模型来分析患者血肿体积、水肿体积和治疗方法相关的 25 个特征之间的相关性，根据相关系数表和相关系数热力分布情况描述以上特征和指标之间的相关关系，期望筛选出影响出血性脑卒中患者的血肿体积扩张和水肿发生发展的显著性因素，为临床治疗提出合理建议。</p>
+<h3 id="问题三分析"><a href="#问题三分析" class="headerlink" title="问题三分析"></a>问题三分析</h3><h4 id="a问-2"><a href="#a问-2" class="headerlink" title="a问"></a>a问</h4><p>​		该题是一个预测问题，要求对患者 90 天 mRS 评分进行模型的建立与求解，首先提取患者个人史、疾病史、发病相关及首次影像等信息，建立 Catboost 回归模型。通过 CatBoost 算法模型构建以前 100 名患者的个人史，疾病史，发病及治疗相关特征及首次影像检查结果为变量，以 90 天 mRS 评分为输出的预测模型，以输出结果作为 90 天mRS 评分结果的预测模型。</p>
+<h4 id="b问-2"><a href="#b问-2" class="headerlink" title="b问"></a>b问</h4><p>​		该题与问题 3.a 的思路类似，区别在于该题用到的影像数据是首次加八次随访影像记录的数据。通过因子分析将数据中合并的 103 个变量降维为 7 个因子。本题中的目标函数是判断 90 天 mRS 评分，输入特征为 1-100 名患者的个人史、发病史、发病及治疗相关等临床信息指标，通过 LightGBM 多分类模型构建以前 100 名患者的个人史，疾病史，发病及治疗相关特征及首次加随访影像检查结果为变量，以 90 天 mRS 评分为输出的预测模型，以输出结果作为评分结果。</p>
+<h4 id="c问-1"><a href="#c问-1" class="headerlink" title="c问"></a>c问</h4><p>​		该题为分析多个特征间的关联关系，选择灰色关联分析作为本题的解决方法。在对数据做灰色关联分析时，应注意数据间是否存在较大的差异。首先做数据标准化处理，以确保不同因素之间具有相同的尺度。然后利用 PCA 进行数据降维，有效地减少数据的维度，同时保留数据中的重要信息。经过降维后，数据表最终只保留了 90 天 mRS评分、PCA_个人史、PCA_疾病史、PCA_治疗方法、PCA_HM 灰度、PCA_HM 形状、PCA_HM位置、HM_volume、ED_volume 共 9 特征，最后进行灰色关联分析。</p>
+<blockquote>
+<p>赛题文件：<a class="link" target="_blank" rel="noopener" href="https://duojiyun.常子儒.xyz/document/huaweicup2023/%E4%BA%8C%E5%8D%81%E5%B1%8A%E5%8D%8E%E4%B8%BA%E6%9D%AF%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E8%B5%9B%E9%A2%98.zip">二十届华为杯数学建模赛题.zip <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>程序文件：<a class="link" target="_blank" rel="noopener" href="https://duojiyun.常子儒.xyz/document/huaweicup2023/pycode.zip">pycode.zip <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>答案文件：<a class="link" target="_blank" rel="noopener" href="https://duojiyun.常子儒.xyz/document/huaweicup2023/%E7%AD%94%E6%A1%88%E6%96%87%E4%BB%B6.xlsx">答案文件.zip <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+</blockquote>
+
+        </div>
+
+        
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>标题:</strong> 第二十届华为杯数学建模竞赛E题思路、实现过程与最终论文</li>
+        <li><strong>作者:</strong> 狮子阿儒</li>
+        <li><strong>创建于
+                :</strong> 2023-12-14 20:32:30</li>
+        
+            <li>
+                <strong>更新于
+                    :</strong> 2023-12-14 22:19:43
+            </li>
+        
+        <li>
+            <strong>链接:</strong> https://c200108.github.io/2023/12/14/第二十届华为杯数学建模竞赛E题思路、实现过程与最终论文/
+        </li>
+        <li>
+            <strong>
+                版权声明:
+            </strong>
+            
+            本文章采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a> 进行许可。
+            
+
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/%E5%8C%BB%E5%AD%A6%E6%95%B0%E6%8D%AE/">#医学数据</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/%E5%8D%8E%E4%B8%BA%E6%9D%AF/">#华为杯</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+
+        
+            <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                        rel="prev"
+                        href="/2023/12/14/token/"
+                        >
+                            <span class="left arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item"></span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                        rel="next"
+                        href="/2023/10/10/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E6%A6%82%E8%BF%B0/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">统计学习方法记录（一）：概述</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+            <div class="comment-container">
+                <div class="comments-container pjax">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fa-solid fa-comments"></i>&nbsp;评论
+    </div>
+    
+
+        
+            
+ 
+    <div id="waline"></div>
+    <script type="module"  data-swup-reload-script>
+        import { init } from 'https://evan.beee.top/js/waline.mjs';
+
+        function loadWaline() {
+            init({
+                el: '#waline',
+                serverURL: 'https://vercel.czrblog.top',
+                lang: 'zh-CN',
+                dark: 'body[class~="dark-mode"]',
+                requiredMeta: ['nick','mail'], // cannot customize by theme config, change it yourself
+            });
+        }
+
+        if ('true') {
+            const loadWalineTimeout = setTimeout(() => {
+                loadWaline();
+                clearTimeout(loadWalineTimeout);
+            }, 1000);
+        } else {
+            window.addEventListener('DOMContentLoaded', loadWaline);
+        }
+        
+    </script>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">此页目录</div>
+        <div class="page-title">第二十届华为杯数学建模竞赛E题思路、实现过程与最终论文</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#E%E9%A2%98%E5%AE%8C%E6%95%B4%E8%B5%9B%E9%A2%98%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">E题完整赛题：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E4%B8%80%E5%88%86%E6%9E%90%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">问题一分析：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#a%E9%97%AE"><span class="nav-number">1.1.1.</span> <span class="nav-text">a问</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#b%E9%97%AE"><span class="nav-number">1.1.2.</span> <span class="nav-text">b问</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E4%BA%8C%E5%88%86%E6%9E%90"><span class="nav-number">1.2.</span> <span class="nav-text">问题二分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#a%E9%97%AE-1"><span class="nav-number">1.2.1.</span> <span class="nav-text">a问</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#b%E9%97%AE-1"><span class="nav-number">1.2.2.</span> <span class="nav-text">b问</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#c%E9%97%AE"><span class="nav-number">1.2.3.</span> <span class="nav-text">c问</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#d%E9%97%AE"><span class="nav-number">1.2.4.</span> <span class="nav-text">d问</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E4%B8%89%E5%88%86%E6%9E%90"><span class="nav-number">1.3.</span> <span class="nav-text">问题三分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#a%E9%97%AE-2"><span class="nav-number">1.3.1.</span> <span class="nav-text">a问</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#b%E9%97%AE-2"><span class="nav-number">1.3.2.</span> <span class="nav-text">b问</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#c%E9%97%AE-1"><span class="nav-number">1.3.3.</span> <span class="nav-text">c问</span></a></li></ol></li></ol></li></ol>
+
+    </div>
+</div>
+        </div>
+    
+</div>
+
 
 
                 
@@ -498,6 +901,27 @@
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-side-tools-container">
