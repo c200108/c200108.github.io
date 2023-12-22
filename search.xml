@@ -4176,11 +4176,6 @@ var player = new DogePlayer({
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2023/12/22/token/</url>
-    <content><![CDATA[{"credentials":{"accessKeyId":"AKID2ai3eEe1_h6wIHGCoOjiRcLc877ca5VHz_xLRZcvOmK0qvOsBVeSZaWOuza9Pykr","secretAccessKey":"O3OCfm+nLIxjJwhm52lHfxSHfKogSHmIj5zaGibVDOc=","sessionToken":"n1KfOSzcWM3d1q0QwJtSkNcQD9372z5a81307a04e477652973f8b8881a7ed541VIhrFX3Ci3uRQgr_Rq_Ng_xtZbBdOPp4588zId5Mt5BN5lVhUmzrvV8bkXQb12pn-PpZC3kIcOYTt7YDkbT6bqRQMIlM5GoyLYKXTCdoTkt6qOnF-Jhyi1wTqw7hD2dRHaJRabYiru_hwh6dcM3FktvYqLiCNRZdzNL5JrTss8gFMXBcf1Ka6QaQxFwwtEiJRZKsBj-qW_jqQePjBS1iQYqHVTw8Ura7xvIlY5DWn_1o4npkxd5jCMT9MwZ-QIR32dcb9zm0DTVwESq4K4826Q41dHNYciTgZEyVPg2cCSM1xN5vqeqBUJWM1-Hh__yU1161E2qqlWjHHTUFBuxVG6qZ-ulUBISm5qVFo-KLJloCrb6tniE7Efq03PFixhcslF5rZwuDmZ2_8bZnnO6BXfG6fEpf1N_MCkhbc2q3WaWXRnITG1FwJKT54-I_XJ_x73RlESajaJFJzDiBCBmZ0Yx3eYbzkbAMZN1HsjUrjVBZGngm0KxslMFLCT16NGz6ix8BZfokDSnyopNC8oDWOWd2MnAVylO2u83WlcrK4-5OEQViWtE8NWkPq2kShrHS30ViSBX6LXFQY6a_Lpzyzyo7CsCeCpo1tMeI2B-ifhevuDIYjb67Tdkef6YHqbvJ"},"s3Bucket":"s-bj-6247-doge-storage-1258813047","s3Endpoint":"https://cos.ap-beijing.myqcloud.com"}]]></content>
-  </entry>
-  <entry>
     <title>温度监控软件——CoreTemp</title>
     <url>/2023/12/22/%E6%B8%A9%E5%BA%A6%E7%9B%91%E6%8E%A7%E8%BD%AF%E4%BB%B6%E2%80%94%E2%80%94CoreTemp/</url>
     <content><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>​	最近总是感觉电脑温度比较高，鲁大师显示一直是40度，也就没管，直到后面电脑用的发烫了，鲁大师还显示40度，就感觉不太对劲，打开鲁大师界面一看，好家伙，需要升级会员才能看电脑温度，不光如此，CPU使用率、GPU使用率和内存占用率也一直不动。</p>
