@@ -4,6 +4,46 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2024/01/13/token/"/>
+      <url>/2024/01/13/token/</url>
+      
+        <content type="html"><![CDATA[{"credentials":{"accessKeyId":"AKIDtYotYWsNZp-yGkVhqyCN0rbbfyvyTEa9--T1d36eJ3obni68aPwfr4uj1JBNy9T2","secretAccessKey":"q00vfJMklLByg4hZdxAc6sEqsDnSdbdVqqV74wAGgXc=","sessionToken":"rmSkwSjZXOQwaXEEFmheBCb4bnxyHKHab5f1e258154fc69343a752092556ce33KYPFEneC17zvAgCcUzTh67JJdb5N1JOVj67W9H1ioa-B9op1FkgECGY6VdQDhZ-8YUlumwixZmJX6AMbAFl23HH3-V-cJTNkn3DNp7uYXsAMH5Brx4vxJ6SRkg1tFWfZFqxOmaScqjSSUFVRWPRTsGaBT36fSMkaH8HNa8hgSA5DmH0jvM_3svM05Sirxh14mNTgdbC7TMpBdbJp1BcjH49TkxTY-cr5ZHucl-0T7iBsQwV4jZ-Fqx9bT93TDSEEwa07CHVHETObBEA-sk6Cpww8Hfp3Kta_4xRkDX7K2IZPQNgqMlU_05A5drteqztdYsw33l4zt20lHerXvX2YnDYwXlY-5TEQHaq2s12_g1HMZAYmbQYLOsQd45RqVPZaQUKJL-6yjWQ48Rfxs1bLInGCGRdJQaJC_V3WSLfm5gpCFgXijaTzCeJxCAn4TJ897PLtJJvnrbBNYAhQdluC9GQkKA6d-FzaSWj3or00jeM690ApR-rk567JUxgbkvJRGHHbWystj3Jty0HN30TXrmlsblUtlUfKfi8v1CnsH-LyJjFLmSJqBmuo60KygsT8O6krk7m_p8nrEXNyDVh4dfmrsf7MrUwvGIaJwjmqfqMNeGrXhIs8gz8R7QnvbybN"},"s3Bucket":"s-bj-6247-doge-storage-1258813047","s3Endpoint":"https://cos.ap-beijing.myqcloud.com"}]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>蓝桥杯学习记录（1）</title>
+      <link href="/2024/01/13/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%881%EF%BC%89/"/>
+      <url>/2024/01/13/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%881%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<h4 id="蓝桥杯python组知识点大纲"><a href="#蓝桥杯python组知识点大纲" class="headerlink" title="蓝桥杯python组知识点大纲"></a>蓝桥杯python组知识点大纲</h4><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/01/13/e7159d8da8b73c1557ad47a9191f7b54.png" alt="image-20240113131949218" style="zoom: 80%;"><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/01/13/a2117080c4755ae334396c3fea65a882.png" alt="image-20240113132118584" style="zoom: 80%;"><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/01/13/f1a308d5c29ce27da2dc4287b0b93a29.png" alt="image-20240113132215764" style="zoom:80%;"><img lazyload="" src="/images/loading.svg" data-src="C:/Users/czr/AppData/Roaming/Typora/typora-user-images/image-20240113132239848.png" alt="image-20240113132239848" style="zoom:80%;"><h4 id="经验之谈"><a href="#经验之谈" class="headerlink" title="经验之谈"></a>经验之谈</h4><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/01/13/f443cf4c87f0b6b5d0be8333887b93ff.png" alt="image-20240113132438275" style="zoom:67%;"><p>参考材料：<a class="link" href="https://duojiyun.常子儒.xyz/document/lanqiao2024/%E5%8D%81%E4%BA%94%E5%B1%8A%E8%93%9D%E6%A1%A5%E6%9D%AF%E8%BD%AF%E4%BB%B6%E8%B5%9B%E7%9F%A5%E8%AF%86%E7%82%B9%E5%A4%A7%E7%BA%B2.pdf">第十五届蓝桥杯软件赛知识点大纲 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 竞赛 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 蓝桥杯 </tag>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>小巧的内存清理软件——MemReduct</title>
       <link href="/2023/12/25/%E5%B0%8F%E5%B7%A7%E7%9A%84%E5%86%85%E5%AD%98%E6%B8%85%E7%90%86%E8%BD%AF%E4%BB%B6%E2%80%94%E2%80%94MemReduct/"/>
       <url>/2023/12/25/%E5%B0%8F%E5%B7%A7%E7%9A%84%E5%86%85%E5%AD%98%E6%B8%85%E7%90%86%E8%BD%AF%E4%BB%B6%E2%80%94%E2%80%94MemReduct/</url>
@@ -67,7 +107,7 @@
       
       <categories>
           
-          <category> 数模 </category>
+          <category> 竞赛 </category>
           
       </categories>
       
@@ -77,6 +117,8 @@
             <tag> 医学数据 </tag>
             
             <tag> 华为杯 </tag>
+            
+            <tag> 数学建模 </tag>
             
         </tags>
       
@@ -121,7 +163,7 @@
       
       <categories>
           
-          <category> 数模 </category>
+          <category> 竞赛 </category>
           
       </categories>
       
@@ -131,6 +173,8 @@
             <tag> 华数杯 </tag>
             
             <tag> 社科 </tag>
+            
+            <tag> 数学建模 </tag>
             
         </tags>
       
