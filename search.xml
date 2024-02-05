@@ -904,7 +904,7 @@ var player = new DogePlayer({
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E8%B6%85%E6%97%B6%E6%A3%80%E6%9F%A5.png"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E4%BC%98%E5%8C%96%E5%90%8E%E6%88%AA%E5%9B%BE.png"
                       alt="超时检查"
                 ></p>
 <h4 id="解决办法："><a href="#解决办法：" class="headerlink" title="解决办法："></a><strong>解决办法：</strong></h4><p>1、利用CDN内容分发网络使用户根据自己网络的特点更快、更稳定地访问到节点服务器中的资源，从而加快网页加载速度<br>2、将服务器base.html文件head标签中的script标签放到body标签中，实现在页面完全显示之后再加载JS文件，但实质上并未解决JS资源加载时间长的问题<br>3、给script标签设置延迟脚本或异步脚本，实现浏览器先下载JS文件，再延迟执行。</p>
@@ -914,7 +914,7 @@ var player = new DogePlayer({
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E4%BC%98%E5%8C%96%E5%90%8E%E6%88%AA%E5%9B%BE.png"
+                     data-src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/%E8%B6%85%E6%97%B6%E6%A3%80%E6%9F%A5.png"
                       alt="优化后截图"
                 ></p>
 ]]></content>
@@ -4546,7 +4546,23 @@ var player = new DogePlayer({
 <td>x 不在 y 序列中 , 如果 x 不在 y 序列中返回 True。</td>
 </tr>
 </tbody></table>
-<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3>]]></content>
+<h3 id="选择结构"><a href="#选择结构" class="headerlink" title="选择结构"></a>选择结构</h3><h4 id="条件表达式"><a href="#条件表达式" class="headerlink" title="条件表达式"></a>条件表达式</h4><p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/05/462f6da67934592377f41aef9502c47a.png" alt="image-20240205201753234"></p>
+<h4 id="逻辑表达式"><a href="#逻辑表达式" class="headerlink" title="逻辑表达式"></a>逻辑表达式</h4><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/05/0d552a7b02e18f84b2dd0ddafe3bb08c.png" alt="image-20240205201706115">
+
+<p>短路操作：在Python中，and和or不一定会计算右边表达式的值，有时候只计算左边表达式的值就能得到最终结果。另外and和or运算符会将其中一个表达式的值作为最终结果，而不是将True或者False作为最终结果。</p>
+<p>and——左假，直接结束；or——左真，直接结束</p>
+<h4 id="if-elif-else语句"><a href="#if-elif-else语句" class="headerlink" title="if-elif-else语句"></a><strong>if-elif-else语句</strong></h4><h3 id="循环结构"><a href="#循环结构" class="headerlink" title="循环结构"></a>循环结构</h3><h4 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h4><p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/05/7ed0b2104390cbc8fd1c8eb8147627bf.png" alt="image-20240205202916197"></p>
+<p><strong>for语句</strong></p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> &lt;variable&gt; <span class="keyword">in</span> &lt;sequence&gt;:</span><br><span class="line">    XXX</span><br><span class="line"><span class="comment">#&lt;variable&gt;:循环变量，一般如i j k</span></span><br><span class="line"><span class="comment">#&lt;sequence&gt;：序列或可迭代对象，一般为range()、list等等</span></span><br></pre></td></tr></table></figure></div>
+
+<h4 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h4><p><strong>while语句</strong></p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> 条件表达式:</span><br><span class="line">    XXX</span><br><span class="line"><span class="comment">#条件表达式为True，进入循环；条件表达式为Flase，结束循环</span></span><br></pre></td></tr></table></figure></div>
+
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/05/d414a754308d4b15361218076ae70e2a.png" alt="image-20240205205443513"></p>
+<p><strong>break与continue</strong></p>
+<img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/05/f3070ed14a725a639857781a33a17f21.png" alt="image-20240205210447733" style="zoom:80%;">
+
+<h3 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h3><h4 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h4><h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><h4 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h4><h4 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h4><h4 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h4><h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3>]]></content>
       <categories>
         <category>竞赛</category>
       </categories>
