@@ -37,8 +37,14 @@
 <meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/05/7ed0b2104390cbc8fd1c8eb8147627bf.png">
 <meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/05/d414a754308d4b15361218076ae70e2a.png">
 <meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/05/f3070ed14a725a639857781a33a17f21.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/08/575864e11aaabbc851d26922c4272b1f.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/08/9ee6090937b1abb30b21810609f6b88c.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/08/f14c439cdceb1917b6423f09c1fb83a1.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/08/0476430797927f0c8be1ec45833648f0.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/08/9e81dccabdcb742d322df5892e464847.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/08/e10f3310b8f2b71b2697af85c428b0a4.png">
 <meta property="article:published_time" content="2024-02-02T11:18:10.000Z">
-<meta property="article:modified_time" content="2024-02-06T15:07:17.898Z">
+<meta property="article:modified_time" content="2024-02-08T13:36:40.387Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="蓝桥杯">
 <meta property="article:tag" content="笔记">
@@ -780,8 +786,8 @@ mjx-container[display="true"] + br {
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-02-06 23:07:17</span>
-            <span class="mobile">2024-02-06 23:07:17</span>
+            <span class="desktop">2024-02-08 21:36:40</span>
+            <span class="mobile">2024-02-08 21:36:40</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -823,12 +829,12 @@ mjx-container[display="true"] + br {
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>1.4k 字</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>2k 字</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fa-regular fa-clock"></i>&nbsp;<span>5 分钟</span>
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>8 分钟</span>
         </span>
     
     
@@ -1121,7 +1127,32 @@ mjx-container[display="true"] + br {
 <p><strong>break与continue</strong></p>
 <img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/05/f3070ed14a725a639857781a33a17f21.png" alt="image-20240205210447733" style="zoom:80%;">
 
-<h3 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h3><h4 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h4><h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><h4 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h4><h4 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h4><h4 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h4><h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h3 id="类定义与使用"><a href="#类定义与使用" class="headerlink" title="类定义与使用"></a>类定义与使用</h3>
+<h3 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h3><h4 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h4><h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><p><strong>1、添加元素</strong></p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">list</span>.append(x) <span class="comment">#列表list末尾添加单个元素，x可以为单个整数、浮点数或者字符串等</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">list.append(3)</span></span><br><span class="line"><span class="string">list.append(3.14)</span></span><br><span class="line"><span class="string">list.append('hello')</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">list</span>.extend(x) <span class="comment">#列表list末尾添加多个元素，x为可迭代对象，包括列表、元组或字符串等</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">list.extend([1,2,3])</span></span><br><span class="line"><span class="string">list.extend((1,2,3))</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">list</span>.insert(idx,x) <span class="comment">#列表list在下标idx位置插入元素x，原来下标大于等于idx的元素都往右移动一个位置</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+<p><strong>注意，</strong>append与extend添加字符串时的区别：<img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/08/575864e11aaabbc851d26922c4272b1f.png" alt="image-20240208195402460"></p>
+<p><strong>2、删除元素</strong></p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#利用del删除列表中的元素</span></span><br><span class="line"><span class="keyword">del</span> <span class="built_in">list</span>[idx] <span class="comment">#删除列表list中下标为idx的元素</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#利用pop删除列表中元素</span></span><br><span class="line"><span class="built_in">list</span>.pop(idx) <span class="comment">#删除列表list中下标为idx的元素</span></span><br><span class="line"><span class="built_in">list</span>.pop() <span class="comment">#删除列表list中最后一个元素</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#根据值删除元素</span></span><br><span class="line"><span class="built_in">list</span>.remove(x) <span class="comment">#删除列表list中值为x的第一个元素</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#利用clear清空所有列表元素</span></span><br><span class="line"><span class="built_in">list</span>.clear() <span class="comment">#list变为空列表</span></span><br></pre></td></tr></table></figure></div>
+
+<p>示例： <img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/08/9ee6090937b1abb30b21810609f6b88c.png" alt="image-20240208200955674"></p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/08/f14c439cdceb1917b6423f09c1fb83a1.png" alt="image-20240208201141179"></p>
+<p><strong>注：</strong>pop删除是有返回值的，并且是被删除的那个元素，即 <code>[1,2,3].pop(0) = 1</code></p>
+<p><strong>3、查找元素</strong></p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">list</span>.count(x) <span class="comment">#计算x在list中出现次数，如果未出现则为0，否则返回出现次数</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">list</span>.index(x,start,stop) <span class="comment">#计算元素x在列表list下标[start,stop)中第一次出现的位置</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">——要保证x必须在区间[start,stop)中存在，否则报错</span></span><br><span class="line"><span class="string">——start,stop不赋值，默认为在整个列表中查找</span></span><br><span class="line"><span class="string">——只赋值start，stop默认为列表长度</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure></div>
+
+<p>示例：<img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/08/0476430797927f0c8be1ec45833648f0.png" alt="image-20240208201645964" style="zoom:80%;"></p>
+<p><strong>4、翻转列表</strong></p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">list</span>.reverse() <span class="comment">#列表list进行翻转，调用2次则返回原列表</span></span><br></pre></td></tr></table></figure></div>
+
+<p>示例： <img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/08/9e81dccabdcb742d322df5892e464847.png" alt="image-20240208201950227"></p>
+<p><strong>5、列表长度</strong></p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">len</span>(<span class="built_in">list</span>) <span class="comment">#计算列表list长度</span></span><br></pre></td></tr></table></figure></div>
+
+<p><strong>6、操作列表</strong></p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#利用for循环遍历列表，同时获得下标</span></span><br><span class="line"><span class="keyword">for</span> idx, x <span class="keyword">in</span> <span class="built_in">enumerate</span>(<span class="built_in">list</span>):</span><br><span class="line">    <span class="built_in">print</span>(idx,x)</span><br><span class="line"><span class="comment">#enumerate(a)将列表a每个元素和对应的下标组合为一个带索引的序列，下标默认从0开始，遍历的时候同步遍历下标和值。</span></span><br><span class="line"></span><br><span class="line">list_1 + list2 <span class="comment">#连接两个列表</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">list</span> * <span class="number">2</span> <span class="comment">#返回一个新列表，内容为list复制两遍</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">max</span>(<span class="built_in">list</span>), <span class="built_in">min</span>(<span class="built_in">list</span>), <span class="built_in">sum</span>(<span class="built_in">list</span>) <span class="comment">#对list分别求最大值，最小值，求和</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#切片</span></span><br><span class="line">a[start:end:step]</span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">start：切片的下标起点（包含起点），默认为0</span></span><br><span class="line"><span class="string">end：切片的下标终点（不包含终点），默认为列表长度</span></span><br><span class="line"><span class="string">step：切片步长，默认为1</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#复制列表</span></span><br><span class="line">b = a[:] <span class="comment">#利用切片</span></span><br><span class="line">b = a.copy() <span class="comment">#利用copy函数</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+<p>示例： <img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/08/e10f3310b8f2b71b2697af85c428b0a4.png" alt="image-20240208213620659"></p>
+<h4 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h4><h4 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h4><h4 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h4><h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h3 id="类定义与使用"><a href="#类定义与使用" class="headerlink" title="类定义与使用"></a>类定义与使用</h3>
         </div>
 
         
@@ -1135,7 +1166,7 @@ mjx-container[display="true"] + br {
         
             <li>
                 <strong>更新于
-                    :</strong> 2024-02-06 23:07:17
+                    :</strong> 2024-02-08 21:36:40
             </li>
         
         <li>
