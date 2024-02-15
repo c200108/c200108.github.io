@@ -4779,45 +4779,45 @@ var player = new DogePlayer({
   <entry>
     <title>阿里云ECS搭建AList个人云盘</title>
     <url>/2024/02/14/%E9%98%BF%E9%87%8C%E4%BA%91ECS%E6%90%AD%E5%BB%BAAList%E4%B8%AA%E4%BA%BA%E4%BA%91%E7%9B%98/</url>
-    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>之前在逛别人博客的时候，看到了在博客中插入一些个人网盘用于存放个人常用且重要的文件，想着自己之前还有个云服务器可以拿来部署一下，练练手</p>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>之前在逛别人博客的时候，看到了在博客中插入一些个人网盘用于存放个人常用且重要的文件，想着自己之前还有个云服务器可以拿来部署一下，练练手</p>
 <p>目前市面上，个人网盘种类繁多。</p>
 <p>在这里列举一下我看到感觉还可以的个人云盘：</p>
-<h4 id="AList"><a href="#AList" class="headerlink" title="AList"></a><strong>AList</strong></h4><p><strong>（强烈推荐，简洁美观，支持傻瓜式部署与多网盘挂载，有免费版与高级版）</strong></p>
+<h3 id="AList"><a href="#AList" class="headerlink" title="AList"></a><strong>AList</strong></h3><p><strong>（强烈推荐，简洁美观，支持傻瓜式部署与多网盘挂载，有免费版与高级版）</strong></p>
 <p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/5704af2f533f89d98085641ad649c46b.png" alt="image-20240215130255639"></p>
 <p>官网：<a class="link" href="https://alist.nn.ci/">Home | AList Docs (nn.ci) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p>GitHub项目地址：<a class="link" href="https://github.com/alist-org/alist">https://github.com/alist-org/alist <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p>演示地址：<a class="link" href="https://alist.pages.dev/">主页 | AList <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h4 id="Cloudreve"><a href="#Cloudreve" class="headerlink" title="Cloudreve"></a><strong>Cloudreve</strong></h4><p><strong>（推荐，功能齐全，有免费版与高级版）</strong></p>
+<h3 id="Cloudreve"><a href="#Cloudreve" class="headerlink" title="Cloudreve"></a><strong>Cloudreve</strong></h3><p><strong>（推荐，功能齐全，有免费版与高级版）</strong></p>
 <p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/15baf5665f01c9163c513ef5e8c0e282.png" alt="image-20240215131324747"></p>
 <p>官网：<a class="link" href="https://cloudreve.org/">Cloudreve - 部署公私兼备的网盘系统 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p>Github项目地址：<a class="link" href="https://github.com/cloudreve/Cloudreve">cloudreve/Cloudreve: 🌩支持多家云存储的云盘系统  <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p>演示地址：<a class="link" href="https://demo.cloudreve.org/home?path=/">Cloudreve <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h4 id="Seafile"><a href="#Seafile" class="headerlink" title="Seafile"></a><strong>Seafile</strong></h4><p>官网：<a class="link" href="https://www.seafile.com/home/">Seafile - 开源的企业私有网盘 私有云存储软件 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h4 id="可道云"><a href="#可道云" class="headerlink" title="可道云"></a><strong>可道云</strong></h4><p><strong>（强烈推荐，支持宝塔一键部署，功能强大）</strong></p>
+<h3 id="Seafile"><a href="#Seafile" class="headerlink" title="Seafile"></a><strong>Seafile</strong></h3><p>官网：<a class="link" href="https://www.seafile.com/home/">Seafile - 开源的企业私有网盘 私有云存储软件 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="可道云"><a href="#可道云" class="headerlink" title="可道云"></a><strong>可道云</strong></h3><p><strong>（强烈推荐，支持宝塔一键部署，功能强大）</strong></p>
 <img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/515b1faf27d67310b69259ebb1777bb2.png" alt="image-20240215131221070" style="zoom:80%;">
 
 <p>官网：<a class="link" href="https://kodcloud.com/">可道云-私有云存储&amp;协同办公平台 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p>演示地址：<a class="link" href="https://demo.kodcloud.com/#user/login">用户登录 - 可道云 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h4 id="ZPan"><a href="#ZPan" class="headerlink" title="ZPan"></a><strong>ZPan</strong></h4><p><strong>（支持多个云存储）</strong></p>
+<h3 id="ZPan"><a href="#ZPan" class="headerlink" title="ZPan"></a><strong>ZPan</strong></h3><p><strong>（支持多个云存储）</strong></p>
 <p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/16521d952ec99852ba34194a4659164c.png" alt="image-20240215130522017"></p>
 <p>官网文档：<a class="link" href="https://zpan.space/#/">介绍 (zpan.space) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p>Github项目地址：<a class="link" href="https://github.com/saltbo/zpan">saltbo/zpan:一个基于云存储的网盘系统 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h4 id="filegator"><a href="#filegator" class="headerlink" title="filegator"></a><strong>filegator</strong></h4><p><strong>（简洁实用，免费开源）</strong></p>
+<h3 id="filegator"><a href="#filegator" class="headerlink" title="filegator"></a><strong>filegator</strong></h3><p><strong>（简洁实用，免费开源）</strong></p>
 <p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/daf202bb91d1358695cec492180b1c1b.png" alt="image-20240215130657895"></p>
 <p>官网：<a class="link" href="https://filegator.io/">FileGator - Free, Multi-User PHP File Manager <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p>Github项目地址：<a class="link" href="https://github.com/filegator/filegator">filegator/filegator: Powerful Multi-User File Manager <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p>演示地址：<a class="link" href="https://demo.filegator.io/">https://demo.filegator.io/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h4 id="Zdir"><a href="#Zdir" class="headerlink" title="Zdir"></a>Zdir</h4><p><strong>（简洁使用，免费开源）</strong></p>
+<h3 id="Zdir"><a href="#Zdir" class="headerlink" title="Zdir"></a>Zdir</h3><p><strong>（简洁使用，免费开源）</strong></p>
 <p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/4264715794da9fe59a50607cfec4d0a4.png" alt="image-20240215131637752"></p>
 <p>官方文档：<a class="link" href="https://doc.xiaoz.org/books/zdir-3">Zdir 3 | 藏经阁 (xiaoz.org) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p>演示：<a class="link" href="https://soft.xiaoz.org/#/public/">小z博客软件库 (xiaoz.org) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p>Github项目地址：<a class="link" href="https://github.com/helloxz/zdir">helloxz/zdir: Golang + Vue3开发的目录列表程序 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h4 id="ifile"><a href="#ifile" class="headerlink" title="ifile"></a><strong>ifile</strong></h4><p><strong>（有免费与商用双版本，功能强大）</strong></p>
+<h3 id="ifile"><a href="#ifile" class="headerlink" title="ifile"></a><strong>ifile</strong></h3><p><strong>（有免费与商用双版本，功能强大）</strong></p>
 <p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/855a66d653c70274df5de9e5246f7140.png" alt="image-20240215132101510"></p>
 <p>官网：<a class="link" href="https://ifile.space/">ifile.space <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p>演示地址：<a class="link" href="https://demo.ifile.space/main">文件 - iFileSpace 演示站 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="回归正题"><a href="#回归正题" class="headerlink" title="回归正题"></a>回归正题</h3><p>选用的阿里云ECS配置是<code>2核4G内存3Mbps+40G高速云盘</code></p>
-<h4 id="连接服务器"><a href="#连接服务器" class="headerlink" title="连接服务器"></a>连接服务器</h4><p>服务器到手后，用阿里云的<strong>Workbench远程连接</strong>或者用Xshell、FinalShell等工具连接。</p>
+<h2 id="回归正题"><a href="#回归正题" class="headerlink" title="回归正题"></a>回归正题</h2><p>选用的阿里云ECS配置是<code>2核4G内存3Mbps+40G高速云盘</code></p>
+<h3 id="连接服务器"><a href="#连接服务器" class="headerlink" title="连接服务器"></a>连接服务器</h3><p>服务器到手后，用阿里云的<strong>Workbench远程连接</strong>或者用Xshell、FinalShell等工具连接。</p>
 <p>我用的是FinalShell，界面如下：</p>
 <p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/328f0575ffb228c2890752e0626b5f8a.png" alt="image-20240215132545103"></p>
 <p>下一步：</p>
@@ -4826,7 +4826,7 @@ var player = new DogePlayer({
 <p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/30451be64ff47b1a8587443b42e6509a.png"></p>
 <p>连接完成：</p>
 <p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/237001a13744e65f561244174ea75cff.png" alt="image-20240215133256354"></p>
-<h4 id="安装AList"><a href="#安装AList" class="headerlink" title="安装AList"></a>安装AList</h4><p>打开AList官方文档，选择一键脚本（如果想自定义安装，可以选择手动安装）</p>
+<h3 id="安装AList"><a href="#安装AList" class="headerlink" title="安装AList"></a>安装AList</h3><p>打开AList官方文档，选择一键脚本（如果想自定义安装，可以选择手动安装）</p>
 <p><strong>安装：</strong></p>
 <div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="code"><pre><span class="line">curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install</span><br></pre></td></tr></table></figure></div>
 
@@ -4847,14 +4847,45 @@ var player = new DogePlayer({
 <p>AList项目默认安装到<code>/opt/alist</code>中，如果想自定义安装路径，将安装路径作为第二个参数添加，必须是绝对路径（如果路径以 alist 结尾，则直接安装到给定路径，否则会安装在给定路径 alist 目录下）</p>
 <div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Install</span></span><br><span class="line">curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install /root</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">update</span></span><br><span class="line">curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s update /root</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Uninstall</span></span><br><span class="line">curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s uninstall /root</span><br></pre></td></tr></table></figure></div>
 
-<h4 id="AList配置"><a href="#AList配置" class="headerlink" title="AList配置"></a>AList配置</h4><p>打开网址：http://你的IP:5244，就会显示你的AList云盘界面，输入你自己设置的密码登录。</p>
+<ul>
+<li>启动: <code>systemctl start alist</code></li>
+<li>关闭: <code>systemctl stop alist</code></li>
+<li>状态: <code>systemctl status alist</code></li>
+<li>重启: <code>systemctl restart alist</code></li>
+</ul>
+<h3 id="AList配置"><a href="#AList配置" class="headerlink" title="AList配置"></a>AList配置</h3><p>打开网址：http://你的IP:5244，就会显示你的AList云盘界面，输入你自己设置的密码登录。</p>
 <p>默认账号：admin</p>
 <p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/a991e0a581ccdb22ba489dc373c943a8.png" alt="image-20240215135508350"></p>
 <p>登录成功后，点这里进入后台管理。</p>
 <p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/61ba13fe54a41155ce155a32f68e5646.png" alt="image-20240215135743682"></p>
 <p>现在就可以在UI界面更改账号与密码了。</p>
 <p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/1e7e5757085a4c75407e4eb73b2b740a.png" alt="image-20240215135815144"></p>
-<h4 id="多云盘挂载"><a href="#多云盘挂载" class="headerlink" title="多云盘挂载"></a>多云盘挂载</h4>]]></content>
+<h3 id="多云盘挂载"><a href="#多云盘挂载" class="headerlink" title="多云盘挂载"></a>多云盘挂载</h3><p>在管理界面找到存储——添加</p>
+ <img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/0484479ce25c98986ba478a3c465b480.png" alt="image-20240215190906277" style="zoom:80%;">
+
+<p>选择自己想要添加的挂载网盘。</p>
+<p>可供选择的网盘还是很多的。</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/df0f5ba5ff2daa42815641c95b5c384b.png" alt="image-20240215191222121" style="zoom:80%;">          <img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/ff14dfc57f143c4fcef6bd3ba8c770fb.png" alt="image-20240215191237238" style="zoom:80%;">          </p>
+<p>这里演示添加几个常用云盘。</p>
+<h4 id="天翼云盘客户端"><a href="#天翼云盘客户端" class="headerlink" title="天翼云盘客户端"></a>天翼云盘客户端</h4><p>这诸多网盘中天翼网盘挂载较为简单，也不太容易被封、冻结</p>
+<p>天翼网盘存储空间分了个人云与家庭云两部分，下面两种设置步骤</p>
+<p>1、<strong>个人云设置</strong>如下：</p>
+<img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/7e19c37c049abf87902e857a0f0fc51f.png" alt="image-20240215193637246" style="zoom:80%;">
+
+<img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/663a055fe1e5daf209920e517798f248.png" alt="image-20240215194159507" style="zoom:80%;">
+
+<p>效果：<img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/a952bab3a17531e3e11af49c6a133511.png" alt="image-20240215200501679"></p>
+<p>2、<strong>家庭云设置</strong>如下：</p>
+<p>因为天翼网盘网页版不能使用家庭云，只有移动端才有，因此需要进行以下操作。</p>
+<p>使用电脑浏览器，打开开发者工具（F12），切换仿真设备选择手机设备。</p>
+<p>输入网址<a class="link" href="https://h5.cloud.189.cn/main.html#/family%EF%BC%8C%E5%8D%B3%E5%8F%AF%E8%BF%9B%E5%85%A5%E5%A4%A9%E7%BF%BC%E4%BA%91%E7%9B%98%E7%A7%BB%E5%8A%A8%E7%89%88">https://h5.cloud.189.cn/main.html#/family，即可进入天翼云盘移动版 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/5fb967fb13085c8df2418209e33f19d0.png" alt="image-20240215194553539" style="zoom:80%;">
+
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/0d9a3ff2a7662e0fa6a0008bd7d1d884.png" alt="image-20240215200343183"></p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/0a7e50be7e888c6cb9f3a087dfcea104.png" alt="image-20240215200010202"></p>
+<p>效果：</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/c92f6766e4352bc6226df1ca5cdfc255.png" alt="image-20240215200429488"></p>
+]]></content>
       <categories>
         <category>WEB运维</category>
       </categories>
