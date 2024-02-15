@@ -19,18 +19,41 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://c200108.github.io/tags/科学计算/"/>
+    <link rel="canonical" href="https://c200108.github.io/2024/02/14/阿里云ecs搭建alist个人云盘/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://c200108.github.io/tags/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97/index.html">
+        <meta name="description" content="前言之前在逛别人博客的时候，看到了在博客中插入一些个人网盘用于存放个人常用且重要的文件，想着自己之前还有个云服务器可以拿来部署一下，练练手 目前市面上，个人网盘种类繁多。 在这里列举一下我看到感觉还可以的个人云盘： AList（强烈推荐，简洁美观，支持傻瓜式部署与多网盘挂载，有免费版与高级版）  官网：Home | AList Docs (nn.ci)  GitHub项目地址：https:&#x2F;&#x2F;gi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="阿里云ECS搭建AList个人云盘">
+<meta property="og:url" content="https://c200108.github.io/2024/02/14/%E9%98%BF%E9%87%8C%E4%BA%91ECS%E6%90%AD%E5%BB%BAAList%E4%B8%AA%E4%BA%BA%E4%BA%91%E7%9B%98/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="前言之前在逛别人博客的时候，看到了在博客中插入一些个人网盘用于存放个人常用且重要的文件，想着自己之前还有个云服务器可以拿来部署一下，练练手 目前市面上，个人网盘种类繁多。 在这里列举一下我看到感觉还可以的个人云盘： AList（强烈推荐，简洁美观，支持傻瓜式部署与多网盘挂载，有免费版与高级版）  官网：Home | AList Docs (nn.ci)  GitHub项目地址：https:&#x2F;&#x2F;gi">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/5704af2f533f89d98085641ad649c46b.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/15baf5665f01c9163c513ef5e8c0e282.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/515b1faf27d67310b69259ebb1777bb2.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/16521d952ec99852ba34194a4659164c.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/daf202bb91d1358695cec492180b1c1b.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/4264715794da9fe59a50607cfec4d0a4.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/855a66d653c70274df5de9e5246f7140.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/328f0575ffb228c2890752e0626b5f8a.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/3a6be91b78d024ffdfe3d556264e72d6.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/30451be64ff47b1a8587443b42e6509a.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/237001a13744e65f561244174ea75cff.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/7497142e4459270d6b85d43ca4819c4a.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/369d26f3fddfaba738b86ef6a4770c1c.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/a991e0a581ccdb22ba489dc373c943a8.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/61ba13fe54a41155ce155a32f68e5646.png">
+<meta property="og:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/1e7e5757085a4c75407e4eb73b2b740a.png">
+<meta property="article:published_time" content="2024-02-14T03:43:28.000Z">
+<meta property="article:modified_time" content="2024-02-15T06:02:27.063Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="云服务器">
+<meta property="article:tag" content="建站">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/5704af2f533f89d98085641ad649c46b.png">
     
     
         <!-- Google tag (gtag.js) -->
@@ -52,7 +75,7 @@
     
     <title>
         
-            标签: 科学计算 -
+            阿里云ECS搭建AList个人云盘 -
         
         阿儒小站
     </title>
@@ -254,7 +277,119 @@
     
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-redefine@2.6.0/source/fontawesome/sharp-solid.min.css">
     
-<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
 </head>
 
 
@@ -375,7 +510,7 @@
 
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class="active"
+                                <a class=""
                                    href="/tags/"
                                         >
                                     <i class="fa-solid fa-tags fa-fw"></i>
@@ -530,7 +665,7 @@
 
                     <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
                         
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
                            href="/tags/"
                         >
                             <span>
@@ -617,46 +752,320 @@
             <div class="main-content">
 
                 
-                    <div class="tag-container">
-	<div class="tag-name">
-		<i class="fa-solid fa-tag"></i>&nbsp;科学计算
-	</div>
-	<div class="tag-post-list">
-		
+                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
+    <div class="article-content-container">
 
-<div class="archive-list-container">
-    
-        <section class="archive-item">
-            <div class="archive-item-header flex flex-row items-center mb-2">
-                <span class="archive-year font-semibold text-3xl mr-2">2023</span>
-                <span class="archive-year-post-count text-xs md:text-sm font-bold rounded-small bg-third-background-color py-[2px] px-[10px] border border-border-color">1</span>
+        <div class="article-title relative w-full">
+            
+                
+                
+                <img src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/47413bd62426c0d2bce12e8620878b24.png" alt="阿里云ECS搭建AList个人云盘" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75"/>
+                
+                <div class="w-full flex items-center absolute bottom-0 justify-start">
+                    <h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-bold backdrop-blur-lg rounded-xl border border-border-color ">阿里云ECS搭建AList个人云盘</h1>
+                </div>
+            
             </div>
-            <ul class="article-list pl-8 text-lg leading-[1.5]">
-              
+
+        
+            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="https://c200108.oss-cn-beijing.aliyuncs.com/imgs/202304171505157.svg">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">狮子阿儒</span>
+                        
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv4</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2024-02-14 11:43:28</span>
+        <span class="mobile">2024-02-14 11:43:28</span>
+        <span class="hover-info">创建</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2024-02-15 14:02:27</span>
+            <span class="mobile">2024-02-15 14:02:27</span>
+            <span class="hover-info">更新</span>
+        </span>
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
                 
                     
-                    <li class="article-item" date-is='04-29'>
+                        
+                        <li>
+                            <a href="/categories/WEB%E8%BF%90%E7%BB%B4/">WEB运维</a>&nbsp;
+                        </li>
+                    
+                    
                 
-                
-                    <a href="/2023/04/29/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E5%BA%93numpy/" class="block overflow-hidden">
-                        <span class="article-title mb-0.5 text-2xl">数据挖掘学习记录（一）：科学计算库numpy</span>
-                    </a>
-                
-              
             </ul>
-        </section>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/">云服务器</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E5%BB%BA%E7%AB%99/">建站</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>841 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>3 分钟</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
     
 </div>
 
-	</div>
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>之前在逛别人博客的时候，看到了在博客中插入一些个人网盘用于存放个人常用且重要的文件，想着自己之前还有个云服务器可以拿来部署一下，练练手</p>
+<p>目前市面上，个人网盘种类繁多。</p>
+<p>在这里列举一下我看到感觉还可以的个人云盘：</p>
+<h4 id="AList"><a href="#AList" class="headerlink" title="AList"></a><strong>AList</strong></h4><p><strong>（强烈推荐，简洁美观，支持傻瓜式部署与多网盘挂载，有免费版与高级版）</strong></p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/5704af2f533f89d98085641ad649c46b.png" alt="image-20240215130255639"></p>
+<p>官网：<a class="link" target="_blank" rel="noopener" href="https://alist.nn.ci/">Home | AList Docs (nn.ci) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>GitHub项目地址：<a class="link" target="_blank" rel="noopener" href="https://github.com/alist-org/alist">https://github.com/alist-org/alist <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>演示地址：<a class="link" target="_blank" rel="noopener" href="https://alist.pages.dev/">主页 | AList <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h4 id="Cloudreve"><a href="#Cloudreve" class="headerlink" title="Cloudreve"></a><strong>Cloudreve</strong></h4><p><strong>（推荐，功能齐全，有免费版与高级版）</strong></p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/15baf5665f01c9163c513ef5e8c0e282.png" alt="image-20240215131324747"></p>
+<p>官网：<a class="link" target="_blank" rel="noopener" href="https://cloudreve.org/">Cloudreve - 部署公私兼备的网盘系统 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>Github项目地址：<a class="link" target="_blank" rel="noopener" href="https://github.com/cloudreve/Cloudreve">cloudreve/Cloudreve: 🌩支持多家云存储的云盘系统  <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>演示地址：<a class="link" target="_blank" rel="noopener" href="https://demo.cloudreve.org/home?path=/">Cloudreve <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h4 id="Seafile"><a href="#Seafile" class="headerlink" title="Seafile"></a><strong>Seafile</strong></h4><p>官网：<a class="link" target="_blank" rel="noopener" href="https://www.seafile.com/home/">Seafile - 开源的企业私有网盘 私有云存储软件 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h4 id="可道云"><a href="#可道云" class="headerlink" title="可道云"></a><strong>可道云</strong></h4><p><strong>（强烈推荐，支持宝塔一键部署，功能强大）</strong></p>
+<img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.xn--l3q92w0lc.xyz/2024/02/15/515b1faf27d67310b69259ebb1777bb2.png" alt="image-20240215131221070" style="zoom:80%;">
+
+<p>官网：<a class="link" target="_blank" rel="noopener" href="https://kodcloud.com/">可道云-私有云存储&amp;协同办公平台 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>演示地址：<a class="link" target="_blank" rel="noopener" href="https://demo.kodcloud.com/#user/login">用户登录 - 可道云 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h4 id="ZPan"><a href="#ZPan" class="headerlink" title="ZPan"></a><strong>ZPan</strong></h4><p><strong>（支持多个云存储）</strong></p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/16521d952ec99852ba34194a4659164c.png" alt="image-20240215130522017"></p>
+<p>官网文档：<a class="link" target="_blank" rel="noopener" href="https://zpan.space/#/">介绍 (zpan.space) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>Github项目地址：<a class="link" target="_blank" rel="noopener" href="https://github.com/saltbo/zpan">saltbo/zpan:一个基于云存储的网盘系统 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h4 id="filegator"><a href="#filegator" class="headerlink" title="filegator"></a><strong>filegator</strong></h4><p><strong>（简洁实用，免费开源）</strong></p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/daf202bb91d1358695cec492180b1c1b.png" alt="image-20240215130657895"></p>
+<p>官网：<a class="link" target="_blank" rel="noopener" href="https://filegator.io/">FileGator - Free, Multi-User PHP File Manager <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>Github项目地址：<a class="link" target="_blank" rel="noopener" href="https://github.com/filegator/filegator">filegator/filegator: Powerful Multi-User File Manager <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>演示地址：<a class="link" target="_blank" rel="noopener" href="https://demo.filegator.io/">https://demo.filegator.io/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h4 id="Zdir"><a href="#Zdir" class="headerlink" title="Zdir"></a>Zdir</h4><p><strong>（简洁使用，免费开源）</strong></p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/4264715794da9fe59a50607cfec4d0a4.png" alt="image-20240215131637752"></p>
+<p>官方文档：<a class="link" target="_blank" rel="noopener" href="https://doc.xiaoz.org/books/zdir-3">Zdir 3 | 藏经阁 (xiaoz.org) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>演示：<a class="link" target="_blank" rel="noopener" href="https://soft.xiaoz.org/#/public/">小z博客软件库 (xiaoz.org) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>Github项目地址：<a class="link" target="_blank" rel="noopener" href="https://github.com/helloxz/zdir">helloxz/zdir: Golang + Vue3开发的目录列表程序 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h4 id="ifile"><a href="#ifile" class="headerlink" title="ifile"></a><strong>ifile</strong></h4><p><strong>（有免费与商用双版本，功能强大）</strong></p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/855a66d653c70274df5de9e5246f7140.png" alt="image-20240215132101510"></p>
+<p>官网：<a class="link" target="_blank" rel="noopener" href="https://ifile.space/">ifile.space <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>演示地址：<a class="link" target="_blank" rel="noopener" href="https://demo.ifile.space/main">文件 - iFileSpace 演示站 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="回归正题"><a href="#回归正题" class="headerlink" title="回归正题"></a>回归正题</h3><p>选用的阿里云ECS配置是<code>2核4G内存3Mbps+40G高速云盘</code></p>
+<h4 id="连接服务器"><a href="#连接服务器" class="headerlink" title="连接服务器"></a>连接服务器</h4><p>服务器到手后，用阿里云的<strong>Workbench远程连接</strong>或者用Xshell、FinalShell等工具连接。</p>
+<p>我用的是FinalShell，界面如下：</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/328f0575ffb228c2890752e0626b5f8a.png" alt="image-20240215132545103"></p>
+<p>下一步：</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/3a6be91b78d024ffdfe3d556264e72d6.png" alt="image-20240215132834727"></p>
+<p>下一步：</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/30451be64ff47b1a8587443b42e6509a.png"></p>
+<p>连接完成：</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/237001a13744e65f561244174ea75cff.png" alt="image-20240215133256354"></p>
+<h4 id="安装AList"><a href="#安装AList" class="headerlink" title="安装AList"></a>安装AList</h4><p>打开AList官方文档，选择一键脚本（如果想自定义安装，可以选择手动安装）</p>
+<p><strong>安装：</strong></p>
+<div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>更新：</strong></p>
+<div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s update</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>卸载：</strong></p>
+<div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s uninstall</span><br></pre></td></tr></table></figure></div>
+
+<p>将安装命令输入后执行：</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/7497142e4459270d6b85d43ca4819c4a.png" alt="image-20240215134639699"></p>
+<p>这样便安装完成，顺便设置一下登录密码：</p>
+<div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">移动到AList所在目录</span></span><br><span class="line">cd /opt/alist</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">设置新的密码（自己想要的）</span></span><br><span class="line">./alist admin set NEW_PASSWORD</span><br></pre></td></tr></table></figure></div>
+
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/369d26f3fddfaba738b86ef6a4770c1c.png" alt="image-20240215135200737"></p>
+<p><strong>注意，安装后的AList项目会使用5244端口，因此需要在阿里云安全组中开放5244端口。</strong></p>
+<p><strong>自定义安装</strong></p>
+<p>AList项目默认安装到<code>/opt/alist</code>中，如果想自定义安装路径，将安装路径作为第二个参数添加，必须是绝对路径（如果路径以 alist 结尾，则直接安装到给定路径，否则会安装在给定路径 alist 目录下）</p>
+<div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Install</span></span><br><span class="line">curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install /root</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">update</span></span><br><span class="line">curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s update /root</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Uninstall</span></span><br><span class="line">curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s uninstall /root</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="AList配置"><a href="#AList配置" class="headerlink" title="AList配置"></a>AList配置</h4><p>打开网址：http://你的IP:5244，就会显示你的AList云盘界面，输入你自己设置的密码登录。</p>
+<p>默认账号：admin</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/a991e0a581ccdb22ba489dc373c943a8.png" alt="image-20240215135508350"></p>
+<p>登录成功后，点这里进入后台管理。</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/61ba13fe54a41155ce155a32f68e5646.png" alt="image-20240215135743682"></p>
+<p>现在就可以在UI界面更改账号与密码了。</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/1e7e5757085a4c75407e4eb73b2b740a.png" alt="image-20240215135815144"></p>
+<h4 id="多云盘挂载"><a href="#多云盘挂载" class="headerlink" title="多云盘挂载"></a>多云盘挂载</h4>
+        </div>
+
+        
+            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>标题:</strong> 阿里云ECS搭建AList个人云盘</li>
+        <li><strong>作者:</strong> 狮子阿儒</li>
+        <li><strong>创建于
+                :</strong> 2024-02-14 11:43:28</li>
+        
+            <li>
+                <strong>更新于
+                    :</strong> 2024-02-15 14:02:27
+            </li>
+        
+        <li>
+            <strong>链接:</strong> https://c200108.github.io/2024/02/14/阿里云ECS搭建AList个人云盘/
+        </li>
+        <li>
+            <strong>
+                版权声明:
+            </strong>
+            
+
+            
+                本文章采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a> 进行许可。
+            
+        </li>
+    </ul>
 </div>
 
-<div class="tag-paginator">
-	<div class="paginator">
-    <span class="page-number current">1</span>
+            </div>
+        
+
+        
+            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/">#云服务器</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/%E5%BB%BA%E7%AB%99/">#建站</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/2024/02/05/%E6%95%B0%E5%AD%A6%E6%A6%82%E5%BF%B5/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">数学概念</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+                <div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        评论
+    </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/js/libs/waline.mjs';
+
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'https://vercel.czrblog.top',
+          lang: 'zh-CN',
+          dark: 'body[class~="dark-mode"]',
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+          recaptchaV3Key: "wasd",
+          
+        });
+      }
+
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
+    </script>
+
+
+
+        
+    
 </div>
 
+            </div>
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">此页目录</div>
+        <div class="page-title">阿里云ECS搭建AList个人云盘</div>
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#AList"><span class="nav-number">1.1.</span> <span class="nav-text">AList</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Cloudreve"><span class="nav-number">1.2.</span> <span class="nav-text">Cloudreve</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Seafile"><span class="nav-number">1.3.</span> <span class="nav-text">Seafile</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%AF%E9%81%93%E4%BA%91"><span class="nav-number">1.4.</span> <span class="nav-text">可道云</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ZPan"><span class="nav-number">1.5.</span> <span class="nav-text">ZPan</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#filegator"><span class="nav-number">1.6.</span> <span class="nav-text">filegator</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Zdir"><span class="nav-number">1.7.</span> <span class="nav-text">Zdir</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ifile"><span class="nav-number">1.8.</span> <span class="nav-text">ifile</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9E%E5%BD%92%E6%AD%A3%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">回归正题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="nav-number">2.1.</span> <span class="nav-text">连接服务器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85AList"><span class="nav-number">2.2.</span> <span class="nav-text">安装AList</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AList%E9%85%8D%E7%BD%AE"><span class="nav-number">2.3.</span> <span class="nav-text">AList配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%9A%E4%BA%91%E7%9B%98%E6%8C%82%E8%BD%BD"><span class="nav-number">2.4.</span> <span class="nav-text">多云盘挂载</span></a></li></ol></li></ol>
+
+    </div>
 </div>
+        </div>
+    
+</div>
+
 
 
                 
@@ -732,6 +1141,27 @@
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-side-tools-container">
