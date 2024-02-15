@@ -4885,7 +4885,10 @@ var player = new DogePlayer({
 <p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/0a7e50be7e888c6cb9f3a087dfcea104.png" alt="image-20240215200010202"></p>
 <p>效果：</p>
 <p><img lazyload="" src="/images/loading.svg" data-src="https://duojiyun-storage.常子儒.xyz/2024/02/15/c92f6766e4352bc6226df1ca5cdfc255.png" alt="image-20240215200429488"></p>
-]]></content>
+<h2 id="其他实用功能"><a href="#其他实用功能" class="headerlink" title="其他实用功能"></a>其他实用功能</h2><h3 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h3><p>用于实现所有网盘资源的检索，快速查找</p>
+<h3 id="单点登录"><a href="#单点登录" class="headerlink" title="单点登录"></a>单点登录</h3><p>实现Github、钉钉、谷歌等第三方账号登录</p>
+<h3 id="元信息"><a href="#元信息" class="headerlink" title="元信息"></a>元信息</h3><p>用于对某些文件夹加密，或隐藏</p>
+<h3 id="离线下载"><a href="#离线下载" class="headerlink" title="离线下载"></a>离线下载</h3><h3 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h3>]]></content>
       <categories>
         <category>WEB运维</category>
       </categories>
